@@ -1,0 +1,147 @@
+\chapter{Human Computed Stories in wePorter}
+\label{chap:weporter}
+
+\url{http://youtube-global.blogspot.co.uk/2009/05/zoinks-20-hours-of-video-uploaded-every_20.html}
+
+\url{http://youtube-global.blogspot.co.uk/2010/03/oops-pow-surprise24-hours-of-video-all.html}
+
+\url{http://youtube-global.blogspot.co.uk/2010/11/great-scott-over-35-hours-of-video.html}
+\url{http://youtube-global.blogspot.co.uk/2011/05/thanks-youtube-community-for-two-big.html}
+\url{http://youtube-global.blogspot.co.uk/2012/01/holy-nyans-60-hours-per-minute-and-4.html}
+
+\begin{quote}
+  Since the dawn of YouTube, we’ve been sharing the hours of video you upload every minute. In 2007 we started at six hours, then in 2010 we were at 24 hours, then 35, then 48, and now...60 hours of video every minute, an increase of more than 25 percent in the last eight months. In other words, you’re uploading one hour of video to YouTube every second. Tick, tock, tick, tock — that’s 4 hours right there!
+\end{quote}
+
+The astonishing figures of the amount of video that is uploaded to youtube are nothing short of mind blowing, but will most likely sound dated in a matter of years or even months. Looking at the increase of content uploaded to the video platform in past years, the growth does not seem likely to come to a halt soon. [include table] All these videos are great for online video junkies, and are increasingly part of the online journalism landscape \cite{Rosenstiel:2012vb}. At the same time, all these videos being put online beg the question which ones of them to watch.
+
+With more and more visual content being put online, there is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
+
+\section{The Purpose}
+
+
+
+
+
+The task at hand: filtering after IR
+more specific: once we have a repositiory that is returned as a search result because of annotations, how can we filter what is most interesting. (intentional ordering?)
+
+
+Idea 1: towards interest based filtering via meaning
+
+Idea 2: skip the semantic gap and directly model human attentional behaviour
+
+
+\subsection{Current handles of meaning on uploaded video repositories}
+tags etc
+
+
+many people watching:
+Clicking from one video to the next (choosing from a set of related videos)
+these inter-video links could be seen as indicators for relatedness and relevance, much like google's page rank algorithm use links across webpages to establish a notion of the most significant site on a particular topic. 
+
+There is an important difference here though. Whereas the links used by Google's search algorithms are embedded in machine readable hyperlinks, the path of clicking on from one video to the next is a characteristic of a person's interaction. 
+
+differences:
+	public, readable // private, non readable
+	conscious choice // unconcious result of interaction
+	Concluding
+		can be consciously put in place by several people at large scale // dependent on real 'human' traffic.
+		
+
+\section{The Motivation}
+\section{The Task}
+
+
+\section{Analysis of the wePorter System}
+
+\subsection{The death of the author}
+ref: Barthes - Image music Sound
+here: a lack of clear narrator of the written story
+
+in wePorter: the lack of a centralised creator, authoring a work consciously and deliberately.
+
+This new form of creation could at first sight be seen as non-authorship, but is rather a collective authorship. 
+
+Several recent developments now make possible this collective form of authorship:
+- the proliferation of tools hhat enable indicidual authorship of multimedia content
+- the increased connectivity of these devices, which gives them the capacity to make the created media accessible to others
+- the platforms for hosting multimedia (MM) content. This point is strongly related to the previous one. In ther development they form a chicken and egg relaten. Initially it's hard to imagine one withour the other, but once matured, they [influence eachother positively].
+- the Methods to link, mix, aggregate and modify content online.
+
+\section{Parallel Play}
+A new method for preference elicitation in time-based multi-media content.
+
+\section{Implementation}
+\label{sec:implementation}
+
+$\underset{x}{\operatorname{argmin}}$
+
+\begin{algorithm}
+  \caption{My algorithm}
+  \begin{algorithmic}[1]
+    \Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+      \State $r\gets a\bmod b$
+      \While{$r\not=0$}\Comment{We have the answer if r is 0}
+        \State $a\gets b$
+        \State $b\gets r$
+        \State $r\gets a\bmod b$
+      \EndWhile\label{euclidendwhile}
+      \State \textbf{return} $b$\Comment{The gcd is b}
+    \EndProcedure
+
+  \end{algorithmic}
+\end{algorithm}
+
+% Pseudo Code generate Sequences Random Shuffled
+% # fillSeqs
+% (seq1, seq2) <- [],[]
+% for i <- 0 to n_parts do
+%   # select videoParts with different src than the parts already in sequence
+%   selection1 <- []
+%   selection2 <- []
+%   for all vp in videoParts do:    
+%     if vp.src not in selection1:
+%       add vp to selection1
+%     if vp.src not in selection2:
+%       add vp to selection2            
+% 
+%   # seq1: select videoParts that have minimal count
+%   minSelection11 <- []
+%   minCount1 <- min(count) from selection1
+%   for all vp in selection1:
+%     if vp.count == minCount1:
+%       add vp to minSelection1
+%   selected1 <- pick random from minSelection1
+%   add selected1 to seq1
+% 
+%   # seq2: filter videoParts with different src than selected for seq1
+%   selection2V = []
+%   for vp in selection2:
+%     if vp.src != selected1.src:
+%       add vp to selection2V
+%   # select videoParts that have minimal count
+%   minSelection2 <- []
+%   minCount2 <- min(count) from selection2
+%   for all vp in selection2:
+%     if vp.count == minCount2:
+%       add vp to minSelection2
+%   selected2 <- pick random from minSelection2
+%   add selected2 to seq2
+% shuffle in unison(seq1, seq2)
+
+\begin{algorithm}
+  \caption{Generate Sequences Random Shuffled}
+  \begin{algorithmic}[1]
+    \Procedure{Fill Sequences}{}\Comment{The g.c.d. of a and b}
+      \State $r\gets a\bmod b$
+      \While{$r\not=0$}\Comment{We have the answer if r is 0}
+        \State $a\gets b$
+        \State $b\gets r$
+        \State $r\gets a\bmod b$
+      \EndWhile
+      \State \textbf{return} $b$\Comment{The gcd is b}
+    \EndProcedure
+
+  \end{algorithmic}
+\end{algorithm}

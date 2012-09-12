@@ -1,0 +1,41 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage{graphicx}
+\usepackage{ifpdf}
+\ifpdf
+   % put here packages only for the PDF:
+   \DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps}
+   % \usepackage{hyperref}
+   % \usepackage[plainpages=false]{hyperref}
+\else
+   % put here packages only for the DVI:
+\fi
+ 
+% put all the other packages here:
+\usepackage{mystyle}
+ 
+\begin{document}
+% \pagenumbering{alph}
+\pagenumbering{Alph}
+\input{./tex/title}
+\pagenumbering{arabic}
+\input{./tex/abstract}
+%\maketitle
+\tableofcontents
+\pagebreak
+% \listoffigures
+% \listoftables
+ 
+\input{./tex/intro}
+\input{./tex/main}
+\input{./tex/conclusions}
+
+
+% \appendix
+% \input{./tex/myappendix.tex}
+ 
+% Bibliography:
+\clearpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\input{./tex/mybibliography.tex}
+ 
+\end{document}

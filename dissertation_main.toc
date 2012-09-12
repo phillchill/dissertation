@@ -1,0 +1,17 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {chapter}{\numberline {2}The Quest for Meaningful Computation}{3}
+\contentsline {section}{\numberline {2.1}The web as platform for creation}{3}
+\contentsline {chapter}{\numberline {3}Human Computation}{4}
+\contentsline {chapter}{\numberline {4}Interactive Storytelling: From database to data-based}{5}
+\contentsline {section}{\numberline {4.1}Symbolic approaches}{5}
+\contentsline {section}{\numberline {4.2}Statistic approaches}{5}
+\contentsline {chapter}{\numberline {5}Never-ending Stories in `wePorter'}{6}
+\contentsline {section}{\numberline {5.1}Human Computed Stories in wePorter}{6}
+\contentsline {section}{\numberline {5.2}Current handles of meaning on uploaded video repositories}{6}
+\contentsline {section}{\numberline {5.3}Analysis of the wePorter System}{7}
+\contentsline {subsection}{\numberline {5.3.1}The death of the author}{7}
+\contentsline {section}{\numberline {5.4}Implementation}{7}
+\contentsline {chapter}{\numberline {6}Evaluation}{9}
+\contentsline {chapter}{\numberline {7}Discussion}{10}
+\contentsline {chapter}{\numberline {8}Future Directions}{11}
+\contentsline {chapter}{\numberline {9}Conclusions}{12}
