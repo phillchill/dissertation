@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  11 SEP 2012 22:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  12 SEP 2012 21:10
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -384,49 +384,63 @@ Overfull \hbox (31.13805pt too wide) in paragraph at lines 8--11
  / 01 / holy-[]nyans-[]60-[]hours-[]per-[]minute-[]and-[]4 .
  []
 
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ” in font cmr10!
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
 [6
 
-]) (./tex/main/evaluation.tex [7] [8]
+] [7] [8]) (./tex/main/evaluation.tex [9]
 Chapter 6.
-) (./tex/main/discussion.tex [9
+) (./tex/main/discussion.tex [10
 
 ]
 Chapter 7.
-) (./tex/future.tex [10
+) (./tex/main/future.tex [11
 
 ]
 Chapter 8.
-)) (./tex/conclusions.tex [11
+)) (./tex/conclusions.tex [12
 
 ]
 Chapter 9.
-) [12
+) [13
 
-] (./tex/mybibliography.tex
-No file dissertation_main.bbl.
-) (./dissertation_main.aux) ) 
+] (./tex/mybibliography.tex (./dissertation_main.bbl)) [14
+
+
+]
+(./dissertation_main.aux) ) 
 Here is how much of TeX's memory you used:
- 4037 strings out of 493848
- 58554 string characters out of 3149207
- 126250 words of memory out of 3000000
- 7232 multiletter control sequences out of 15000+200000
+ 4040 strings out of 493848
+ 58617 string characters out of 3149207
+ 126256 words of memory out of 3000000
+ 7233 multiletter control sequences out of 15000+200000
  11351 words of font info for 41 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 51i,6n,45p,628b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2009/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr9.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (14 pages, 143458 bytes).
+ 51i,6n,45p,869b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2009/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr9.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb>
+Output written on dissertation_main.pdf (16 pages, 156309 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
