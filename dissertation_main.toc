@@ -1,27 +1,36 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}
-\contentsline {chapter}{\numberline {2}The Quest for Meaning in Video}{3}
-\contentsline {subsection}{\numberline {2.0.1}Indexing to enable search}{3}
-\contentsline {section}{\numberline {2.1}collaborative filtering}{3}
-\contentsline {chapter}{\numberline {3}Human Computation}{4}
-\contentsline {subsection}{\numberline {3.0.1}The web as platform for creation}{4}
-\contentsline {chapter}{\numberline {4}Interactive Storytelling: From database to data-based}{5}
-\contentsline {section}{\numberline {4.1}Symbolic approaches}{5}
-\contentsline {section}{\numberline {4.2}Statistic approaches}{5}
-\contentsline {section}{\numberline {4.3}Remixing}{5}
-\contentsline {subsection}{\numberline {4.3.1}Taking the remix online}{5}
-\contentsline {chapter}{\numberline {5}Human Computed Stories in wePorter}{6}
-\contentsline {section}{\numberline {5.1}User Generated Video Content}{6}
-\contentsline {section}{\numberline {5.2}The Purpose}{6}
-\contentsline {subsection}{\numberline {5.2.1}looking into a video}{8}
-\contentsline {subsection}{\numberline {5.2.2}Current handles of meaning on uploaded video repositories}{8}
-\contentsline {section}{\numberline {5.3}The Motivation}{8}
-\contentsline {section}{\numberline {5.4}The Task}{8}
-\contentsline {section}{\numberline {5.5}Analysis of the wePorter System}{8}
-\contentsline {subsection}{\numberline {5.5.1}The death of the author}{8}
-\contentsline {section}{\numberline {5.6}Parallel Play}{9}
-\contentsline {section}{\numberline {5.7}Implementation}{9}
-\contentsline {chapter}{\numberline {6}Evaluation}{10}
-\contentsline {chapter}{\numberline {7}Discussion}{11}
-\contentsline {chapter}{\numberline {8}Future Directions}{12}
-\contentsline {chapter}{\numberline {9}Conclusions}{13}
-\contentsline {chapter}{Bibliography}{14}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {chapter}{\numberline {2}The Quest for Meaning in Video}{4}
+\contentsline {section}{\numberline {2.1}Forms of Meaning in Film and Video}{4}
+\contentsline {subsection}{\numberline {2.1.1}Meaning in Visuals}{4}
+\contentsline {subsection}{\numberline {2.1.2}Meaning in Concept}{4}
+\contentsline {subsection}{\numberline {2.1.3}Meaning in Structure}{4}
+\contentsline {subsection}{\numberline {2.1.4}Meaning in Annotations}{4}
+\contentsline {section}{\numberline {2.2}Computational Undertakings of the Quest}{4}
+\contentsline {subsection}{\numberline {2.2.1}Steps towards Meaning: An Overview}{4}
+\contentsline {subsection}{\numberline {2.2.2}Indexing to enable search}{4}
+\contentsline {section}{\numberline {2.3}collaborative filtering}{4}
+\contentsline {chapter}{\numberline {3}Human Computation towards Visual Meaning}{5}
+\contentsline {subsection}{\numberline {3.0.1}The web as platform for creation}{5}
+\contentsline {chapter}{\numberline {4}Interactive Storytelling: From database to data-based}{6}
+\contentsline {section}{\numberline {4.1}Symbolic approaches}{6}
+\contentsline {section}{\numberline {4.2}Statistic approaches}{6}
+\contentsline {section}{\numberline {4.3}Remixing}{6}
+\contentsline {subsection}{\numberline {4.3.1}Taking the remix online}{6}
+\contentsline {chapter}{\numberline {5}Human Computed Stories in wePorter}{7}
+\contentsline {section}{\numberline {5.1}User Generated Video Content}{8}
+\contentsline {section}{\numberline {5.2}The Purpose}{8}
+\contentsline {subsection}{\numberline {5.2.1}Different Ways of Querying}{8}
+\contentsline {subsection}{\numberline {5.2.2}Storytelling as Structured Recommendation}{9}
+\contentsline {subsection}{\numberline {5.2.3}Current handles of meaning on uploaded video repositories}{10}
+\contentsline {section}{\numberline {5.3}The Motivation}{10}
+\contentsline {section}{\numberline {5.4}The Task}{10}
+\contentsline {section}{\numberline {5.5}Analysis of the wePorter System}{10}
+\contentsline {section}{\numberline {5.6}Landscapes of Interest}{10}
+\contentsline {subsection}{\numberline {5.6.1}The death of the author}{10}
+\contentsline {section}{\numberline {5.7}Parallel Play}{11}
+\contentsline {section}{\numberline {5.8}Implementation}{11}
+\contentsline {chapter}{\numberline {6}Evaluation}{12}
+\contentsline {chapter}{\numberline {7}Discussion}{13}
+\contentsline {chapter}{\numberline {8}Future Directions}{14}
+\contentsline {chapter}{\numberline {9}Conclusions}{15}
+\contentsline {chapter}{Bibliography}{16}

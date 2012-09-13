@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  12 SEP 2012 21:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  13 SEP 2012 01:22
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -329,28 +329,34 @@ Package caption Info: End \AtBeginDocument code.
 (./tex/title.tex [1
 
 {/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./tex
-/abstract.tex [1]) (./dissertation_main.toc)
+/abstract.tex [1]) (./dissertation_main.toc [1
+
+])
 \tf@toc=\write3
 \openout3 = `dissertation_main.toc'.
 
- [1
-
-]
+ [2]
 (./tex/intro.tex
 Chapter 1.
-) (./tex/main.tex (./tex/main/meaningfulComputation.tex [2
+) (./tex/main.tex (./tex/main/meaningfulComputation.tex [3
 
 ]
 Chapter 2.
-) (./tex/main/humanComputation.tex [3
+
+LaTeX Warning: Citation `Bruno:2002tt' on page 4 undefined on input line 7.
+
+
+LaTeX Warning: Citation `Kuwano:2000wy' on page 4 undefined on input line 14.
+
+) (./tex/main/humanComputation.tex [4
 
 ]
 Chapter 3.
-) (./tex/main/storytelling.tex [4
+) (./tex/main/storytelling.tex [5
 
 ]
 Chapter 4.
-) (./tex/main/weporter.tex [5
+) (./tex/main/weporter.tex [6
 
 ]
 Chapter 5.
@@ -396,51 +402,62 @@ Missing character: There is no ” in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[6
+[7
 
-] [7] [8]) (./tex/main/evaluation.tex [9]
+]
+
+LaTeX Warning: Citation `Hollink:2005ei' on page 8 undefined on input line 31.
+
+[8]
+
+LaTeX Warning: Citation `Zhou:2010ut' on page 9 undefined on input line 49.
+
+[9] [10]) (./tex/main/evaluation.tex [11]
 Chapter 6.
-) (./tex/main/discussion.tex [10
+) (./tex/main/discussion.tex [12
 
 ]
 Chapter 7.
-) (./tex/main/future.tex [11
+) (./tex/main/future.tex [13
 
 ]
 Chapter 8.
-)) (./tex/conclusions.tex [12
+)) (./tex/conclusions.tex [14
 
 ]
 Chapter 9.
-) [13
+) [15
 
-] (./tex/mybibliography.tex (./dissertation_main.bbl)) [14
+] (./tex/mybibliography.tex (./dissertation_main.bbl)) [16
 
 
 ]
-(./dissertation_main.aux) ) 
+(./dissertation_main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4040 strings out of 493848
- 58617 string characters out of 3149207
- 126256 words of memory out of 3000000
- 7233 multiletter control sequences out of 15000+200000
+ 4044 strings out of 493848
+ 58675 string characters out of 3149207
+ 126258 words of memory out of 3000000
+ 7237 multiletter control sequences out of 15000+200000
  11351 words of font info for 41 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 51i,6n,45p,869b,372s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2009/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr9.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (16 pages, 156309 bytes).
+ 51i,6n,45p,859b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/lo
+cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on dissertation_main.pdf (18 pages, 161286 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

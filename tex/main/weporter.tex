@@ -13,47 +13,53 @@
   Since the dawn of YouTube, we’ve been sharing the hours of video you upload every minute. In 2007 we started at six hours, then in 2010 we were at 24 hours, then 35, then 48, and now...60 hours of video every minute, an increase of more than 25 percent in the last eight months. In other words, you’re uploading one hour of video to YouTube every second. Tick, tock, tick, tock — that’s 4 hours right there!
 \end{quote}
 
-The astonishing figures of the amount of video that is uploaded to youtube are nothing short of mind blowing, but will most likely sound dated in a matter of years or even months. Looking at the increase of content uploaded to the video platform in past years, the growth does not seem likely to come to a halt soon. [include table] All these videos are great for online video junkies, and are increasingly part of the online journalism landscape \cite{Rosenstiel:2012vb}. At the same time, all these videos being put online beg the question which ones of them to watch.
+These astonishing figures of the amount of video that is uploaded to youtube are nothing short of mind blowing, but will most likely sound dated in a matter of years or even months. Looking at the increase of content uploaded to the video platform in past years, the growth does not seem likely to come to a halt soon [ref table]. All these videos are great for online video junkies, and are increasingly part of the online journalism landscape \cite{Rosenstiel:2012vb}. At the same time, all these videos being put online beg the question which ones of them to watch.
 
-With more and more visual content being put online, there is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
+[table of youtube content uploads]
+
+The increasing amounts of content being put online, lead to an information overload and present serious challenges in search and information retrieval tasks [ref]. There is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an at least a shallow understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
 
 \section{User Generated Video Content}
 
 \section{The Purpose}
 
 Searching -> IR
-With more than an hour of new content per second it is no wonder that youtube has come to be viewed as the go-to for online video, much like  ``the digital video repository for the Internet'' that was envisioined by its founders in their first ever blog post [ref http://youtube-global.blogspot.co.uk/2005/07/greetings-everyone-thanks-for-visiting.html]. An important activity on video platforms like youtube is searching and much attention has been given to different methods of multimedia search and indexing [refs]. Once items have been annotated with tags that reflect the content of a video, items can be presented as search results in response to a textual query.
+With more than an hour of new content per second it is no wonder that youtube has come to be viewed as the go-to for online video, much like ``the digital video repository for the Internet'' that was envisioined by its founders in their first ever blog post [ref http://youtube-global.blogspot.co.uk/2005/07/greetings-everyone-thanks-for-visiting.html]. An important activity on video platforms like youtube is searching and much attention has been given to different methods of multimedia search and indexing [refs]. Youtube's acquisition by Google in 2006 underlines the platform's role as a video search engine. 
 
-narrow // broad queries
+
+\subsection{Different Ways of Querying}
+Once items have been annotated with tags that reflect the content of a video, these indexes can, along with other meta data of the video, be used for retrieval of videos[ref] in response to textual queries. The effectiveness of such a retrieval task can vary depending on the information that is used in the search algorithm[refs] and the type of content that is searched for \cite{Hollink:2005ei}[more refs]. We expand on this latter point, as it forms an important context for the wePorter system.
+
 A user might visit an online video platform with a specific goal in mind. Reasons to visit might be the wish to see a particular music video or to find an instance of a series by a particular producer. Provided that the desired piece of content exists and the video platform has an appropriate search function in place, these \textit{narrow queries} will result is a result set from which the user is likely to handpick the sought-after result fairly quickly. This user's desired result lies withing a single item of content. Perhaps a few hit and misses are required, but after a couple of clicks the required video is found.
 
 A different scenario emerges when a user approaches a video platform with a more broad and open ended motive. Think for example of someone who wants to know what happened at a large music festival she recently attended, or someone who couldn't make it to a large demonstration and would like to get a sense of the atmosphere. These kind of `broad queries' return a result set of content in which a users will probably consider many item as a succesfull retrieval. Furthermore, one could even say that by traversing the space of different videos in the result set, users interactively construct the answers to their own queries.
 
-This kind of navigation through a space of related content is common practice on large spaces of linked data [ref]. Goal of a person's query here is no longer defined in a single returnable item of content or even a containable set of items. Rather, the sequential pathway through the a set of interesting bits of content is what represents a user's aim. 
+This kind of navigation through a space of related content is common practice on large spaces of linked data [ref]. Goal of a person's query here is no longer defined in a single returnable item of content or even a containable set of items. Rather, the sequential pathway through the a set of interesting bits of content is what represents a user's aim[ref to video retrieval overview of content]. The answer to a user's query lies as much in the journey through the content as in the returned content itself. This self-constructed story is an important concept that wePorter capitalises on, as will soon become apparent.
 
-The task at hand changes dramatically compared to the more narrow queries that could be answered by a small true positives in an information retrieval task. Users with broad expectations will not only want to be presented with as set of relevant items from a complete repository, they are also looking for the most interesting parts from within these relevant items. This issue is particular to time-based media, and especially relevant for video. Other temporal media, like audio in general and music in particular, have less of a need for segmentation because of  their common usage in multi-media applications. People usually tend to listen to a song entirely and if they which to experience an album in part, constituent songs are already units on their own that can easily be reconfigured.
+The task at hand of recommending a larger group of interesting videos is radically different compared to the more narrow queries that could be answered by a small set of true positives in an information retrieval task. Besides the spread of the searched for result across different pieces of content, there is a second important difference that lies in the nature of pieces of UGVC.
 
-Because of the raw, unedited nature of the mayority of UGVC [ref yt and the news] it is desireable to establish local recommendations that point to parts within a video content that are of particular interest. Whereas digital music albums shared online consist of a collection of songs that can each easily be made to stand alone, video currently suffers from a less mallable identity online.  Online videos are currently much like black boxes that can be played, paused, rated, commented on, tagged and shared only in its entirety. What if a piece of raw, unedited UGVC features something spectacular for 10 seconds halfway along its timeline, but shows much of the same for the rest of the time?
+Users with broad expectations will not only want to be presented with as set of relevant items from a complete repository, they are also looking for the most interesting parts within these relevant items. This issue is particular to time-based media, and especially relevant for video. Other temporal media, like audio in general and music in particular, have less of a need for segmentation because of  their common usage in multi-media applications. People usually tend to listen to a song entirely and if they which to experience an album in part, constituent songs are already units on their own that can easily be reconfigured.
 
-The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. Afterall, an unedited video captures a single strech of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we see interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with spikes every now and then when an iteresting event occurs. 
+Because of the raw, unedited nature of the mayority of UGVC [ref yt and the news] it is desireable to establish local recommendations that point to parts within a video content that are of particular interest. Whereas digital music albums shared online consist of a collection of songs that can each easily be made to stand alone, video currently suffers from a less mallable identity online.  Online videos are currently much like black boxes that can be played, paused, rated, commented on, tagged and shared only in its entirety. What if a piece of raw, unedited UGVC features something spectacular for ten seconds halfway along its timeline, but shows much of the same for the rest of the time? Answering this question will be the first part of the purpose of the wePorter system.
 
-Looking at interest at a more global level, aggregating over a large group of users, would perhaps even a more smooth landscape of interest. This kind of data could reveal mountains and valleys that can be used for interest-based segmentation. From the thus segmented parts, the ones with high interest score can be returned as the salient parts within a video.
+\subsection{Storytelling as Structured Recommendation}
 
+[TODO]
 
-This is the purpose of the wePorter system.
-
-
-
-
-Beyond standard information retrieval that finds relevant items from a larger set, there is a need for an extra step of video segmentation 
+It has been found that YouTube's related video recommendation functionality, which recommends videos that are related the video currently being watched, is one of the most important view sources of videos. In fact, traffic received from these recommendations is the main source of views for the majority of videos on YouTube \cite{Zhou:2010ut}.
 
 
+The ten significant seconds in a two-minute video become a needle in a haystack when an initial set of videos relating to your query includes tens to hundreds of possibly related videos with lengths between 30 seconds and ten minutes. The  aggregation and reconfiguration of several of these needles into a meaningful new whole is another non-trivial task. We present the wePorter system as a test case for new methods that aim to solve this problem. More precisely, wePorter's purpose is two-folded:
+
+From a set of topically related unedited user-generated videos:
+\begin{enumerate}
+  \item Find localised intervals of interest within each of a set of source videos
+  \item Find a meaningful structure for the reconfiguration of interesing video parts
+\end{enumerate}
+(distinguish irrelevancy of content)
 
 
 
-The problem of determining local intervals of interest within a single video is currently hard to solve. Work has been done in automatic video segmentation,
-
-\subsection{looking into a video}
 
 
 
@@ -114,6 +120,12 @@ differences:
 
 
 \section{Analysis of the wePorter System}
+
+\section{Landscapes of Interest}
+
+The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. Afterall, an unedited video captures a single strech of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we see interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with spikes every now and then when an iteresting event occurs. 
+
+Looking at interest at a more global level, aggregating over a large group of users, would perhaps even a more smooth landscape of interest. This kind of data could reveal mountains and valleys that can be used for interest-based segmentation. From the thus segmented parts, the ones with high interest score can be returned as the salient parts within a video.
 
 \subsection{The death of the author}
 ref: Barthes - Image music Sound
