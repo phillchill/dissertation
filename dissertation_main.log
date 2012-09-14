@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  14 SEP 2012 13:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  14 SEP 2012 22:10
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -346,7 +346,7 @@ Chapter 1.
 ]
 Chapter 2.
 
-Overfull \hbox (13.76291pt too wide) in paragraph at lines 22--32
+Overfull \hbox (13.76291pt too wide) in paragraph at lines 24--34
 \OT1/cmr/m/n/10.95 tent based [Rel-e-vance feed-back: A power tool for in-ter-a
 c-tive content-based im-age retrieval][[]]
  []
@@ -418,26 +418,26 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [13]
+ [13] [14] [15]
 
-LaTeX Warning: Reference `sec:experiments' on page 14 undefined on input line 1
-72.
+LaTeX Warning: Reference `sec:experiments' on page 16 undefined on input line 2
+01.
 
-[14] [15]) (./tex/main/evaluation.tex [16]
+[16]) (./tex/main/evaluation.tex [17] [18]
 Chapter 6.
-) (./tex/main/discussion.tex [17
+) (./tex/main/discussion.tex [19
 
 ]
 Chapter 7.
-) (./tex/main/future.tex [18
+) (./tex/main/future.tex [20
 
 ]
 Chapter 8.
-)) (./tex/conclusions.tex [19
+)) (./tex/conclusions.tex [21
 
 ]
 Chapter 9.
-) [20
+) [22
 
 ] (./tex/mybibliography.tex (./dissertation_main.bbl
 Underfull \hbox (badness 4872) in paragraph at lines 75--80
@@ -445,12 +445,15 @@ Underfull \hbox (badness 4872) in paragraph at lines 75--80
 gel Ro-drigo
  []
 
-[21
+[23
 
 
-])) [22] (./dissertation_main.aux)
+])) [24] (./dissertation_main.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
@@ -471,9 +474,9 @@ sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
 l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (24 pages, 191542 bytes).
+Output written on dissertation_main.pdf (26 pages, 197699 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
