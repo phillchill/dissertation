@@ -1,8 +1,139 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Bruno:2002tt}
+E.~Bruno and D.~Pellerin.
+\newblock {Video structuring, indexing and retrieval based on global motion
+  wavelet coefficients}.
+\newblock {\em Pattern Recognition, 2002. Proceedings. 16th International
+  Conference on}, 3:287--290 vol. 3, 2002.
+
+\bibitem{Christel:2004wm}
+M.~Christel and N.~Moraveji.
+\newblock {Finding the right shots: assessing usability and performance of a
+  digital video library interface}.
+\newblock {\em Proceedings of the 12th annual ACM international conference on
+  Multimedia}, pages 732--739, 2004.
+
+\bibitem{Christel:2005td}
+M.G. Christel and R.M. Conescu.
+\newblock {Addressing the challenge of visual information access from digital
+  image and video libraries}.
+\newblock {\em Proceedings of the 5th ACM/IEEE-CS joint conference on Digital
+  libraries}, pages 69--78, 2005.
+
+\bibitem{Davidson:2010tu}
+J.~Davidson, B.~Liebald, J.~Liu, P.~Nandy, T.~Van~Vleet, U.~Gargi, S.~Gupta,
+  Y.~He, M.~Lambert, and B.~Livingston.
+\newblock {The YouTube video recommendation system}.
+\newblock {\em Proceedings of the fourth ACM conference on Recommender
+  systems}, pages 293--296, 2010.
+
+\bibitem{DeRooij:2007ua}
+O.~De~Rooij, C~G~M Snoek, and M~Worring.
+\newblock {Query on demand video browsing}.
+\newblock {\em Proceedings of the 15th international conference on Multimedia},
+  pages 811--814, 2007.
+
+\bibitem{DeRooij:2008ut}
+O.~De~Rooij, C~G~M Snoek, and M~Worring.
+\newblock {Balancing thread based navigation for targeted video search}.
+\newblock {\em Proceedings of the 2008 international conference on
+  Content-based image and video retrieval}, pages 485--494, 2008.
+
+\bibitem{Hollink:2005ei}
+L~Hollink, G~P Nguyen, D~C Koelma, A~Th Schreiber, and M~Worring.
+\newblock {Assessing user behaviour in news video retrieval}.
+\newblock {\em IEE Proceedings - Vision, Image, and Signal Processing},
+  152(6):911, 2005.
+
+\bibitem{Jonsson:2011fh}
+Anna~Maria J{\"o}nsson and Henrik {\"O}rnebring.
+\newblock {USER-GENERATED CONTENT AND THE NEWS}.
+\newblock {\em Journalism Practice}, 5(2):127--144, April 2011.
+
+\bibitem{Kuwano:2000wy}
+H.~Kuwano, Y.~Taniguchi, H.~Arai, M.~Mori, S.~Kurakake, and H.~Kojima.
+\newblock {Telop-on-demand: Video structuring and retrieval based on text
+  recognition}.
+\newblock {\em Multimedia and Expo, 2000. ICME 2000. 2000 IEEE International
+  Conference on}, 2:759--762 vol. 2, 2000.
+
+\bibitem{Mei:2007wa}
+T.~Mei, B.~Yang, X.S. Hua, L.~Yang, S.Q. Yang, and S.~Li.
+\newblock {VideoReach: an online video recommendation system}.
+\newblock {\em Proceedings of the 30th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  767--768, 2007.
+
+\bibitem{Quinn:2011us}
+A.J. Quinn and B.B. Bederson.
+\newblock {Human computation: a survey and taxonomy of a growing field}.
+\newblock {\em Proceedings of the 2011 annual conference on Human factors in
+  computing systems}, pages 1403--1412, 2011.
+
+\bibitem{RodrigoLaiolaGuimaraes:2011tl}
+Pablo Cesar Dick C A Bulterman Vilmos Zsombori Ian~Kegel Rodrigo
+  Laiola~Guimaraes.
+\newblock {Creating Personalized Memories from Social Events: Community-Based
+  Support for Multi-Camera Recordings of School Concerts}.
+\newblock Technical report, August 2011.
 
 \bibitem{Rosenstiel:2012vb}
 Tom Rosenstiel and Amy Mitchell.
 \newblock {YouTube {\&} the News}.
 \newblock Technical report, July 2012.
+
+\bibitem{Rui:1998uj}
+Y.~Rui, T.S. Huang, M.~Ortega, and S.~Mehrotra.
+\newblock {Relevance feedback: A power tool for interactive content-based image
+  retrieval}.
+\newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
+  on}, 8(5):644--655, 1998.
+
+\bibitem{Smeaton:2006ww}
+A.F. Smeaton, P.~Over, and W.~Kraaij.
+\newblock {Evaluation campaigns and TRECVid}.
+\newblock {\em Proceedings of the 8th ACM international workshop on Multimedia
+  information retrieval}, pages 321--330, 2006.
+
+\bibitem{Ursu:2009gc}
+Marian~F Ursu, Vilmos Zsombori, John Wyver, Lucie Conrad, Ian Kegel, and Doug
+  Williams.
+\newblock {Interactive documentaries}.
+\newblock {\em Computers in Entertainment}, 7(3):1, September 2009.
+
+\bibitem{Xu:2008vb}
+S.~Xu, H.~Jiang, and F.~Lau.
+\newblock {Personalized online document, image and video recommendation via
+  commodity eye-tracking}.
+\newblock {\em Proceedings of the 2008 ACM conference on Recommender systems},
+  pages 83--90, 2008.
+
+\bibitem{Yang:2007vb}
+B.~Yang, T.~Mei, X.S. Hua, L.~Yang, S.Q. Yang, and M.~Li.
+\newblock {Online video recommendation based on multimodal fusion and relevance
+  feedback}.
+\newblock {\em Proceedings of the 6th ACM international conference on Image and
+  video retrieval}, pages 73--80, 2007.
+
+\bibitem{Yang:2004tc}
+M.~Yang, B.M. Wildemuth, and G.~Marchionini.
+\newblock {The relative effectiveness of concept-based versus content-based
+  video retrieval}.
+\newblock {\em Proceedings of the 12th annual ACM international conference on
+  Multimedia}, pages 368--371, 2004.
+
+\bibitem{Zhou:2010ut}
+R.~Zhou, S.~Khemmarat, and L.~Gao.
+\newblock {The impact of YouTube recommendation system on video views}.
+\newblock {\em Proceedings of the 10th annual conference on Internet
+  measurement}, pages 404--410, 2010.
+
+\bibitem{Vilmos:2011wv}
+V.~Zsombori, M.~Frantzis, R.L. Guimaraes, M.F. Ursu, P.~Cesar, I.~Kegel,
+  R.~Craigie, and D.~Bulterman.
+\newblock {Automatic generation of video narratives from shared UGC}.
+\newblock {\em Proceedings of the ACM Conference on Hypertext and Hypermedia},
+  pages 325--334, 2011.
 
 \end{thebibliography}

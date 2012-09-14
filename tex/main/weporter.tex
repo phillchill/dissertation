@@ -1,6 +1,13 @@
 \chapter{Human Computed Stories in wePorter}
 \label{chap:weporter}
 
+\section{Introduction}
+This section describes the interaction design of the wePorter system, built to examplify how human computation can be used in tasks like local video part filtering and semi-automated video reconfiguration. The wePorter system runs an interactive webpage that functions as the main source for data acquisition, presentation of results and general proof of concept. In this chapter the system is analysed along the axes of \textit{Purpose}, \textit{Motivation} and \textit{Task}, that were introduced in the analysis of Human Computational systems in chaperter \ref{ch:humancomputation}. Next to these guidelines for analysis, some remarks are made about the specifics in the functioning of the system. Lastly we discuss the implementation of the web application that is central in wePorter.
+
+\section{User Generated Video Content}
+
+[define UGVC]
+
 \url{http://youtube-global.blogspot.co.uk/2009/05/zoinks-20-hours-of-video-uploaded-every_20.html}
 
 \url{http://youtube-global.blogspot.co.uk/2010/03/oops-pow-surprise24-hours-of-video-all.html}
@@ -19,87 +26,62 @@ These astonishing figures of the amount of video that is uploaded to youtube are
 
 The increasing amounts of content being put online, lead to an information overload and present serious challenges in search and information retrieval tasks [ref]. There is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an at least a shallow understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
 
-\section{User Generated Video Content}
-
 \section{The Purpose}
 
 Searching -> IR
 With more than an hour of new content per second it is no wonder that youtube has come to be viewed as the go-to for online video, much like ``the digital video repository for the Internet'' that was envisioined by its founders in their first ever blog post [ref http://youtube-global.blogspot.co.uk/2005/07/greetings-everyone-thanks-for-visiting.html]. An important activity on video platforms like youtube is searching and much attention has been given to different methods of multimedia search and indexing [refs]. Youtube's acquisition by Google in 2006 underlines the platform's role as a video search engine. 
 
 
-\subsection{Different Ways of Querying}
-Once items have been annotated with tags that reflect the content of a video, these indexes can, along with other meta data of the video, be used for retrieval of videos[ref] in response to textual queries. The effectiveness of such a retrieval task can vary depending on the information that is used in the search algorithm[refs] and the type of content that is searched for \cite{Hollink:2005ei}[more refs]. We expand on this latter point, as it forms an important context for the wePorter system.
+\subsection{Different Goals}
+Once items have been annotated with tags that reflect the content of a video, these indexes can, along with other meta data of the video, be used for retrieval of videos[ref] in response to textual queries. The effectiveness of such a retrieval task can vary depending on the information that is used in the search algorithm[refs] and the type of content that is searched for \cite{Hollink:2005ei}[more refs]. A third characteristic that determines the effectiveness of a video retrieval system is the goals that users have in their usage of the system. These user goals can vary widely from more to less specific\cite{Davidson:2010tu}. We expand on this latter point, as it forms an important context for the wePorter system.
 
-A user might visit an online video platform with a specific goal in mind. Reasons to visit might be the wish to see a particular music video or to find an instance of a series by a particular producer. Provided that the desired piece of content exists and the video platform has an appropriate search function in place, these \textit{narrow queries} will result is a result set from which the user is likely to handpick the sought-after result fairly quickly. This user's desired result lies withing a single item of content. Perhaps a few hit and misses are required, but after a couple of clicks the required video is found.
+\subsubsection{Direct Navigation}
+First, a user might be drawn to a video platform by a direct link from an external website. Links might be either in the form of actual hyperlinks or playable embedded videos that are followed through to the platform. Navigations via such links form a direct mapping between a user's intention to the desired piece of content. In this case, users have a very specific reason to come and watch. Their desire, at least of knowing the contents of the video, is satisfied after the viewing. YouTube's system engineers call this way of video viewing \emph{direct navigation}\cite{Davidson:2010tu}.
 
-A different scenario emerges when a user approaches a video platform with a more broad and open ended motive. Think for example of someone who wants to know what happened at a large music festival she recently attended, or someone who couldn't make it to a large demonstration and would like to get a sense of the atmosphere. These kind of `broad queries' return a result set of content in which a users will probably consider many item as a succesfull retrieval. Furthermore, one could even say that by traversing the space of different videos in the result set, users interactively construct the answers to their own queries.
+\subsubsection{Search and Goal-oriented browse}
+When users have not obtained a direct link to a potentially relevant piece of content, they might still have a specific goal in mind when visiting an online video platform. Reasons to visit might be the wish to see a particular music video or to find an instance of a series by a particular producer. This goal of discovering a rather specific video is referred to as \emph{search and goal-oriented browse}. Provided that the desired piece of content exists and the video platform has an appropriate search function in place, these `narrow queries', will result is a result set of search results from which the user is likely to handpick the sought-after result fairly quickly. Here the user's desired result often lies within a single item of content. Perhaps a few hit and misses are required, but after a couple of clicks the required video is found.
 
-This kind of navigation through a space of related content is common practice on large spaces of linked data [ref]. Goal of a person's query here is no longer defined in a single returnable item of content or even a containable set of items. Rather, the sequential pathway through the a set of interesting bits of content is what represents a user's aim[ref to video retrieval overview of content]. The answer to a user's query lies as much in the journey through the content as in the returned content itself. This self-constructed story is an important concept that wePorter capitalises on, as will soon become apparent.
+\subsubsection{Unarticulated Want}
+A different scenario emerges altogether when a user approaches a video platform with a more broad and open ended motive. Think for example of someone who wants to know what happened at a large music festival she recently attended, or someone who couldn't make it to a large demonstration and would like to get a sense of the atmosphere. This kind of `broad queries' returns a result set of content in which a users will probably consider many items as a successful retrieval. Furthermore, one could even say that the desired result of a user's query is spread across the multiple pieces of content. By traversing the space of different videos in the result set, users interactively construct the answers to their own queries.
+
+This kind of navigation through a space of related content is common practice on large spaces of linked data[ref]. It has been found that YouTube's related video recommendation functionality, which recommends videos that are related to the video currently being watched, is one of the most important view sources of videos. In fact, traffic received from these recommendations is the main source of views for the majority of videos on YouTube \cite{Zhou:2010ut}. Features derived from users' navigations such as `click-through rate' have been used to improve content-based video recommendation \cite{Yang:2007vb}.
+
+Goal of a person's query in this kind of navigation is no longer defined in a single returnable item of content or even a containable set of items. Rather, the interactive pathway through the a set of interesting bits of content is what represents a user's aim. This broader exploratory goal of finding different parts of relevant content has been termed `unarticulated want'\cite{Davidson:2010tu}.
+
+Interactivity is generally agreed to play an important role in the task of video retrieval, as is reflected by the separate category in the annual TRECVid challenge for interactive video retrieval\cite{Smeaton:2006ww}. Several works have indicated the importance of interactivity in the task of video retrieval to filter through a set of initially returned results \cite{DeRooij:2007ua, Christel:2004wm, DeRooij:2007ua, DeRooij:2008ut}. As most of these systems are aimed at retrieval of clearly specified intentions, for example in the TRECvid retrieval task, the need for interactive exploration is even more apparent for the broader oriented goal of users engaged in unarticulated want.
+
+\section{serving the purpose of unarticulated want}
+The answer to a user's query now lies as much in the journey through the content as in the returned content itself. This self-constructed story is an important concept that wePorter capitalises on, as will soon become apparent.
 
 The task at hand of recommending a larger group of interesting videos is radically different compared to the more narrow queries that could be answered by a small set of true positives in an information retrieval task. Besides the spread of the searched for result across different pieces of content, there is a second important difference that lies in the nature of pieces of UGVC.
 
 Users with broad expectations will not only want to be presented with as set of relevant items from a complete repository, they are also looking for the most interesting parts within these relevant items. This issue is particular to time-based media, and especially relevant for video. Other temporal media, like audio in general and music in particular, have less of a need for segmentation because of  their common usage in multi-media applications. People usually tend to listen to a song entirely and if they which to experience an album in part, constituent songs are already units on their own that can easily be reconfigured.
 
-Because of the raw, unedited nature of the mayority of UGVC [ref yt and the news] it is desireable to establish local recommendations that point to parts within a video content that are of particular interest. Whereas digital music albums shared online consist of a collection of songs that can each easily be made to stand alone, video currently suffers from a less mallable identity online.  Online videos are currently much like black boxes that can be played, paused, rated, commented on, tagged and shared only in its entirety. What if a piece of raw, unedited UGVC features something spectacular for ten seconds halfway along its timeline, but shows much of the same for the rest of the time? Answering this question will be the first part of the purpose of the wePorter system.
+Because of the raw, unedited nature of the majority of UGVC [ref yt and the news] it is desirable to establish local recommendations that point to parts within a video content that are of particular interest. Whereas digital music albums shared online consist of a collection of songs that can each easily be made to stand alone, video currently suffers from a less malleable identity online.  Online videos are currently much like black boxes that can be played, paused, rated, commented on, tagged and shared only in its entirety. What if a piece of raw, unedited UGVC features something spectacular for ten seconds halfway along its timeline, but shows much of the same for the rest of the time? Answering this question will be the first part of the purpose of the wePorter system.
 
 \subsection{Storytelling as Structured Recommendation}
 
+explanation why it is also good to structure the filtered pieces of content into a new configuration.
 [TODO]
 
-It has been found that YouTube's related video recommendation functionality, which recommends videos that are related the video currently being watched, is one of the most important view sources of videos. In fact, traffic received from these recommendations is the main source of views for the majority of videos on YouTube \cite{Zhou:2010ut}.
 
-
-The ten significant seconds in a two-minute video become a needle in a haystack when an initial set of videos relating to your query includes tens to hundreds of possibly related videos with lengths between 30 seconds and ten minutes. The  aggregation and reconfiguration of several of these needles into a meaningful new whole is another non-trivial task. We present the wePorter system as a test case for new methods that aim to solve this problem. More precisely, wePorter's purpose is two-folded:
+The ten significant seconds in a two-minute video become a needle in a haystack when an initial set of videos relating to your query includes tens to hundreds of possibly relevant videos with lengths between some tens of seconds and a couple of minutes. The aggregation and reconfiguration of several of these `needles' into a meaningful new whole is another non-trivial task. We present wePorter as a test case for new methods that address both these issues of information overload in video libraries of UGVC. More precisely, wePorter's purpose is two-folded:
 
 From a set of topically related unedited user-generated videos:
 \begin{enumerate}
-  \item Find localised intervals of interest within each of a set of source videos
+  \item Find localised intervals of interest within each of the source videos
   \item Find a meaningful structure for the reconfiguration of interesing video parts
 \end{enumerate}
-(distinguish irrelevancy of content)
 
 
 
 
-
-
-
-
-
-
-
-
-
-Since the proliferation of mobile video recording devices, it has become common that these kinds of large-scale (semi-)public event are covered in user-generated video content that gets uploaded to the web. 
-
-
-Computer readable  handles for search algorithms. 
-
-
-Vast collections of content, like the one stored at youtube, need indexing for users to be able to navigate the content.  
-
-
-
-
-
-
-
-
-The task at hand: filtering after IR
-more specific: once we have a repositiory that is returned as a search result because of annotations, how can we filter what is most interesting. (intentional ordering?)
-
-preference elicitation
-
-beyond recommendation
 
 
 Idea 1: towards interest based filtering via meaning
 
 Idea 2: skip the semantic gap and directly model human attentional behaviour
 
-
-\subsection{Current handles of meaning on uploaded video repositories}
-tags etc
 
 
 many people watching:
@@ -112,16 +94,101 @@ differences:
 	public, readable // private, non readable
 	conscious choice // unconcious result of interaction
 	Concluding
-		can be consciously put in place by several people at large scale // dependent on real 'human' traffic.
+		can be consciously put in place by several people at large scale // dependent on real `human' traffic.
 		
 
 \section{The Motivation}
+
+How to get a group of unrelated people to contribute their efforts to solving the tasks set in our two-folded purpose? This section looks at the reasons people might have to contribute their computational powers to a system with a purpose like wePorter. Looking at the way people engage with online video content on platforms like youtube, we identify patterns in their behaviour that can be matched to a task in a human computation system. This behaviour that is characterised by a more active role in multimedia consumption, can be seen as a larger trend in the development of new media. The end of this section indicates how the motivations of users of the wePorter system can link in with this larger trend. 
+
+\subsection{Information Provision through Online Video}
+
+Since the proliferation of mobile video recording devices, it has become common practice for large-scale (semi-)public events to be covered in UGVC that gets uploaded to the web. While some are critical\cite{Jonsson:2011fh} about the often heralded democratization and empowerment of people by the new media production and distribution tools, it is clear that the UGVC at places like youtube attracts a lot of traffic from people looking to be informed about recent events. Afterall UGVC can have its advantages over traditional video news production, especially for unexpected events where traditional media production does not have the immediacy of user-generated `reports' recorded by coincidental passersby. 
+
+In a recent study as part of the the Pew Research Center’s Project for Excellence in Journalism, for a period of 15 months the most popular video's from YouTube's `News and Politics' category are analyzed\cite{Rosenstiel:2012vb}. The authors of the study exemplify the power UGVC can have in news provision by showcasing frequently viewed videos detailling scenes from the earthquake and subsequent tsunami that hit Japan in March 2011. The week following the disaster, the 20 most viewed news-related videos on YouTube were all focused on the catastrophic event and were viewed more thatn 96 million times. Most of these videos were recorded by individuals who happened to be in the affected areas when the disaster struck, either uploaded by themselves, or by TV channels who approprioted the content. The study furthermore reports that in the investigated period, the most searched term of the month was a news-related event 5 out of 15 months.
+
+While the journalism study above focusses on videos with the `News \& Politics' label, information provision about current event might span a larger set of catefories. Someone looking for footage in order to get a sense of the atmosphere at a recent music festival or public demonstration, might very well find relevant videos in categories like `Entertainment', `Travel \& Events' or `Nonprofits \& Activism'. Across all of these categories, we are able to find examples of UGVC, uploaded in the period following up newsworthy events.
+
+The wePorter system focusses on these kinds of topically related sets that people are currently exploring interactively by browsing from one video to the next. This way of navigation is an intermediary between the goals of \textit{goal-oriented browse} and \textit{unarticulated want}. The unarticulated want is now encapsulated by the event but users still roam freely within this topicalized set of content. By navigating from video to video, watching some and skipping others, users leave attentional traces that give valuable insight into a user's intentional standpoint.
+
+It is this kind of interactions that are already taking place at a large scale that we like to make use of in the wePorter system. Motivated by the whish to explore informative content, users of system appropriately appropriately set up, will instinctively and implicitly contribute their human knowledge.
+...
+and a task is set up such that their interactions are recorded as contributions to solving small instances of a larger problem we have two of the three ingredients of our human computation system in place.
+
 \section{The Task}
+
+This would fall into what Quinn and Bederson would label as `implicit work' \cite{Quinn:2011us}.
+\subsection{Between consumer and producer}
+
+
+Intro
+We start by explaining the motivations out of which the design was born, followed by a detailed explanation of the interface and analysis of some of the design choices that were made in its development.
+
+Between Couch Potato and Video Editor
+The interaction here presented is the result of a design process motivated by the wish to solve a challenge:
+
+How to get massive amounts of people collaboratively contributing to the shape of a video story?
+
+An answer to this question should balances extremes in multiple dimensions:
+creation vs consumption
+active vs passive
+advanced control vs easy access
+
+A central idea in the wePorter system is that video consumption and video creation might be more closely related than traditionally thought. In fact, relating these two aspects is a key element in the interaction design here presented.
+
+Traditionally, models of media productions, distribution and consumption have usually assumed a strict division between the roles of producers and consumers. [need for New Media studies ref] The classical image of television viewers is that of passive couch potatoes, comfortably leaned back on the sofa in their living room. Literally miles apart from them are content producers like reporters, presenters, cameramen, directors, editors and so on, who capture, form and present the content that is viewed on screen.
+
+Thanks to the creative use of telecommunications technology, some television programmes have embraced more interactivity between the two roles. Formats like the numerous talent shows that let people vote by text or gameshows where people play by calling in by telephone, are examples where consumers influence what happens onscreen, but roles of creator and consumer stay effectively unchanged. Creators are still responsible for the production of content shown onscreen. In living up to this responsibility, they
+
+Video Editor
+Couch Potato
+creator
+consumer
+active
+passive
+making
+viewing
+active
+passive
+difficult
+easy
+
+% Online interaction front-end
+% Using HTML, CSS, JavaScript (Popcorn.js)
+% At Github: https://github.com/phillchill/wePorter
+% 
+% User Experience
+% 
+% 
+% Web Interaction v_3
+
+
+Parallel player
+
+In the web-based interface two video players are presented at once. When a user initiates an interaction session by hitting play, the two videos start playing. Both videos are now visible to the user, but only one of the audio tracks is played. Users control which player's audio track is being played by moving the mouse cursor over the player they whish to hear. Apart from triggering the audio of a video this way, mouse-over movement also brings focus to a video by displaying it clear, while video out of focus is silent and slightly dimmed.
+
+For every 10th of a second, we record which video a user attends to. Note that we never explicitly ask anyone to point at the video that is most interesting. Users are simply instructed as to how the interface works and then left to explore the video as they like. By recording users' behaviour this way, we achieve a detailed insight as to which of a pair of videos a user has attended to at what time.
+
+Positioning two video's one on top of the other, might inflict a bias for users in their attentional behaviour. It might be the case videos on the top are systematically more attended to than videos displayed below. We've experimented to see whether such positioning bias effects occur and report on this in section \ref{sec:experiments} [*TODO ref].
+
+Sequences of video parts
+
+The video sequences played by the two players consist of distinct parts of videos from a topic-centred video database. This means all content that is aggregated in the interaction is focussed around a single topic, in this example the event of the Queen of England's Diamond Jubilee celebrations in London. The sequences have some other important characteristics:
+Sequences are formed out of the same number of video parts (in this example 6)
+Video parts in sequences are all of the same duration (in this example 10 seconds)
+It follows that all sequences have equal duration (in this example 1 minute).
+
+
+
+
+\subsection{Forced Feedback}
+By making data acquisition from interaction an intrinsic part of a human computation system [*need umbrella term], submitting data to the system will become second nature to users and can even take place without the users being aware of it.
+	-> curation through interaction
 
 
 \section{Analysis of the wePorter System}
 
-\section{Landscapes of Interest}
+\subsection{Landscapes of Interest}
 
 The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. Afterall, an unedited video captures a single strech of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we see interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with spikes every now and then when an iteresting event occurs. 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  13 SEP 2012 01:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  14 SEP 2012 13:01
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -329,63 +329,73 @@ Package caption Info: End \AtBeginDocument code.
 (./tex/title.tex [1
 
 {/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./tex
-/abstract.tex [1]) (./dissertation_main.toc [1
+/abstract.tex [1])
+Missing character: There is no Â in font cmr10!
+Missing character: There is no § in font cmr10!
+ [1] (./dissertation_main.toc [2
 
 ])
 \tf@toc=\write3
 \openout3 = `dissertation_main.toc'.
 
- [2]
-(./tex/intro.tex
+
+[3] (./tex/intro.tex
 Chapter 1.
-) (./tex/main.tex (./tex/main/meaningfulComputation.tex [3
+) (./tex/main.tex (./tex/main/meaningfulComputation.tex [4
 
 ]
 Chapter 2.
 
-LaTeX Warning: Citation `Bruno:2002tt' on page 4 undefined on input line 7.
+Overfull \hbox (13.76291pt too wide) in paragraph at lines 22--32
+\OT1/cmr/m/n/10.95 tent based [Rel-e-vance feed-back: A power tool for in-ter-a
+c-tive content-based im-age retrieval][[]]
+ []
 
-
-LaTeX Warning: Citation `Kuwano:2000wy' on page 4 undefined on input line 14.
-
-) (./tex/main/humanComputation.tex [4
+) (./tex/main/humanComputation.tex [5
 
 ]
 Chapter 3.
-) (./tex/main/storytelling.tex [5
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+ [6
 
-]
+])
+(./tex/main/storytelling.tex [7]
 Chapter 4.
-) (./tex/main/weporter.tex [6
+) (./tex/main/weporter.tex [8
 
 ]
 Chapter 5.
 
-Overfull \hbox (22.95476pt too wide) in paragraph at lines 4--5
-$\OT1/cmtt/m/n/10 http : / / youtube-[]global . blogspot . co . uk / 2009 / 05 
-/ zoinks-[]20-[]hours-[]of-[]video-[]uploaded-[]every _
+Overfull \hbox (39.95476pt too wide) in paragraph at lines 11--12
+[]$\OT1/cmtt/m/n/10 http : / / youtube-[]global . blogspot . co . uk / 2009 / 0
+5 / zoinks-[]20-[]hours-[]of-[]video-[]uploaded-[]every _
  []
 
 
-Overfull \hbox (34.7048pt too wide) in paragraph at lines 6--7
+Overfull \hbox (34.7048pt too wide) in paragraph at lines 13--14
 []$\OT1/cmtt/m/n/10 http : / / youtube-[]global . blogspot . co . uk / 2010 / 0
 3 / oops-[]pow-[]surprise24-[]hours-[]of-[]video-[]all .
  []
 
 
-Overfull \hbox (13.70499pt too wide) in paragraph at lines 8--11
+Overfull \hbox (13.70499pt too wide) in paragraph at lines 15--18
 []$\OT1/cmtt/m/n/10 http : / / youtube-[]global . blogspot . co . uk / 2010 / 1
 1 / great-[]scott-[]over-[]35-[]hours-[]of-[]video .
  []
 
 
-Overfull \hbox (30.13805pt too wide) in paragraph at lines 8--11
+Overfull \hbox (30.13805pt too wide) in paragraph at lines 15--18
 \OT1/cmtt/m/n/10 html$ $http : / / youtube-[]global . blogspot . co . uk / 2011
  / 05 / thanks-[]youtube-[]community-[]for-[]two-[]big .
  []
 
 
-Overfull \hbox (31.13805pt too wide) in paragraph at lines 8--11
+Overfull \hbox (31.13805pt too wide) in paragraph at lines 15--18
 \OT1/cmtt/m/n/10 html$ $http : / / youtube-[]global . blogspot . co . uk / 2012
  / 01 / holy-[]nyans-[]60-[]hours-[]per-[]minute-[]and-[]4 .
  []
@@ -402,49 +412,55 @@ Missing character: There is no ” in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[7
+[9
 
-]
+] [10] [11] [12]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+ [13]
 
-LaTeX Warning: Citation `Hollink:2005ei' on page 8 undefined on input line 31.
+LaTeX Warning: Reference `sec:experiments' on page 14 undefined on input line 1
+72.
 
-[8]
-
-LaTeX Warning: Citation `Zhou:2010ut' on page 9 undefined on input line 49.
-
-[9] [10]) (./tex/main/evaluation.tex [11]
+[14] [15]) (./tex/main/evaluation.tex [16]
 Chapter 6.
-) (./tex/main/discussion.tex [12
+) (./tex/main/discussion.tex [17
 
 ]
 Chapter 7.
-) (./tex/main/future.tex [13
+) (./tex/main/future.tex [18
 
 ]
 Chapter 8.
-)) (./tex/conclusions.tex [14
+)) (./tex/conclusions.tex [19
 
 ]
 Chapter 9.
-) [15
+) [20
 
-] (./tex/mybibliography.tex (./dissertation_main.bbl)) [16
+] (./tex/mybibliography.tex (./dissertation_main.bbl
+Underfull \hbox (badness 4872) in paragraph at lines 75--80
+[]\OT1/cmr/m/n/10.95 Pablo Ce-sar Dick C A Bul-ter-man Vil-mos Zsom-bori Ian Ke
+gel Ro-drigo
+ []
+
+[21
 
 
-]
-(./dissertation_main.aux)
+])) [22] (./dissertation_main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4044 strings out of 493848
- 58675 string characters out of 3149207
- 126258 words of memory out of 3000000
- 7237 multiletter control sequences out of 15000+200000
+ 4080 strings out of 493848
+ 59261 string characters out of 3149207
+ 127330 words of memory out of 3000000
+ 7270 multiletter control sequences out of 15000+200000
  11351 words of font info for 41 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 51i,6n,45p,859b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,6n,45p,1044b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -455,9 +471,9 @@ sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
 l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (18 pages, 161286 bytes).
+Output written on dissertation_main.pdf (24 pages, 191542 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
