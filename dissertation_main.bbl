@@ -1,11 +1,32 @@
 \begin{thebibliography}{10}
 
+\bibitem{Babbage:1832vu}
+Charles Babbage.
+\newblock {On the economy of machinery and manufactures}.
+\newblock 1832.
+
 \bibitem{Bruno:2002tt}
 E.~Bruno and D.~Pellerin.
 \newblock {Video structuring, indexing and retrieval based on global motion
   wavelet coefficients}.
 \newblock {\em Pattern Recognition, 2002. Proceedings. 16th International
   Conference on}, 3:287--290 vol. 3, 2002.
+
+\bibitem{youtubeCCmisc}
+Cathy Casserly.
+\newblock Here’s your invite to reuse and remix the 4 million creative
+  commons-licensed videos on youtube.
+\newblock
+  \url{http://youtube-global.blogspot.co.uk/2012/07/heres-your-invite-to-reuse%
+-and-remix-4.html}, June 2012.
+\newblock Accessed: 15/09/2012.
+
+\bibitem{Cesar:2009fk}
+Pablo Cesar and Konstantinos Chorianopoulos.
+\newblock {The Evolution of TV Systems, Content, and Users Toward
+  Interactivity}.
+\newblock {\em Foundations and Trends{\textregistered} in Human-Computer
+  Interaction}, 2(4):373--95, 2009.
 
 \bibitem{Christel:2004wm}
 M.~Christel and N.~Moraveji.
@@ -40,6 +61,11 @@ O.~De~Rooij, C~G~M Snoek, and M~Worring.
 \newblock {\em Proceedings of the 2008 international conference on
   Content-based image and video retrieval}, pages 485--494, 2008.
 
+\bibitem{grier2007computers}
+D.A. Grier.
+\newblock {\em {When Computers Were Human}}.
+\newblock Princeton University Press, 2007.
+
 \bibitem{Hollink:2005ei}
 L~Hollink, G~P Nguyen, D~C Koelma, A~Th Schreiber, and M~Worring.
 \newblock {Assessing user behaviour in news video retrieval}.
@@ -58,12 +84,24 @@ H.~Kuwano, Y.~Taniguchi, H.~Arai, M.~Mori, S.~Kurakake, and H.~Kojima.
 \newblock {\em Multimedia and Expo, 2000. ICME 2000. 2000 IEEE International
   Conference on}, 2:759--762 vol. 2, 2000.
 
+\bibitem{Law:2009vl}
+E.~Law and L.~Von~Ahn.
+\newblock {Input-agreement: a new mechanism for collecting data using human
+  computation games}.
+\newblock {\em Proceedings of the 27th international conference on Human
+  factors in computing systems}, pages 1197--1206, 2009.
+
 \bibitem{Mei:2007wa}
 T.~Mei, B.~Yang, X.S. Hua, L.~Yang, S.Q. Yang, and S.~Li.
 \newblock {VideoReach: an online video recommendation system}.
 \newblock {\em Proceedings of the 30th annual international ACM SIGIR
   conference on Research and development in information retrieval}, pages
   767--768, 2007.
+
+\bibitem{Pea:2004td}
+R.~Pea, M.~Mills, J.~Rosen, K.~Dauber, W.~Effelsberg, and E.~Hoffert.
+\newblock {The diver project: Interactive digital video repurposing}.
+\newblock {\em Multimedia, IEEE}, 11(1):54--61, 2004.
 
 \bibitem{Quinn:2011us}
 A.J. Quinn and B.B. Bederson.
@@ -95,6 +133,11 @@ A.F. Smeaton, P.~Over, and W.~Kraaij.
 \newblock {Evaluation campaigns and TRECVid}.
 \newblock {\em Proceedings of the 8th ACM international workshop on Multimedia
   information retrieval}, pages 321--330, 2006.
+
+\bibitem{Turing:1950wi}
+AM~Turing.
+\newblock {Computing machinery and intelligence}.
+\newblock {\em Mind}, 1950.
 
 \bibitem{Ursu:2009gc}
 Marian~F Ursu, Vilmos Zsombori, John Wyver, Lucie Conrad, Ian Kegel, and Doug

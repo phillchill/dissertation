@@ -2,47 +2,48 @@ This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: dissertation_main.aux
 The style file: plain.bst
 Database file #1: ./tex/bib/mybib.bib
+Warning--empty journal in Babbage:1832vu
 Warning--empty institution in RodrigoLaiolaGuimaraes:2011tl
 Warning--empty institution in Rosenstiel:2012vb
-You've used 21 entries,
+You've used 28 entries,
             2118 wiz_defined-function locations,
-            633 strings with 8580 characters,
-and the built_in function-call counts, 9165 in all, are:
-= -- 932
-> -- 472
-< -- 13
-+ -- 185
-- -- 164
-* -- 657
-:= -- 1460
-add.period$ -- 63
-call.type$ -- 21
-change.case$ -- 147
+            673 strings with 9714 characters,
+and the built_in function-call counts, 11231 in all, are:
+= -- 1139
+> -- 559
+< -- 14
++ -- 220
+- -- 192
+* -- 780
+:= -- 1807
+add.period$ -- 85
+call.type$ -- 28
+change.case$ -- 181
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 338
-empty$ -- 605
-format.name$ -- 164
-if$ -- 1940
+cite$ -- 31
+duplicate$ -- 421
+empty$ -- 769
+format.name$ -- 192
+if$ -- 2372
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 19
-newline$ -- 108
-num.names$ -- 42
-pop$ -- 133
+int.to.str$ -- 28
+missing$ -- 26
+newline$ -- 144
+num.names$ -- 56
+pop$ -- 174
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 152
 quote$ -- 0
-skip$ -- 298
+skip$ -- 362
 stack$ -- 0
-substring$ -- 659
-swap$ -- 132
-text.length$ -- 13
+substring$ -- 775
+swap$ -- 149
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
-warning$ -- 2
-while$ -- 91
-width$ -- 23
-write$ -- 231
-(There were 2 warnings)
+type$ -- 110
+warning$ -- 3
+while$ -- 112
+width$ -- 30
+write$ -- 305
+(There were 3 warnings)

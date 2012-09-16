@@ -1,2 +1,47 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}
-\BOOKMARK [0][-]{chapter.2}{Conclusions}{}
+\BOOKMARK [0][-]{chapter.2}{The Quest for Meaning in Video}{}
+\BOOKMARK [1][-]{section.2.1}{Forms of Meaning in Film and Video}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{Meaning in Visuals}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.2}{Meaning in Concept}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.3}{Meaning in Structure}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.4}{Meaning in Annotations}{section.2.1}
+\BOOKMARK [1][-]{section.2.2}{Computational Undertakings of the Quest}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{The Semantic Gap}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Steps towards Meaning: An Overview}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Indexing to enable search}{section.2.2}
+\BOOKMARK [0][-]{chapter.3}{Human Computation towards Visual Meaning}{}
+\BOOKMARK [1][-]{subsection.3.0.4}{The web as platform for creation}{chapter.3}
+\BOOKMARK [1][-]{section.3.1}{Deriving Meaning from Video Via Human Factors}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Collaborative Filtering}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{A Characterisation of Human Computation Systems}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Purpose}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Motivation}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.3}{Task}{section.3.3}
+\BOOKMARK [0][-]{chapter.4}{Interactive Storytelling: From database to data-based}{}
+\BOOKMARK [1][-]{section.4.1}{Symbolic approaches}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Statistic approaches}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Remixing}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Taking the remix online}{section.4.3}
+\BOOKMARK [0][-]{chapter.5}{Human Computed Stories in wePorter}{}
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{User Generated Video Content}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{The Purpose}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.3.1}{Different Goals}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.2}{Serving the Purpose of Unarticulated Want}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.3}{Storytelling as Structured Recommendation}{section.5.3}
+\BOOKMARK [1][-]{section.5.4}{The Motivation}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.4.1}{Information Provision through Online Video}{section.5.4}
+\BOOKMARK [1][-]{section.5.5}{The Task}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.5.1}{Design Considerations}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.2}{The Interface}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.3}{Forced Feedback}{section.5.5}
+\BOOKMARK [1][-]{section.5.6}{Analysis of the Weporter System}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.6.1}{Landscapes of Interest}{section.5.6}
+\BOOKMARK [2][-]{subsection.5.6.2}{The death of the author}{section.5.6}
+\BOOKMARK [1][-]{section.5.7}{Parallel Play}{chapter.5}
+\BOOKMARK [1][-]{section.5.8}{Implementation}{chapter.5}
+\BOOKMARK [0][-]{chapter.6}{Evaluation}{}
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}
+\BOOKMARK [0][-]{chapter.8}{Future Directions}{}
+\BOOKMARK [0][-]{chapter.9}{Conclusions}{}
+\BOOKMARK [0][-]{chapter.9}{Bibliography}{}
