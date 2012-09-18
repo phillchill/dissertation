@@ -12,13 +12,16 @@
 \BOOKMARK [1][-]{section.2.3}{Computational Difficulties}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Human Computation towards Visual Meaning}{}
 \BOOKMARK [1][-]{section.3.1}{Characterising Human Computation}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.1.1}{The web as platform for creation}{section.3.1}
-\BOOKMARK [1][-]{section.3.2}{Deriving Meaning from Video Via Human Factors}{chapter.3}
-\BOOKMARK [1][-]{section.3.3}{Collaborative Filtering}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{A Characterisation of Human Computation Systems}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.4.1}{Purpose}{section.3.4}
-\BOOKMARK [2][-]{subsection.3.4.2}{Motivation}{section.3.4}
-\BOOKMARK [2][-]{subsection.3.4.3}{Task}{section.3.4}
+\BOOKMARK [1][-]{section.3.2}{Humans Computing Visual Meaning}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{Examples}{section.3.2}
+\BOOKMARK [1][-]{section.3.3}{Computation in Interaction}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{The web as platform for creation}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{Deriving Meaning from Video Via Human Factors}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Collaborative Filtering}{chapter.3}
+\BOOKMARK [1][-]{section.3.6}{A Characterisation of Human Computation Systems}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.6.1}{Purpose}{section.3.6}
+\BOOKMARK [2][-]{subsection.3.6.2}{Motivation}{section.3.6}
+\BOOKMARK [2][-]{subsection.3.6.3}{Task}{section.3.6}
 \BOOKMARK [0][-]{chapter.4}{Interactive Storytelling: From database to data-based}{}
 \BOOKMARK [1][-]{section.4.1}{Symbolic approaches}{chapter.4}
 \BOOKMARK [1][-]{section.4.2}{Statistic approaches}{chapter.4}
@@ -36,14 +39,12 @@
 \BOOKMARK [1][-]{section.5.5}{The Task}{chapter.5}
 \BOOKMARK [2][-]{subsection.5.5.1}{Design Considerations}{section.5.5}
 \BOOKMARK [2][-]{subsection.5.5.2}{The Interface}{section.5.5}
-\BOOKMARK [2][-]{subsection.5.5.3}{Forced Feedback}{section.5.5}
-\BOOKMARK [1][-]{section.5.6}{Analysis of the Weporter System}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.6.1}{Landscapes of Interest}{section.5.6}
-\BOOKMARK [2][-]{subsection.5.6.2}{The death of the author}{section.5.6}
-\BOOKMARK [1][-]{section.5.7}{Parallel Play}{chapter.5}
-\BOOKMARK [1][-]{section.5.8}{Implementation}{chapter.5}
+\BOOKMARK [1][-]{section.5.6}{Implementation}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.6.1}{Preparation of Content}{section.5.6}
+\BOOKMARK [2][-]{subsection.5.6.2}{The live system}{section.5.6}
 \BOOKMARK [0][-]{chapter.6}{Evaluation}{}
 \BOOKMARK [1][-]{section.6.1}{The Interface}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.1.1}{Landscapes of Interest}{section.6.1}
 \BOOKMARK [0][-]{chapter.7}{Discussion}{}
 \BOOKMARK [0][-]{chapter.8}{Future Directions}{}
 \BOOKMARK [0][-]{chapter.9}{Conclusions}{}

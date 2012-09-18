@@ -12,50 +12,56 @@
 \contentsline {section}{\numberline {2.3}Computational Difficulties}{6}{section.2.3}
 \contentsline {chapter}{\numberline {3}Human Computation towards Visual Meaning}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Characterising Human Computation}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}The web as platform for creation}{8}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Deriving Meaning from Video Via Human Factors}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Collaborative Filtering}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}A Characterisation of Human Computation Systems}{8}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Purpose}{8}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Motivation}{8}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Task}{8}{subsection.3.4.3}
-\contentsline {chapter}{\numberline {4}Interactive Storytelling: From database to data-based}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Symbolic approaches}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Statistic approaches}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}Remixing}{9}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Taking the remix online}{9}{subsection.4.3.1}
-\contentsline {chapter}{\numberline {5}Human Computed Stories in wePorter}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}User Generated Video Content}{10}{section.5.2}
-\contentsline {section}{\numberline {5.3}The Purpose}{11}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Different Goals}{11}{subsection.5.3.1}
-\contentsline {subsubsection}{Direct Navigation}{12}{section*.2}
-\contentsline {subsubsection}{Search and Goal-oriented browse}{12}{section*.3}
-\contentsline {subsubsection}{Unarticulated Want}{12}{section*.4}
-\contentsline {subsection}{\numberline {5.3.2}Serving the Purpose of Encapsulated Wander}{13}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Storytelling as Structured Recommendation}{14}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}The Motivation}{14}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Information Provision through Online Video}{14}{subsection.5.4.1}
-\contentsline {section}{\numberline {5.5}The Task}{15}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Design Considerations}{15}{subsection.5.5.1}
-\contentsline {subsubsection}{wePorter is a web interface}{15}{section*.5}
-\contentsline {subsubsection}{Hypervideo}{16}{section*.6}
-\contentsline {subsubsection}{Localised Interest}{16}{section*.7}
-\contentsline {subsubsection}{Interest Elicitation}{16}{section*.8}
-\contentsline {subsubsection}{Recurrent Interaction}{17}{section*.9}
-\contentsline {subsubsection}{Users Between Consumers and Producers}{17}{section*.10}
-\contentsline {subsubsection}{The Death of the Author, the Birth of Collective Creation}{17}{section*.11}
-\contentsline {subsection}{\numberline {5.5.2}The Interface}{18}{subsection.5.5.2}
-\contentsline {subsubsection}{A Walkthrough}{19}{section*.13}
-\contentsline {subsection}{\numberline {5.5.3}Forced Feedback}{20}{subsection.5.5.3}
-\contentsline {section}{\numberline {5.6}Analysis of the Weporter System}{21}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Landscapes of Interest}{21}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}The death of the author}{21}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Parallel Play}{21}{section.5.7}
-\contentsline {section}{\numberline {5.8}Implementation}{21}{section.5.8}
-\contentsline {chapter}{\numberline {6}Evaluation}{23}{chapter.6}
-\contentsline {section}{\numberline {6.1}The Interface}{23}{section.6.1}
-\contentsline {chapter}{\numberline {7}Discussion}{24}{chapter.7}
-\contentsline {chapter}{\numberline {8}Future Directions}{25}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conclusions}{26}{chapter.9}
-\contentsline {chapter}{Bibliography}{27}{chapter.9}
+\contentsline {section}{\numberline {3.2}Humans Computing Visual Meaning}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Examples}{8}{subsection.3.2.1}
+\contentsline {subsubsection}{ESP Game}{8}{section*.2}
+\contentsline {subsubsection}{Peek-a-Boom}{8}{section*.3}
+\contentsline {subsubsection}{reCaptcha}{8}{section*.4}
+\contentsline {section}{\numberline {3.3}Computation in Interaction}{8}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}The web as platform for creation}{8}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Deriving Meaning from Video Via Human Factors}{8}{section.3.4}
+\contentsline {section}{\numberline {3.5}Collaborative Filtering}{8}{section.3.5}
+\contentsline {section}{\numberline {3.6}A Characterisation of Human Computation Systems}{9}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Purpose}{9}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Motivation}{9}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Task}{9}{subsection.3.6.3}
+\contentsline {chapter}{\numberline {4}Interactive Storytelling: From database to data-based}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Symbolic approaches}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}Statistic approaches}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Remixing}{10}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Taking the remix online}{10}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Human Computed Stories in wePorter}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{11}{section.5.1}
+\contentsline {section}{\numberline {5.2}User Generated Video Content}{11}{section.5.2}
+\contentsline {section}{\numberline {5.3}The Purpose}{12}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Different Goals}{12}{subsection.5.3.1}
+\contentsline {subsubsection}{Direct Navigation}{13}{section*.5}
+\contentsline {subsubsection}{Search and Goal-oriented browse}{13}{section*.6}
+\contentsline {subsubsection}{Unarticulated Want}{13}{section*.7}
+\contentsline {subsubsection}{Encapsulated Wander}{13}{section*.8}
+\contentsline {subsection}{\numberline {5.3.2}Serving the Purpose of Encapsulated Wander}{14}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Storytelling as Structured Recommendation}{15}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}The Motivation}{15}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Information Provision through Online Video}{15}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}The Task}{16}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Design Considerations}{16}{subsection.5.5.1}
+\contentsline {subsubsection}{wePorter is a web interface}{16}{section*.9}
+\contentsline {subsubsection}{Hypervideo}{17}{section*.10}
+\contentsline {subsubsection}{Localised Interest}{17}{section*.11}
+\contentsline {subsubsection}{Forced Feedback}{17}{section*.12}
+\contentsline {subsubsection}{Preference Elicitation by Parallel Play}{18}{section*.13}
+\contentsline {subsubsection}{Recurrent Interaction}{18}{section*.14}
+\contentsline {subsubsection}{Users Between Consumers and Producers}{18}{section*.15}
+\contentsline {subsubsection}{The Death of the Author, the Birth of Collective Creation}{19}{section*.16}
+\contentsline {subsection}{\numberline {5.5.2}The Interface}{20}{subsection.5.5.2}
+\contentsline {subsubsection}{A Walkthrough}{20}{section*.18}
+\contentsline {section}{\numberline {5.6}Implementation}{22}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Preparation of Content}{22}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}The live system}{22}{subsection.5.6.2}
+\contentsline {chapter}{\numberline {6}Evaluation}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}The Interface}{25}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Landscapes of Interest}{25}{subsection.6.1.1}
+\contentsline {chapter}{\numberline {7}Discussion}{26}{chapter.7}
+\contentsline {chapter}{\numberline {8}Future Directions}{27}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conclusions}{28}{chapter.9}
+\contentsline {chapter}{Bibliography}{29}{chapter.9}

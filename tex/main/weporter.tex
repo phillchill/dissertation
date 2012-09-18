@@ -75,7 +75,7 @@ Goal of a person's query in this kind of navigation is no longer defined in a si
 
 \subsubsection{Encapsulated Wander}
 
-Considering the three categories of user motivation above, another, composite motive can be imagined. Users often start with a query for a particular topic, followed by a journey across many videos relating to their search term. Their navigation seems unarticulated but it is encapsulated by the topic of their query. Think of someone who wants to get an overview of a large music festival she recently attended. Big events where many people record videos, are often massively covered on UGVC platforms, resulting in an overload of visual information. Searching YouTube for videos from the recent participatory festival Burning Man that were uploaded this month returns ``About 4,530 results''\cite{youtubeBM}.
+Considering the three categories of user motivation above, another, composite motive can be imagined. Users often start with a query for a particular topic, followed by a journey across many videos relating to their search term. Their navigation seems unarticulated but it is encapsulated by the topic of their query. Think of someone who wants to get an overview of a large music festival she recently attended. Big events where many people record videos, are often massively covered on UGVC platforms, resulting in an overload of visual information. Searching YouTube for this month's videos from the participatory festival Burning Man, two weeks after it ended, returns ``About 7,660 results''\cite{youtubeBM}.
 
 This kind of `broad queries' returns a result set of related content in which a user will probably consider many items as a successful retrieval. Furthermore, one could even say that the desired result of a user's query is spread across the multiple pieces of content. By traversing the space of different videos in the result set, users interactively construct the desired answers to their own queries. We call this motivation for discovery within a topically-related set of videos `encapsulated wander'.
 
@@ -126,7 +126,7 @@ While the journalism study above focusses on videos with the `News \& Politics' 
 
 The wePorter system focusses on these kinds of topically related sets that people are currently exploring interactively by browsing from one video to the next. This way of navigation is an intermediary between the goals of \textit{goal-oriented browse} and \textit{unarticulated want}. The apparently aimless browsing is now encapsulated by the event but users still roam freely within this topicalized set of content. By navigating from video to video, watching some and skipping others, users leave attentional traces that give valuable insight into a user's intentional standpoint.
 
-It is this kind of interactions that are already taking place at a large scale that we like to make use of in the wePorter system. Motivated by the whish to explore informative content, users will instinctively and implicitly contribute their human knowledge to a system that is set up appropriately. This kind of motivation fits the category of `implicity work' as it involves activities that people already enage in for their own reasons\cite{Quinn:2011us}. Considering users' wish to be informed and the interactive way in which they navigate, there is most likely also a factor of enjoyment involved though. We expect though that the more specific motivation of information provision might show to become a valid categorisation for the motivation of people in a HCS as it is a common activity on the web and inherently linked with the hard problem of meaningful interpretation of content.
+It is this kind of interactions that are already taking place at a large scale that we like to make use of in the wePorter system. Motivated by the whish to explore informative content, users will instinctively and implicitly contribute their human knowledge to a system that is set up appropriately. This kind of motivation fits the category of `implicity work' as it involves activities that people already engage in for their own reasons\cite{Quinn:2011us}. Considering users' wish to be informed and the interactive way in which they navigate, there is most likely also a factor of enjoyment involved though. We expect though that the more specific motivation of information provision might show to become a valid categorisation for the motivation of people in a HCS as it is a common activity on the web and inherently linked with the hard problem of meaningful interpretation of content.
 
 \section{The Task}
 
@@ -152,17 +152,24 @@ An implementation of a system where users interact with content that is dynamica
 The idea of hypervideo in the context of interactive narratives has been proposed by  Sawhney et al., where users were invited to navigate a virtual cafe by means of \emph{temporal} and \emph{spatio-temporal} and \emph{textual} links present in the video interface. A temporal link is  ``[a]	time-based	reference	between different video scenes, where a specific time in the source video triggers the playback of the destination video scene''\cite{Sawhney:1996tk}. wePorter utilises temporal links to link sequences of video scenes together.
 
 \subsubsection{Localised Interest} % Define `source videos' and `video parts' here?
-In order to elicit users' interest in particular parts within a video, we divide each videos in our initial set of topic-related content into smaller parts when presenting a selection of these in a user interaction. Slicing up source videos virtually and playing their parts by reference is made possible by a hyperlinked implementation of the video player.
+To answer to the first purpose of wePorter, we wish to distinguish parts of videos based on their level of interest. In order to elicit users' preference for particular parts within a video, we divide each \emph{`source video'} in our initial set of topic-related content into smaller \emph{`video parts'} and present a selection of these in a user interaction. Slicing up source videos virtually and playing their parts by reference is made possible by a hyperlinked implementation of the video player.
 
-\subsubsection{Interest Elicitation}
+\subsubsection{Forced Feedback}
 % enjoyable interest elicitation
-The user interaction design should enable means to learn about a user's interest in a video at a particular moment in time. This to the purpose of discovering localised regions of interest within separate videos. To make a user's interaction as enjoyable as possible, implicit data acquisition should be preferred over explicit questions. In other words, user will be more likely to repeat a task that implicitly logs their behaviour during interaction, than one where they are presented with a questionnaire after every click. 
+The user interaction design should enable means to learn about a user's interest in a video at a particular moment in time. This to the purpose of discovering localised regions of interest within separate videos. To make a user's interaction as enjoyable as possible, implicit data acquisition should be preferred over explicit questions. In other words, user will be more likely to repeat a task that implicitly logs their behaviour during interaction, than one where they are presented with a questionnaire after every click. By making the acquisition of user feedback an integral part of an interaction, users are directed into contributing their computational power without even being aware of it. In wePorter, this enables \emph{`curation through interaction'} by using the \emph{`forced feedback'} to maintain and improve a dynamic story space.
+
+\subsubsection{Preference Elicitation by Parallel Play}
 
 % attention -> interest
-Considering measures that could indicate how people's interest varies across different videos, an idea that quickly surfaced is that interest might be closely linked to attention. When a piece of content contains something that is interesting to many people, this will most likely result in an increase in views, provided the content is accessible to a variety of people. This simple notion is the idea behind global recommendations that show most popular or `trending' content. Whether the trending item is a video on a sharing platform or a phrase on a microblogging service, when there is a large number of people attending to it, this is a reason to suspect the item to be of interest, even for people who haven't engaged with it yet.
+Considering measures that could indicate how people's interest varies across different videos, an idea that quickly surfaced is that interest is closely linked to attention. When a piece of content contains something that is interesting to many people, this will most likely result in an increase in views, provided the content is accessible to a variety of people. This simple notion is the idea behind global recommendations that show most popular or `trending' content. Whether the trending item is a video on a sharing platform or a phrase on a microblogging service, when there is a large number of people attending to it, this is a reason to suspect the item to be of interest for people who haven't engaged with it yet.
 
 % normally need for personalization
-An obvious limitation of these global recommendations is the lack of personalisation. Personalised recommendations are offered because the content that is globally popular may not be related to the topics of my interest. For the purpose wePorter is serving however, focus around a particular topic is already in place and are in the first instance mostly interested at picking out the parts that share a high level of interest globally.
+An obvious limitation of these global recommendations is the lack of personalisation. Personalised recommendations are offered because the content that is globally popular may not be related to the topics of my interest. For the purpose wePorter is serving however, focus around a particular topic is already in place and we are in the first instance mostly interested in picking out the parts that share a high level of interest globally.
+
+% parallel play as a new method for interest elicitation
+The wePorter system uses a new method of user preference elicitation, that makes explicit choice of attention an integral part of the user's task. A user is concurrently presented with two videos for which we would like to elicit preference, and is forced to make an explicit choice of attending to one or the other. During this `parallel play' of two video parts we capture the amount of time attended to each of the parts and store this for later analysis. Parallel play is useful for eliciting preference for time-based media like audio and video as it lets users express their preference in the time they attend to an item.
+% We are not aware of other work using a similar method for preference elicitation of time-based media.
+% TODO check these last 2 sentences
 
 \subsubsection{Recurrent Interaction}
 Because of the reliance on data, user's should be able (and encouraged) to engage in the interaction more than once.
@@ -171,7 +178,7 @@ Because of the reliance on data, user's should be able (and encouraged) to engag
 Studies reflecting on new media technology and its incorporation in our everyday life are in recent years often speaking of a media convergence, where multimedia content flows dynamically across multiple media platforms and media audiences take an active, participatory role in their search for entertainment experiences. In his book `Convergence Culture', Jenkins writes:
 
 \begin{quote}
-  ``This circulation of media content - across different media systems, competing media economies, and national borders - depends heavily on consumers' active participation. I will argue here against the idea that convergence should be understood primarily as a technological process bringing together multiple media function within the same devices. Instead, convergence represents a cultural shit as consumers are encouraged to seek out new information and make connections among dispersed media content. [...] The term \emph{participatory culture} contrasts with older notions of passive media spectatorship. Rather than talking about media producers and consumers as occupying separate roles, we might now see them as participants who interact with each other according to a new set of rules that none of us fully understands.''
+  ``This circulation of media content - across different media systems, competing media economies, and national borders - depends heavily on consumers' active participation. I will argue here against the idea that convergence should be understood primarily as a technological process bringing together multiple media function within the same devices. Instead, convergence represents a cultural shit as consumers are encouraged to seek out new information and make connections among dispersed media content. [...] The term \emph{participatory culture} contrasts with older notions of passive media spectatorship. Rather than talking about media producers and consumers as occupying separate roles, we might now see them as participants who interact with each other according to a new set of rules that none of us fully understands.''\cite{jenkins2006convergence}
 \end{quote}
 
 Surveying the diverse body of research into interactive TV, Cesar and Chorianopoulos propose a new way of looking the life cycle of digital content that considers content editing, content sharing and content control as an alternative to the more hierarchical `produce-deliver-consume' paradigm associated with traditional media\cite{Cesar:2009fk}. The movement from passive consumers to (inter)active contributors indicates new expectations by users of new media applications. The trend of users' more active engagement in new media technology fits well with the approach of interest defined by users' interaction and our proposal of storytelling as structured recommendation.
@@ -194,9 +201,11 @@ Different video platforms are currently offering less-restrictive CC licensing a
 \end{figure}
 
 % collaboration user & software designer
-Besides the collective actions of the multiple users that help shape the creation of new configurations of content, there is further level of collaboration between the users and the tools they interact with. Manovich even extends this relation to the tools' designers in his view on collaborative new media authorship:
+Besides the collective actions of the multiple users that help shape the creation of new configurations of content, there is a further level of collaboration between the users and the tools they interact with. Manovich even extends this relation to the tools' designers in his view on collaborative new media authorship:
 
-``Authoring using [Artificial Life] or [Artificial Intelligence] is the most obvious case of human-software collaboration. The author sets up some general rules but s/he has no control over the concrete details of the work – these emerge as a result of the interactions of the rules. More generally, we can say that all authorship that uses electronic and computer tools is a collaboration between the author and these tools that make possible certain creative operations and certain ways of thinking while discouraging others. Of course humans have designed these tools, so it would be more precise to say that the author who uses electronic/ software tools engages in a dialog with the software designers [...].''\cite{manovichAuthor}
+\begin{quote}
+  ``Authoring using [Artificial Life] or [Artificial Intelligence] is the most obvious case of human-software collaboration. The author sets up some general rules but s/he has no control over the concrete details of the work – these emerge as a result of the interactions of the rules. More generally, we can say that all authorship that uses electronic and computer tools is a collaboration between the author and these tools that make possible certain creative operations and certain ways of thinking while discouraging others. Of course humans have designed these tools, so it would be more precise to say that the author who uses electronic/ software tools engages in a dialog with the software designers [...].''\cite{manovichAuthor}
+\end{quote}
 
 
 \subsection{The Interface}
@@ -208,7 +217,7 @@ This sections describes the user interface that directs participation of wePorte
 We hypothesise that interesting parts of content will attract a relatively large amount of attention compared to less interesting parts. 
 
 % parallel play; move up to design considerations?
-To force a users to make an explicit choice between parts of content for which we would like to elicit their interest, we present two pieces of video playing concurrently and force users to attend to one or the other. In order to get an idea of the variation of interest across a video, \emph{`source videos'} are divided into smaller \emph{`video parts'}, each of which is presented separately in interactions over time. During this `parallel play' of two video parts we capture the amount of time attended to each of the parts and store this for later analysis.
+To force a users to make an explicit choice between parts of content for which we would like to elicit their preference, we present two pieces of video playing concurrently and force users to attend to one or the other. In order to get an idea of the variation of interest across a video, \emph{`source videos'} are divided into smaller \emph{`video parts'}, each of which is presented separately in interactions over time. During this `parallel play' of two video parts we capture the amount of time attended to each of the parts and store this for later analysis. 
 
 \subsubsection{A Walkthrough}
 % arrival at webpage
@@ -222,7 +231,7 @@ When a user opens the wePorter web interface he is welcomed by a short introduct
 \end{figure}
 
 % loading sequences
-Upon loading the webpage, a database is queried for a pair of sequences made up from different video parts for which the system would like to elicit a user's interest. The two sequences both consist of six video parts that each have a duration of 10 seconds. The interaction of the two sequences playing in parallel thus has a total duration of 60 seconds, reflecting the short time span common across UGVC at YouTube\cite{Cha:2007ty, Cheng:2007tc}. A detailed description of the algorithm used for the construction of these sequences is given in section \ref{sec:implementation}.
+Upon loading the webpage, a database is queried for a pair of sequences made up from different video parts for which the system would like to elicit a user's preference. The two sequences both consist of six video parts that each have a duration of 10 seconds. The interaction of the two sequences playing in parallel thus has a total duration of 60 seconds, reflecting the short time span common across UGVC at YouTube\cite{Cha:2007ty, Cheng:2007tc}. A detailed description of the algorithm used for the construction of these sequences is given in section \ref{sec:implementation}.
 
 % starting interaction
 After reading the instructions, the user scrolls down to the interactive parallel video player that displays two videos on top of each other. By clicking the `Play' button, the user starts the interaction and sets in motion the consecutive playback of both sequences in parallel.
@@ -263,47 +272,33 @@ We record which video a user is attending to by keeping a count for each of the 
 
 Note that we never explicitly ask anyone to point at the video that is most interesting. Users are simply instructed as to how the interface works and then left to explore the videos as they like. By recording users' behaviour this way, we achieve a detailed insight into which of a pair of videos a user has attended to at what time. In section \ref{sec:evaluation} we report on how these measure can be telling in the process of filtering and reconfiguration. 
 
-
-
-
-
-
-\subsection{Forced Feedback}
-By making data acquisition from interaction an intrinsic part of a human computation system [*need umbrella term], submitting data to the system will become second nature to users and can even take place without the users being aware of it.
-	-> curation through interaction
-
-
-\section{Analysis of the Weporter System}
-
-\subsection{Landscapes of Interest}
-
-The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. Afterall, an unedited video captures a single strech of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we see interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with spikes every now and then when an iteresting event occurs. 
-
-Looking at interest at a more global level, aggregating over a large group of users, would perhaps even a more smooth landscape of interest. This kind of data could reveal mountains and valleys that can be used for interest-based segmentation. From the thus segmented parts, the ones with high interest score can be returned as the salient parts within a video.
-
-\subsection{The death of the author}
-ref: Barthes - Image music Sound
-here: a lack of clear narrator of the written story
-
-in wePorter: the lack of a centralised creator, authoring a work consciously and deliberately.
-
-This new form of creation could at first sight be seen as non-authorship, but is rather a collective authorship. 
-
-Several recent developments now make possible this collective form of authorship:
-- the proliferation of tools hhat enable indicidual authorship of multimedia content
-- the increased connectivity of these devices, which gives them the capacity to make the created media accessible to others
-- the platforms for hosting multimedia (MM) content. This point is strongly related to the previous one. In ther development they form a chicken and egg relaten. Initially it's hard to imagine one withour the other, but once matured, they [influence eachother positively].
-- the Methods to link, mix, aggregate and modify content online.
-
-\section{Parallel Play}
-A new method for preference elicitation in time-based multimedia content.
-
-
-
-and a task is set up such that their interactions are recorded as contributions to solving small instances of a larger problem we have two of the three ingredients of our human computation system in place.
-
 \section{Implementation}
 \label{sec:implementation}
+
+This section describes in detail technologies used in the wePorter system and how components relate to each other. We begin by illustrating how video content is prepared for presentation in the wePorter web interface, and next describe the system framework. 
+
+\subsection{Preparation of Content}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=\textwidth]{img/preparing_content}
+  \caption{Slicing Source Videos into Video Parts}
+  \label{fig:content}
+\end{figure}
+
+
+\subsection{The live system}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=\textwidth]{img/framework}
+  \caption{System Framework of wePorter}
+  \label{fig:framework}
+\end{figure}
+
+
+
+
 
 % can handle videos of different dimensions
 

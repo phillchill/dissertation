@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  17 SEP 2012 02:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  18 SEP 2012 03:43
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -477,9 +477,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [7
 
 ])
-(./tex/main/storytelling.tex [8]
+(./tex/main/storytelling.tex [8] [9]
 Chapter 4.
-) (./tex/main/weporter.tex [9
+) (./tex/main/weporter.tex [10
 
 ]
 Chapter 5.
@@ -489,7 +489,7 @@ Overfull \hbox (39.95476pt too wide) in paragraph at lines 36--37
  05 / zoinks-[]20-[]hours-[]of-[]video-[]uploaded-[]every _
  []
 
-[10
+[11
 
 ]
 Overfull \hbox (34.7048pt too wide) in paragraph at lines 38--39
@@ -527,27 +527,36 @@ Missing character: There is no ” in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[11] [12] [13]
+[12]
+
+LaTeX Warning: Citation `youtubeBM' on page 13 undefined on input line 78.
+
+[13] [14]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [14] [15]
+ [15] [16]
 
-LaTeX Warning: Citation `Sawhney:1996tk' on page 16 undefined on input line 152
+LaTeX Warning: Citation `Sawhney:1996tk' on page 17 undefined on input line 152
 .
 
-[16]
+[17]
 
-LaTeX Warning: Citation `YouTubeCC' on page 17 undefined on input line 187.
+LaTeX Warning: Citation `jenkins2006convergence' on page 18 undefined on input 
+line 181.
+
+[18]
+
+LaTeX Warning: Citation `YouTubeCC' on page 19 undefined on input line 194.
 
 
-LaTeX Warning: Citation `vimeoTimeline' on page 17 undefined on input line 187.
+LaTeX Warning: Citation `vimeoTimeline' on page 19 undefined on input line 194.
 
 
 
-LaTeX Warning: Citation `vimeoCC' on page 17 undefined on input line 187.
+LaTeX Warning: Citation `vimeoCC' on page 19 undefined on input line 194.
 
-[17] <img/vimeoCC.png, id=429, 349.7868pt x 183.5658pt>
+<img/vimeoCC.png, id=442, 349.7868pt x 183.5658pt>
 File: img/vimeoCC.png Graphic file (type png)
  <use img/vimeoCC.png>
 Missing character: There is no â in font cmr10!
@@ -555,59 +564,67 @@ Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
 
 
-LaTeX Warning: Citation `manovichAuthor' on page 18 undefined on input line 199
+LaTeX Warning: Citation `manovichAuthor' on page 19 undefined on input line 207
 .
 
-[18 <./img/vimeoCC.png>]
-<img/instructions.png, id=438, 748.7975pt x 410.53375pt>
+[19 <./img/vimeoCC.png>]
+<img/instructions.png, id=453, 748.7975pt x 410.53375pt>
 File: img/instructions.png Graphic file (type png)
 
 <use img/instructions.png>
 
-LaTeX Warning: Citation `Cha:2007ty' on page 19 undefined on input line 224.
+LaTeX Warning: Citation `Cha:2007ty' on page 20 undefined on input line 234.
 
 
-LaTeX Warning: Citation `Cheng:2007tc' on page 19 undefined on input line 224.
+LaTeX Warning: Citation `Cheng:2007tc' on page 20 undefined on input line 234.
 
-<img/pplay1.png, id=440, 437.635pt x 602.25pt>
+[20 <./img/instructions.png (PNG copy)>]
+<img/pplay1.png, id=461, 437.635pt x 602.25pt>
 File: img/pplay1.png Graphic file (type png)
  <use img/pplay1.png>
-<img/pplay2_cursor.png, id=441, 437.635pt x 602.25pt>
+<img/pplay2_cursor.png, id=462, 437.635pt x 602.25pt>
 File: img/pplay2_cursor.png Graphic file (type png)
 
 <use img/pplay2_cursor.png>
-Overfull \hbox (4.86667pt too wide) in paragraph at lines 231--250
+Overfull \hbox (4.86667pt too wide) in paragraph at lines 241--260
  [][]  [] 
  []
 
-[19 <./img/instructions.png (PNG copy)>]
+[21 <./img/pplay1.png> <./img/pplay2_cursor.png>]
 
-LaTeX Warning: Reference `sec:evaluation' on page 20 undefined on input line 26
+LaTeX Warning: Reference `sec:evaluation' on page 22 undefined on input line 27
 3.
 
-[20 <./img/pplay1.png> <./img/pplay2_cursor.png>]
+<img/preparing_content.png, id=470, 487.46115pt x 147.79214pt>
+File: img/preparing_content.png Graphic file (type png)
+
+<use img/preparing_content.png>
+<img/framework.png, id=471, 639.22815pt x 532.6299pt>
+File: img/framework.png Graphic file (type png)
+ <use img/framework.png>
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 312.
-) (./tex/main/evaluation.tex
-[21] [22]
+put line 308.
+)
+(./tex/main/evaluation.tex [22 <./img/preparing_content.png>] [23 <./img/framew
+ork.png>] [24]
 Chapter 6.
 
-LaTeX Warning: Reference `sec:experiments' on page 23 undefined on input line 8
+LaTeX Warning: Reference `sec:experiments' on page 25 undefined on input line 8
 .
 
-) (./tex/main/discussion.tex [23
+) (./tex/main/discussion.tex [25
 
 ]
 Chapter 7.
-) (./tex/main/future.tex [24
+) (./tex/main/future.tex [26
 
 ]
 Chapter 8.
-)) (./tex/conclusions.tex [25
+)) (./tex/conclusions.tex [27
 
 ]
 Chapter 9.
-) [26
+) [28
 
 ] (./tex/mybibliography.tex (./dissertation_main.bbl
 Missing character: There is no â in font cmr10!
@@ -621,7 +638,7 @@ Underfull \hbox (badness 1515) in paragraph at lines 16--23
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
-[27
+[29
 
 
 ]
@@ -630,16 +647,16 @@ Underfull \hbox (badness 4872) in paragraph at lines 113--118
 gel Ro-drigo
  []
 
-[28])) [29] (./dissertation_main.aux)
+[30])) [31] (./dissertation_main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7266 strings out of 493848
- 108177 string characters out of 3149207
- 192673 words of memory out of 3000000
- 10261 multiletter control sequences out of 15000+200000
+ 7291 strings out of 493848
+ 108617 string characters out of 3149207
+ 192814 words of memory out of 3000000
+ 10274 multiletter control sequences out of 15000+200000
  11351 words of font info for 41 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,8n,45p,1068b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -654,9 +671,9 @@ cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
 /texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
 texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (31 pages, 823241 bytes).
+Output written on dissertation_main.pdf (33 pages, 1041995 bytes).
 PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
- 421 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 439 words of extra memory for PDF output out of 10000 (max. 10000000)
 
