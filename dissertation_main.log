@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  18 SEP 2012 03:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  18 SEP 2012 16:00
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -255,6 +255,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks31
+)
 (/usr/local/texlive/2009/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
@@ -262,7 +274,7 @@ nment
 (/usr/local/texlive/2009/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks26
+\@float@every@algorithm=\toks32
 \c@algorithm=\count112
 )
 (/usr/local/texlive/2009/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
@@ -275,13 +287,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count113
 \c@ALG@rem=\count114
 \c@ALG@nested=\count115
-\ALG@tlm=\skip46
-\ALG@thistlm=\skip47
+\ALG@tlm=\skip49
+\ALG@thistlm=\skip50
 \c@ALG@Lnr=\count116
 \c@ALG@blocknr=\count117
 \c@ALG@storecount=\count118
 \c@ALG@tmpcounter=\count119
-\ALG@tmplength=\skip48
+\ALG@tmplength=\skip51
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (/usr/local/texlive/2009/texmf-dist/tex/latex/caption/caption.sty
@@ -317,19 +329,7 @@ Package color Info: Driver file: pdftex.def on input line 130.
 Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
 
 Package: `setspace' 6.7 <2000/12/01>
-) (/usr/local/texlive/2009/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks27
-\thm@bodyfont=\toks28
-\thm@headfont=\toks29
-\thm@notefont=\toks30
-\thm@headpunct=\toks31
-\thm@preskip=\skip49
-\thm@postskip=\skip50
-\thm@headsep=\skip51
-\dth@everypar=\toks32
-)
-(/usr/local/texlive/2009/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/usr/local/texlive/2009/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip52
 \f@ncyO@elh=\skip53
 \f@ncyO@erh=\skip54
@@ -595,15 +595,15 @@ Overfull \hbox (4.86667pt too wide) in paragraph at lines 241--260
 LaTeX Warning: Reference `sec:evaluation' on page 22 undefined on input line 27
 3.
 
-<img/preparing_content.png, id=470, 487.46115pt x 147.79214pt>
+<img/preparing_content.png, id=470, 487.46115pt x 158.994pt>
 File: img/preparing_content.png Graphic file (type png)
 
 <use img/preparing_content.png>
-<img/framework.png, id=471, 639.22815pt x 532.6299pt>
+<img/framework.png, id=472, 639.5895pt x 552.8655pt>
 File: img/framework.png Graphic file (type png)
  <use img/framework.png>
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 308.
+put line 315.
 )
 (./tex/main/evaluation.tex [22 <./img/preparing_content.png>] [23 <./img/framew
 ork.png>] [24]
@@ -653,27 +653,30 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7291 strings out of 493848
- 108617 string characters out of 3149207
- 192814 words of memory out of 3000000
- 10274 multiletter control sequences out of 15000+200000
+ 7302 strings out of 493848
+ 108784 string characters out of 3149207
+ 195851 words of memory out of 3000000
+ 10283 multiletter control sequences out of 15000+200000
  11351 words of font info for 41 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,8n,45p,1068b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
-sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
-cal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
-/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
-exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (33 pages, 1041995 bytes).
+pdfTeX warning (dest): name{algorithm.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
+usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
+exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
+live/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on dissertation_main.pdf (33 pages, 1071688 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
  439 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -279,13 +279,44 @@ This section describes in detail technologies used in the wePorter system and ho
 
 \subsection{Preparation of Content}
 
+In order to get localised feedback on distinct temporal intervals within videos, we present users with a sequence of of `video parts', each originating from their own respective `source video'. A initial step is thus to prepare video parts so they can be presented in a user interaction. What is played back to a user is a part of the source video referenced by hyperlinks. This means slicing up source videos does not involve cutting up video content or recompilation of any sort. 
+
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=\textwidth]{img/preparing_content}
-  \caption{Slicing Source Videos into Video Parts}
+    \includegraphics[width=.6\textwidth]{img/preparing_content}
+  \caption{Slicing Source Videos into Video Parts by Reference}
   \label{fig:content}
 \end{figure}
 
+Each video part is defined by a tuple of source video and two time codes referencing start and end:
+
+\begin{equation}
+  videoPart = (src, tc_{in}, tc_{out})
+\end{equation}
+
+where $tc_{in}$ references the time code within $src$ that represent the start of $videoPart$ and $tc_{out}$ references the time code within $src$ that represent the end of $videoPart$.
+
+Algorithm \ref{alg:videoparts} shows the procedure to generate video parts from source videos.
+
+\begin{algorithm}
+  \caption{Generate Video Parts}
+  \begin{algorithmic}[1]
+    \Procedure{Slice}{$sourceVideos,d$}\Comment{slice videos into parts with duration $d$}
+      \State $i\gets 1$
+      \ForAll{$video \in sourceVideos$} 
+        \State $tc_{in} \gets 0$
+        % \State $length \gets src.length$
+        \While{$tc_{in} \le video.length - d$}
+          \State $tc_{out} \gets tc_{in}+d$
+          \State $videoPart_i \gets (video.src, tc_{in}, tc_{out})$ 
+          \State $tc_{in} \gets tc_{in}+d$
+          \State $i \gets i+1$
+        \EndWhile
+      \EndFor
+    \EndProcedure
+  \end{algorithmic}
+  \label{alg:videoparts}
+\end{algorithm}
 
 \subsection{The live system}
 
@@ -299,10 +330,9 @@ This section describes in detail technologies used in the wePorter system and ho
 
 
 
-
 % can handle videos of different dimensions
 
-$\underset{x}{\operatorname{argmin}}$
+% $\underset{x}{\operatorname{argmin}}$
 
 \begin{algorithm}
   \caption{My algorithm}
