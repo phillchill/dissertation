@@ -12,14 +12,11 @@ E.~Bruno and D.~Pellerin.
 \newblock {\em Pattern Recognition, 2002. Proceedings. 16th International
   Conference on}, 3:287--290 vol. 3, 2002.
 
-\bibitem{youtubeCCmisc}
+\bibitem{YouTubeCC}
 Cathy Casserly.
-\newblock Here’s your invite to reuse and remix the 4 million creative
-  commons-licensed videos on youtube.
-\newblock
-  \url{http://youtube-global.blogspot.co.uk/2012/07/heres-your-invite-to-reuse%
--and-remix-4.html}, June 2012.
-\newblock Accessed: 15/09/2012.
+\newblock {Here's your invite to reuse and remix the 4 million Creative
+  Commons-licensed videos on YouTube}.
+\newblock Technical report, June 2012.
 
 \bibitem{Cesar:2009fk}
 Pablo Cesar and Konstantinos Chorianopoulos.
@@ -27,6 +24,19 @@ Pablo Cesar and Konstantinos Chorianopoulos.
   Interactivity}.
 \newblock {\em Foundations and Trends{\textregistered} in Human-Computer
   Interaction}, 2(4):373--95, 2009.
+
+\bibitem{Cha:2007ty}
+M.~Cha, H.~Kwak, P.~Rodriguez, Y.Y. Ahn, and S.~Moon.
+\newblock {I tube, you tube, everybody tubes: analyzing the world's largest
+  user generated content video system}.
+\newblock {\em Proceedings of the 7th ACM SIGCOMM conference on Internet
+  measurement}, pages 1--14, 2007.
+
+\bibitem{Cheng:2007tc}
+X.~Cheng, C.~Dale, and J.~Liu.
+\newblock {Understanding the characteristics of internet short video sharing:
+  YouTube as a case study}.
+\newblock {\em Arxiv preprint arXiv:0707.3670}, 2007.
 
 \bibitem{Christel:2004wm}
 M.~Christel and N.~Moraveji.
@@ -71,6 +81,11 @@ L~Hollink, G~P Nguyen, D~C Koelma, A~Th Schreiber, and M~Worring.
 \newblock {Assessing user behaviour in news video retrieval}.
 \newblock {\em IEE Proceedings - Vision, Image, and Signal Processing},
   152(6):911, 2005.
+
+\bibitem{jenkins2006convergence}
+H.~Jenkins.
+\newblock {\em {Convergence Culture: Where Old and New Media Collide}}.
+\newblock ACLS Humanities E-Book. NYU Press, 2006.
 
 \bibitem{Jonsson:2011fh}
 Anna~Maria J{\"o}nsson and Henrik {\"O}rnebring.
@@ -127,6 +142,12 @@ Y.~Rui, T.S. Huang, M.~Ortega, and S.~Mehrotra.
   retrieval}.
 \newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
   on}, 8(5):644--655, 1998.
+
+\bibitem{Sawhney:1996tk}
+N.~Sawhney, D.~Balcom, and I.~Smith.
+\newblock {HyperCafe: narrative and aesthetic properties of hypervideo}.
+\newblock {\em Proceedings of the the seventh ACM conference on Hypertext},
+  pages 1--10, 1996.
 
 \bibitem{Smeaton:2006ww}
 A.F. Smeaton, P.~Over, and W.~Kraaij.

@@ -1,45 +1,45 @@
 \chapter{Human Computed Stories in wePorter}
 \label{chap:weporter}
 
-[intro: sketch wePorter scenario. YouTube: Burning Man 1.7 million, Burning Man 2012 ..., Burning Man this month ...]
-
-[discuss: is wePorter human computation?
-is it solving a task that would otherwise be done by computers? By humans? Can it be expected to ever be done by computers? Looking at answers from the questionnaire to the question of why users decided to change their focus, reveal different reasons for their behaviour. A big part of the answers are generic visual or auditory features like the presence of bright colours, video or audio quality and sudden changes in movement of the scenery of camera. These are all aspects of a video that can be computed computationally, some day perhaps even in a realtime online environment. The question whether or not other features such as curiosity or boredom are computable or not is beyond the scope of this thesis, but participants' response hint at the possibility that their interest is at least partially explicable by computable factors.
-
-
-plot aggregated reasons to change:
-
-cinematography
-  camera movement
-content based
-  action
-  trees, boats
-visual
-  colour
-  quality
-  changes, movement
-audio
-  music
-Interest, curiosity / boredom
-unpleasant
-  sound
-  visuals
-]
+% [intro: sketch wePorter scenario. YouTube: Burning Man 1.7 million, Burning Man 2012 ..., Burning Man this month ...]
+% 
+% [discuss: is wePorter human computation?
+% is it solving a task that would otherwise be done by computers? By humans? Can it be expected to ever be done by computers? Looking at answers from the questionnaire to the question of why users decided to change their focus, reveal different reasons for their behaviour. A big part of the answers are generic visual or auditory features like the presence of bright colours, video or audio quality and sudden changes in movement of the scenery of camera. These are all aspects of a video that can be computed computationally, some day perhaps even in a realtime online environment. The question whether or not other features such as curiosity or boredom are computable or not is beyond the scope of this thesis, but participants' response hint at the possibility that their interest is at least partially explicable by computable factors.
+% 
+% 
+% plot aggregated reasons to change:
+% 
+% cinematography
+%   camera movement
+% content based
+%   action
+%   trees, boats
+% visual
+%   colour
+%   quality
+%   changes, movement
+% audio
+%   music
+% Interest, curiosity / boredom
+% unpleasant
+%   sound
+%   visuals
+% ]
 
 \section{Introduction}
 This section describes the interaction design of the wePorter system, built to examplify how human computation can be used in tasks like local video part filtering and semi-automated video reconfiguration. The wePorter system runs an interactive webpage that functions as the main source for data acquisition, presentation of results and general proof of concept. In this chapter the system is analysed along the axes of \textit{Purpose}, \textit{Motivation} and \textit{Task}, that were introduced in the analysis of Human Computational systems in chapter \ref{ch:humancomputation}. Next to these guidelines for analysis, some remarks are made about the specifics in the functioning of the system. Lastly we discuss the implementation of the web application that is central in wePorter.
 
 \section{User Generated Video Content}
 
-[define UGVC]
-
-\url{http://YouTube-global.blogspot.co.uk/2009/05/zoinks-20-hours-of-video-uploaded-every_20.html}
-
-\url{http://YouTube-global.blogspot.co.uk/2010/03/oops-pow-surprise24-hours-of-video-all.html}
-
-\url{http://YouTube-global.blogspot.co.uk/2010/11/great-scott-over-35-hours-of-video.html}
-\url{http://YouTube-global.blogspot.co.uk/2011/05/thanks-YouTube-community-for-two-big.html}
-\url{http://YouTube-global.blogspot.co.uk/2012/01/holy-nyans-60-hours-per-minute-and-4.html}
+% [define UGVC]
+% 
+% \url{http://YouTube-global.blogspot.co.uk/2009/05/zoinks-20-hours-of-video-uploaded-every_20.html}
+% 
+% \url{http://YouTube-global.blogspot.co.uk/2010/03/oops-pow-surprise24-hours-of-video-all.html}
+% 
+% \url{http://YouTube-global.blogspot.co.uk/2010/11/great-scott-over-35-hours-of-video.html}
+% \url{http://YouTube-global.blogspot.co.uk/2011/05/thanks-YouTube-community-for-two-big.html}
+% \url{http://YouTube-global.blogspot.co.uk/2012/01/holy-nyans-60-hours-per-minute-and-4.html}
 
 \begin{quote}
   Since the dawn of YouTube, we’ve been sharing the hours of video you upload every minute. In 2007 we started at six hours, then in 2010 we were at 24 hours, then 35, then 48, and now...60 hours of video every minute, an increase of more than 25 percent in the last eight months. In other words, you’re uploading one hour of video to YouTube every second. Tick, tock, tick, tock — that’s 4 hours right there!
@@ -49,12 +49,12 @@ These astonishing figures of the amount of video that is uploaded to YouTube are
 
 [table of YouTube content uploads]
 
-The increasing amounts of content being put online, lead to an information overload and present serious challenges in search and information retrieval tasks [ref]. There is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an at least a shallow understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
+The increasing amounts of user-generated video content (UGVC) being put online, lead to an information overload and present both challenges and opportunities in search, retrieval\cite{Ulges:2009ua} and recommendation\cite{Zhou:2010ut} tasks [more refs]. There is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an at least a shallow understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
 
 \section{The Purpose}
 
 Searching -> IR
-With more than an hour of new content per second it is no wonder that YouTube has come to be viewed as the go-to for online video, much like ``the digital video repository for the Internet'' that was envisioined by its founders in their first ever blog post [ref http://YouTube-global.blogspot.co.uk/2005/07/greetings-everyone-thanks-for-visiting.html]. An important activity on video platforms like YouTube is searching and much attention has been given to different methods of multimedia search and indexing [refs]. Youtube's acquisition by Google in 2006 underlines the platform's role as a video search engine. 
+With more than an hour of new content per second it is no wonder that YouTube has come to be viewed as the go-to for online video, much like ``the digital video repository for the Internet'' \footnote{\url{http://YouTube-global.blogspot.co.uk/2005/07/greetings-everyone-thanks-for-visiting.html}} that was envisioned by its founders in their first ever blog post [ref ]. An important activity on video platforms like YouTube is searching and much attention has been given to different methods of multimedia search and indexing [refs]. Youtube's acquisition by Google in 2006 underlines the platform's role as a video search engine. 
 
 
 \subsection{Different Goals}
@@ -75,11 +75,11 @@ Goal of a person's query in this kind of navigation is no longer defined in a si
 
 \subsubsection{Encapsulated Wander}
 
-Considering the three categories of user motivation above, another, composite motive can be imagined. Users often start with a query for a particular topic, followed by a journey across many videos relating to their search term. Their navigation seems unarticulated but it is encapsulated by the topic of their query. Think of someone who wants to get an overview of a large music festival she recently attended. Big events where many people record videos, are often massively covered on UGVC platforms, resulting in an overload of visual information. Searching YouTube for this month's videos from the participatory festival Burning Man, two weeks after it ended, returns ``About 7,660 results''\cite{youtubeBM}.
+Considering the three categories of user motivation above, another, composite motive can be imagined. Users often start with a query for a particular topic, followed by a journey across many videos relating to their search term. Their navigation seems unarticulated but it is encapsulated by the topic of their query. Think of someone who wants to get an overview of a large music festival she recently attended. Big events where many people record videos, are often massively covered on UGVC platforms, resulting in an overload of visual information. Searching YouTube for this month's videos from the participatory festival Burning Man, two weeks after it ended, returns ``About 7,660 results''\cite{youtubeBM}. A similar large set of topically related UGVC can be imagined at a website that asks participants to contribute their videos recorded at a recent event or centred around a particular topic.
 
 This kind of `broad queries' returns a result set of related content in which a user will probably consider many items as a successful retrieval. Furthermore, one could even say that the desired result of a user's query is spread across the multiple pieces of content. By traversing the space of different videos in the result set, users interactively construct the desired answers to their own queries. We call this motivation for discovery within a topically-related set of videos `encapsulated wander'.
 
-% TODO link these to paragraphs
+% TODO link these two paragraphs
 % interactivity in search
 Interactivity is generally agreed to play an important role in the task of video retrieval, as is reflected by the separate category in the annual TRECVid challenge for interactive video retrieval\cite{Smeaton:2006ww}. Several works have indicated the importance of interactivity in the task of video retrieval to filter through a set of initially returned results \cite{DeRooij:2007ua, Christel:2004wm, DeRooij:2007ua, DeRooij:2008ut}. While most of these systems are aimed at retrieval of clearly specified queries, exemplified by the TRECvid retrieval task, the need for interactive exploration is even more apparent for the broader oriented goal of users engaged in `encapsulated wander'.
 
@@ -100,10 +100,10 @@ Because of the raw, unedited nature of the majority of UGVC it is desirable to e
 
 \subsection{Storytelling as Structured Recommendation}
 
-explanation why it is also good to structure the filtered pieces of content into a new configuration.
+% explanation why it is also good to structure the filtered pieces of content into a new configuration.
 [TODO; based on section in Meaning chapter]
 
-
+% concluding Purpose
 The ten significant seconds in a two-minute video become a needle in a haystack when an initial set of videos relating to your query includes tens to hundreds of possibly relevant videos with lengths between some tens of seconds and a couple of minutes. The aggregation and reconfiguration of several of these `needles' into a meaningful new whole is another non-trivial task. We present wePorter as a test case for new methods that address both these issues of information overload in video libraries of UGVC. More precisely, wePorter's purpose is two-folded:
 
 From a set of topically related unedited user-generated videos:
@@ -275,28 +275,38 @@ Note that we never explicitly ask anyone to point at the video that is most inte
 \section{Implementation}
 \label{sec:implementation}
 
-This section describes in detail technologies used in the wePorter system and how components relate to each other. We begin by illustrating how video content is prepared for presentation in the wePorter web interface, and next describe the system framework. 
+This section describes in detail the technologies used in the wePorter system and how components relate to each other. We begin by illustrating how video content is prepared for presentation in the wePorter web interface, and next describe the system framework. 
 
 \subsection{Preparation of Content}
 
-In order to get localised feedback on distinct temporal intervals within videos, we present users with a sequence of of `video parts', each originating from their own respective `source video'. A initial step is thus to prepare video parts so they can be presented in a user interaction. What is played back to a user is a part of the source video referenced by hyperlinks. This means slicing up source videos does not involve cutting up video content or recompilation of any sort. 
+In order to get localised feedback on distinct temporal intervals within videos, we present users with a sequence of `video parts' of equal duration, each originating from their own respective `source video'. A initial step is thus to prepare video parts so they can be presented in a user interaction. What is played back to a user is a part of the source video referenced by hyperlinks to start and end points. This hyperlinked implementation means slicing up source videos does not involve cutting up video content or recompilation of any sort. 
 
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=.6\textwidth]{img/preparing_content}
+    \includegraphics[width=.7\textwidth]{img/preparing_content}
   \caption{Slicing Source Videos into Video Parts by Reference}
   \label{fig:content}
 \end{figure}
 
-Each video part is defined by a tuple of source video and two time codes referencing start and end:
+The wePorter system takes as a starting point a set of topically related source videos, representing a result set that could be acquired by querying a large UGCV platform for video from a large scale public event. We keep a database of source videos, storing their source path and length:
 
 \begin{equation}
-  videoPart = (src, tc_{in}, tc_{out})
+  video = (vIdx, srcPath, length)
 \end{equation}
 
-where $tc_{in}$ references the time code within $src$ that represent the start of $videoPart$ and $tc_{out}$ references the time code within $src$ that represent the end of $videoPart$.
+where $vIdx$ is the video's index. Next, we define video parts as tuples of source video and two time codes referencing start and end:
 
-Algorithm \ref{alg:videoparts} shows the procedure to generate video parts from source videos.
+\begin{equation}
+  videoPart = (vpIdx, vIdx, tc_{in}, tc_{out})
+\end{equation}
+
+where $tc_{in}$ references the time code within the video indexed by $vIdx$ that is the start of $videoPart$ and $tc_{out}$ references the time code within the video indexed by $vIdx$ that is the end of $videoPart$. 
+
+% generate_video_parts Algorithm
+Algorithm \ref{alg:videoparts} shows the procedure to generate video parts from source videos. The algorithm starts at the beginning of a video and extracts a video part for every consecutive window of duration $d$. 
+
+% end bits of videos discarded
+There might be an interval with a duration less than $d$ at the end of a source video that is not included in the resulting set of video parts. Because the parallel sequence player expects video parts of equal length, these end bits are discarded and will not be presented during user interaction. Our assumption is that because of the raw, unedited nature of the videos used in wePorter, disregarding the final few seconds of videos will be tolerable. People recording video in a point and shoot fashion usually stop recording when a phenomenon that caused them to film has ended and so the final bit of their videos does not commonly contain the most important content.
 
 \begin{algorithm}
   \caption{Generate Video Parts}
@@ -320,6 +330,12 @@ Algorithm \ref{alg:videoparts} shows the procedure to generate video parts from 
 
 \subsection{The live system}
 
+% start = system defined query result set
+Figure \ref{fig:framework} shows the data framework of the wePorter system. The system runs as a web interface and is accessible online for multiple users at the same time. The server-side functionality is implemented in PHP making use of connections to a mySQL database. On the client-side, Javascript deals with the playback of video sequences as well as keeping track of all interaction data. Upon a user's navigation to the wePorter web page, two sequences are loaded in the parallel video player. A user triggers the interaction by clicking play. Once an interaction have finished all interaction data is added to the database on the server. The updated interaction data and counts of video parts are subsequently used in the generation of sequences for a new interactions either by the same or new visitors.
+
+% single set of videos
+For experimentation purposes, the current implementation maintains a single set of topically related source videos representing the context of `encapsulated wander' for a single query. A useful extension of the system would be to let users query a live database like YouTube for content of their interest and thus define a dynamical collection of content to explore. To focus experimentation on a fixed set of video content, this extension is left for future work. 
+
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=\textwidth]{img/framework}
@@ -327,78 +343,98 @@ Algorithm \ref{alg:videoparts} shows the procedure to generate video parts from 
   \label{fig:framework}
 \end{figure}
 
+\subsubsection{Loading Sequences}
+% sequences satisfy 2 constraints
+The procedure of loading two sequences for a user interactions is detailed in algorithm \ref{alg:genseqs}. Given the set of video parts, we iteratively construct two sequences of $n\_parts$ video parts to be played in parallel. The sequences have equal length and satisfy the following constraints:
 
+\begin{enumerate}
+  \item \textbf{Horizontal source constraint:} Video parts within a sequence all originate from different source videos.
+  \item \textbf{Vertical source constraint:} Two video parts that are played concurrently one above the other, originate from different source videos.
+\end{enumerate}
 
+% constraints ensure variety
+These constraints guarantee variety in the interaction, both within a single sequence and across sequences for concurrent parts. On one hand it enables a more varied editing of the video story, which is desired for the user experience. On the other hand it makes sure that each interaction elicits user preference for a variety of sources, which leads to diversified data acquisition.
 
-% can handle videos of different dimensions
-
-% $\underset{x}{\operatorname{argmin}}$
-
+% algorithm
 \begin{algorithm}
-  \caption{My algorithm}
+  \caption{Load Sequences Random Shuffled}
   \begin{algorithmic}[1]
-    \Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
-      \State $r\gets a\bmod b$
-      \While{$r\not=0$}\Comment{We have the answer if r is 0}
-        \State $a\gets b$
-        \State $b\gets r$
-        \State $r\gets a\bmod b$
-      \EndWhile\label{euclidendwhile}
-      \State \textbf{return} $b$\Comment{The gcd is b}
+    \Procedure{Load Sequences}{$n\_parts, videoParts, vpCounts$}
+      \State $seq_1 \gets []$
+      \State $seq_2 \gets []$
+      \For{$i \gets 0, n\_parts$}
+        \State $selectionH_1 \gets []$\Comment{keep selections of parts that satisfy constraints}
+        \State $selectionH_2 \gets []$
+        \ForAll{$vp \in videoParts$}\Comment{Horizontal constraint}
+          \If{$vp.vIdx \neq part.vIdx$ \textbf{for all} $part \in seq_1$}
+            \State add $vp$ to $selectionH_1$
+          \EndIf
+          \If{$vp.vIdx \neq part.vIdx$ \textbf{for all} $part \in seq_2$}
+            \State add $vp$ to $selectionH_2$
+          \EndIf
+        \EndFor
+        
+        \Comment{For $seq_1$:}
+        \State $minSelection_1 \gets []$\Comment{select from $selectionH_1$ parts that have minimal count}
+        \State $minCount_1 \gets min(count)$ from $selectionH_1$\Comment{look up counts in $vpCounts$}
+        \ForAll{$vp \in selection_1$}
+          \If{$vp.count = minCount_1$}
+            \State add $vp$ to $minSelection_1$
+          \EndIf
+        \EndFor
+        \State $selected_1 \gets$ random from $minSelection_1$
+        \State append $selected_1$ to $seq1$\Comment{add video part to $seq_1$}
+        
+        \Comment{For $seq_2$:}
+        % \Comment{select from $selectionH_2$ parts with different src than $selected_1$}
+        \State $selectionV = []$
+        \ForAll{$vp \in selection_2$} \Comment{Vertical constraint}
+          \If{$vp.src \neq selected_1.src$}
+            \State add $vp$ to $selectionV$
+          \EndIf
+        \EndFor
+        
+        \State $minSelection_2 \gets []$\Comment{select from $selectionV$ parts that have minimal count}
+        \State $minCount_2 \gets min(count)$ from $selectionV$\Comment{look up counts in $vpCounts$}
+        \ForAll{$vp \in selection_2$}
+          \If{$vp.count = minCount_2$}
+            \State add $vp$ to $minSelection_2$
+          \EndIf
+        \EndFor
+        \State $selected_2 \gets$ random from $minSelection_2$
+        \State append $selected_2$ to $seq2$\Comment{add video part to $seq_2$}
+      \EndFor
+      \State $shuffle\_in\_unison(seq_1, seq_1)$
+      \State return $(seq_1, seq_2)$
     \EndProcedure
-
   \end{algorithmic}
+  \label{alg:genseqs}
 \end{algorithm}
 
-% Pseudo Code generate Sequences Random Shuffled
-% # fillSeqs
-% (seq1, seq2) <- [],[]
-% for i <- 0 to n_parts do
-%   # select videoParts with different src than the parts already in sequence
-%   selection1 <- []
-%   selection2 <- []
-%   for all vp in videoParts do:    
-%     if vp.src not in selection1:
-%       add vp to selection1
-%     if vp.src not in selection2:
-%       add vp to selection2            
-% 
-%   # seq1: select videoParts that have minimal count
-%   minSelection11 <- []
-%   minCount1 <- min(count) from selection1
-%   for all vp in selection1:
-%     if vp.count == minCount1:
-%       add vp to minSelection1
-%   selected1 <- pick random from minSelection1
-%   add selected1 to seq1
-% 
-%   # seq2: filter videoParts with different src than selected for seq1
-%   selection2V = []
-%   for vp in selection2:
-%     if vp.src != selected1.src:
-%       add vp to selection2V
-%   # select videoParts that have minimal count
-%   minSelection2 <- []
-%   minCount2 <- min(count) from selection2
-%   for all vp in selection2:
-%     if vp.count == minCount2:
-%       add vp to minSelection2
-%   selected2 <- pick random from minSelection2
-%   add selected2 to seq2
-% shuffle in unison(seq1, seq2)
+Amongst the interaction data that is stored in the database, we keep a count for every video part of how many times it has been presented. The counts are used to select from the set of video parts that satisfy the constraints, the ones that are least presented so far. This ensures that all video parts will be presented roughly an equal number of times.
 
+After the two sequences have reached the desired size of $n\_parts$, they are randomly shuffled to make sure video parts are presented at different positions in sequence roughly equal amounts of time. Shuffling happens in unison which means correspondence is kept across both sequences so that the constraints still hold. The process of shuffling in unison is described in pseudo code in algorithm \ref{alg:shuffle}.
+
+% shuffle algorith
 \begin{algorithm}
-  \caption{Generate Sequences Random Shuffled}
+  \caption{Shuffle Sequences in Unison}
   \begin{algorithmic}[1]
-    \Procedure{Fill Sequences}{}\Comment{The g.c.d. of a and b}
-      \State $r\gets a\bmod b$
-      \While{$r\not=0$}\Comment{We have the answer if r is 0}
-        \State $a\gets b$
-        \State $b\gets r$
-        \State $r\gets a\bmod b$
-      \EndWhile
-      \State \textbf{return} $b$\Comment{The gcd is b}
+    \Procedure{Shuffle in unison}{$seq_1, seq_2$}
+      \State $seed \gets make\_seed()$ \Comment{to seed $random\_generator$ twice identically}
+      \State $random\_generator.set\_seed(seed)$ \Comment{set seed}
+      \State $random\_generator.shuffle(seq_1)$ \Comment{shuffle}
+      \State $random\_generator.set\_seed(seed)$ \Comment{set seed}
+      \State $random\_generator.shuffle(seq_2)$ \Comment{shuffle}
+      \State return $(seq_1, seq_2)$
     \EndProcedure
-
   \end{algorithmic}
+  \label{alg:shuffle}
 \end{algorithm}
+
+\subsection{Hypervideo in your Web Browser}
+
+Playing back parts of different online videos in a single video experience is a common feature of any video editing system, but this functionality has only recently become available to code that runs in a web browser. Today most videos that live on the web are much like black boxes and this is not just because computers are having a hard time understanding the visuals. When we interact with video online it is almost always on the high level of the entire video. Whether it's playing, sharing, commenting on or linking to video, we lack the functionality of referring to parts that lie within or interact with components like (sub)titles, images or audio as separate entities. [... ref video vortex] calls this type of video ``hard'' and ``flat'' [check quotes].
+
+This is starting to change. An important player in the movement of treating video like the web by hyperlinking, cross referencing and remixing it in code, is Mozilla, who's foundation is working on `Popcorn' \footnote{\url{http://mozillapopcorn.org/}}, a project that makes video work much like the web. Part of the Popcorn project is `Popcorn.js' \footnote{\url{http://popcornjs.org/}}, a Javascript library that intends to open up videos to the web, give it back it's depth and make it more soft. The wePorter system relies for a big part on the `Popcorn.js' library for the playback of video parts in sequence.
+
+% ? player can handle videos of different dimensions

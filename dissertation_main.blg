@@ -2,48 +2,53 @@ This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: dissertation_main.aux
 The style file: plain.bst
 Database file #1: ./tex/bib/mybib.bib
+Warning--I didn't find a database entry for "youtubeBM"
+Warning--I didn't find a database entry for "vimeoTimeline"
+Warning--I didn't find a database entry for "vimeoCC"
+Warning--I didn't find a database entry for "manovichAuthor"
 Warning--empty journal in Babbage:1832vu
+Warning--empty institution in YouTubeCC
 Warning--empty institution in RodrigoLaiolaGuimaraes:2011tl
 Warning--empty institution in Rosenstiel:2012vb
-You've used 28 entries,
+You've used 32 entries,
             2118 wiz_defined-function locations,
-            673 strings with 9714 characters,
-and the built_in function-call counts, 11231 in all, are:
-= -- 1139
-> -- 559
-< -- 14
-+ -- 220
-- -- 192
-* -- 780
-:= -- 1807
-add.period$ -- 85
-call.type$ -- 28
-change.case$ -- 181
+            702 strings with 10434 characters,
+and the built_in function-call counts, 12547 in all, are:
+= -- 1269
+> -- 630
+< -- 16
++ -- 248
+- -- 216
+* -- 867
+:= -- 2037
+add.period$ -- 97
+call.type$ -- 32
+change.case$ -- 205
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 421
-empty$ -- 769
-format.name$ -- 192
-if$ -- 2372
+cite$ -- 36
+duplicate$ -- 476
+empty$ -- 855
+format.name$ -- 216
+if$ -- 2643
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 26
-newline$ -- 144
-num.names$ -- 56
-pop$ -- 174
+int.to.str$ -- 32
+missing$ -- 31
+newline$ -- 163
+num.names$ -- 64
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 152
+purify$ -- 172
 quote$ -- 0
-skip$ -- 362
+skip$ -- 400
 stack$ -- 0
-substring$ -- 775
-swap$ -- 149
-text.length$ -- 14
+substring$ -- 833
+swap$ -- 162
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
-warning$ -- 3
-while$ -- 112
-width$ -- 30
-write$ -- 305
-(There were 3 warnings)
+type$ -- 124
+warning$ -- 4
+while$ -- 126
+width$ -- 34
+write$ -- 346
+(There were 8 warnings)
