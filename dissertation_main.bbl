@@ -14,9 +14,12 @@ E.~Bruno and D.~Pellerin.
 
 \bibitem{YouTubeCC}
 Cathy Casserly.
-\newblock {Here's your invite to reuse and remix the 4 million Creative
-  Commons-licensed videos on YouTube}.
-\newblock Technical report, June 2012.
+\newblock Here’s your invite to reuse and remix the 4 million creative
+  commons-licensed videos on youtube.
+\newblock
+  \url{http://YouTube-global.blogspot.co.uk/2012/07/heres-your-invite-to-reuse%
+-and-remix-4.html}, June 2012.
+\newblock Accessed: 15/09/2012.
 
 \bibitem{Cesar:2009fk}
 Pablo Cesar and Konstantinos Chorianopoulos.
@@ -143,12 +146,6 @@ Y.~Rui, T.S. Huang, M.~Ortega, and S.~Mehrotra.
 \newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
   on}, 8(5):644--655, 1998.
 
-\bibitem{Sawhney:1996tk}
-N.~Sawhney, D.~Balcom, and I.~Smith.
-\newblock {HyperCafe: narrative and aesthetic properties of hypervideo}.
-\newblock {\em Proceedings of the the seventh ACM conference on Hypertext},
-  pages 1--10, 1996.
-
 \bibitem{Smeaton:2006ww}
 A.F. Smeaton, P.~Over, and W.~Kraaij.
 \newblock {Evaluation campaigns and TRECVid}.
@@ -159,6 +156,12 @@ A.F. Smeaton, P.~Over, and W.~Kraaij.
 AM~Turing.
 \newblock {Computing machinery and intelligence}.
 \newblock {\em Mind}, 1950.
+
+\bibitem{Ulges:2009ua}
+A.~Ulges, M.~Koch, D.~Borth, and T.M. Breuel.
+\newblock {Tubetagger-YouTube-based concept detection}.
+\newblock {\em Data Mining Workshops, 2009. ICDMW'09. IEEE International
+  Conference on}, pages 190--195, 2009.
 
 \bibitem{Ursu:2009gc}
 Marian~F Ursu, Vilmos Zsombori, John Wyver, Lucie Conrad, Ian Kegel, and Doug
