@@ -30,6 +30,7 @@
 This section describes the interaction design of the wePorter system, built to examplify how human computation can be used in tasks like local video part filtering and semi-automated video reconfiguration. The wePorter system runs an interactive webpage that functions as the main source for data acquisition, presentation of results and general proof of concept. In this chapter the system is analysed along the axes of \textit{Purpose}, \textit{Motivation} and \textit{Task}, that were introduced in the analysis of Human Computational systems in chapter \ref{ch:humancomputation}. Next to these guidelines for analysis, some remarks are made about the specifics in the functioning of the system. Lastly we discuss the implementation of the web application that is central in wePorter.
 
 \section{User Generated Video Content}
+\label{sec:weporter_ugvc}
 
 % [define UGVC]
 % 
@@ -52,6 +53,7 @@ These astonishing figures of the amount of video that is uploaded to YouTube are
 The increasing amounts of user-generated video content (UGVC) being put online, lead to an information overload and present both challenges and opportunities in search, retrieval\cite{Ulges:2009ua} and recommendation\cite{Zhou:2010ut} tasks [more refs]. There is an increased need for ways of aggregation and filtering. Both of these tasks rely heavily on an at least a shallow understanding of what is presented in these media, which, as we've seen in chapter \ref{ch:quest}, is a hard problem to solve via current computational techniques. With so much content being uploaded, how can we find our way in the already enormous ocean of online videos?
 
 \section{The Purpose}
+\label{sec:weporter_purpose}
 
 % Searching -> IR
 With more than an hour of new content per second it is no wonder that YouTube has come to be viewed as the go-to for online video, much like ``the digital video repository for the Internet'' \footnote{\url{http://YouTube-global.blogspot.co.uk/2005/07/greetings-everyone-thanks-for-visiting.html}} that was envisioned by its founders in their first official blog post. An important activity on video platforms like YouTube is searching and much work has focussed on video retrieval\cite{Liu:2007fv,Snoek:jf,Christel:2005td,Halvey:2007tz,Kankanhalli:2008uv,Hollink:2005ei,DeRooij:2008ut,Snoek:2009dq,Smeaton:2008go}. We review the different aims in users' interaction in video retrieval tasks and point to an aspect of video retrieval that has not received much attention in recent research. This is the challenge of segmented video recommendation and we will explain why it forms a problem task to address within a Human Computation System like wePorter.
@@ -113,6 +115,7 @@ From a set of topically related unstructured user-generated videos:
 \end{enumerate}		
 
 \section{The Motivation}
+\label{sec:weporter_motivation}
 
 How to get a group of unrelated people to contribute their efforts to solving the tasks set in our two-folded purpose? This section looks at the reasons people might have to contribute their computational powers to a system with a purpose like wePorter. Looking at the way people engage with online video content on platforms like YouTube, we identify patterns in their behaviour that can be matched to a task in a human computation system. This behaviour that is characterised by a more active role in multimedia consumption, can be seen as a larger trend in the development of new media. The end of this section indicates how the motivations of users of the wePorter system can link in with this larger trend.
 
@@ -134,6 +137,7 @@ The wePorter system focusses on these kinds of topically related sets that peopl
 It is this kind of interactions that are already taking place at a large scale that we like to make use of in the wePorter system. Motivated by the wish to explore informative content, users will instinctively and implicitly contribute their human knowledge to a system that is set up appropriately. This kind of motivation fits the category of `implicit work' as it involves activities that people already engage in for their own reasons \cite{Quinn:2011us}. Considering users' wish to be informed and the interactive way in which they navigate, there is most likely also a factor of entertainment involved though. We expect though that the more specific motivation of information provision might show to become a valid categorisation for the motivation of people in a HCS as it is a common activity on the web and inherently linked with the hard problem of meaningful interpretation of content.
 
 \section{The Task}
+\label{sec:weporter_task}
 
 In this section we take a look at how the larger goal of finding intervals of regional interest across time within a single video can be branched out into bite-sized tasks executable by a person in a single interaction. We begin by introducing some conceptual considerations that influenced the interface design. Then a detailed overview of the wePorter web interface is presented. We end with a  section focussing on the implementation of the system.
 
@@ -220,6 +224,7 @@ Besides the collective actions of the multiple users that help shape the creatio
 
 
 \subsection{The Interface}
+\label{sec:weporter_interface} 
 % intro
 This sections describes the user interface that directs participation of wePorter users towards solving the purpose of distinguishing local intervals of interest within videos. After a conceptual overview of the functioning we include a walkthrough to explain precisely how the interaction takes place.
 
@@ -281,10 +286,10 @@ During the parallel play of the two sequences of video parts, the user triggers 
 
 We record which video a user is attending to by keeping a count for each of the two video parts playing concurrently and increasing the count for the focussed video every 100 milliseconds. When a video part ends, the count is logged internally on the user's browser side before the next video part is started with its own count. When the parallel sequences are played back completely, the end of the interaction is reached and the counts for each of the 12 video parts are stored in a server-side database. Each pair of counts for two concurrently presented parts, represents a distribution of the user's attention over those parts.
 
-Note that we never explicitly ask anyone to point at the video that is most interesting. Users are simply instructed as to how the interface works and then left to explore the videos as they like. By recording users' behaviour this way, we achieve a detailed insight into which of a pair of videos a user has attended to at what time. In section \ref{sec:evaluation} we report on how these measure can be telling in the process of filtering and reconfiguration. 
+Note that we never explicitly ask anyone to point at the video that is most interesting. Users are simply instructed as to how the interface works and then left to explore the videos as they like. By recording users' behaviour this way, we achieve a detailed insight into which of a pair of videos a user has attended to at what time. In section \ref{ch:evaluation} we report on how these measure can be telling in the process of filtering and reconfiguration. 
 
 \section{Implementation}
-\label{sec:implementation}
+\label{sec:weporter_implementation}
 
 This section describes in detail the technologies used in the wePorter system and how components relate to each other. We begin by illustrating how video content is prepared for presentation in the wePorter web interface, and next describe the system framework. 
 

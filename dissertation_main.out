@@ -22,34 +22,33 @@
 \BOOKMARK [2][-]{subsection.3.6.1}{Purpose}{section.3.6}
 \BOOKMARK [2][-]{subsection.3.6.2}{Motivation}{section.3.6}
 \BOOKMARK [2][-]{subsection.3.6.3}{Task}{section.3.6}
-\BOOKMARK [0][-]{chapter.4}{Interactive Storytelling: From database to data-based}{}
-\BOOKMARK [1][-]{section.4.1}{Symbolic approaches}{chapter.4}
-\BOOKMARK [1][-]{section.4.2}{Statistic approaches}{chapter.4}
-\BOOKMARK [1][-]{section.4.3}{Remixing}{chapter.4}
-\BOOKMARK [2][-]{subsection.4.3.1}{Taking the remix online}{section.4.3}
-\BOOKMARK [0][-]{chapter.5}{Human Computed Stories in wePorter}{}
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
-\BOOKMARK [1][-]{section.5.2}{User Generated Video Content}{chapter.5}
-\BOOKMARK [1][-]{section.5.3}{The Purpose}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.3.1}{Different Aims}{section.5.3}
-\BOOKMARK [2][-]{subsection.5.3.2}{Serving the Purpose of Encapsulated Wander}{section.5.3}
-\BOOKMARK [2][-]{subsection.5.3.3}{Storytelling as Structured Recommendation}{section.5.3}
-\BOOKMARK [1][-]{section.5.4}{The Motivation}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.4.1}{Information Provision through Online Video}{section.5.4}
-\BOOKMARK [2][-]{subsection.5.4.2}{Informative Entertainment}{section.5.4}
-\BOOKMARK [1][-]{section.5.5}{The Task}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.5.1}{Design Considerations}{section.5.5}
-\BOOKMARK [2][-]{subsection.5.5.2}{The Interface}{section.5.5}
-\BOOKMARK [1][-]{section.5.6}{Implementation}{chapter.5}
-\BOOKMARK [2][-]{subsection.5.6.1}{Preparation of Content}{section.5.6}
-\BOOKMARK [2][-]{subsection.5.6.2}{The live system}{section.5.6}
-\BOOKMARK [2][-]{subsection.5.6.3}{Hypervideo in a Web Browser}{section.5.6}
-\BOOKMARK [0][-]{chapter.6}{Evaluation}{}
-\BOOKMARK [1][-]{section.6.1}{Experiments}{chapter.6}
-\BOOKMARK [1][-]{section.6.2}{Results}{chapter.6}
-\BOOKMARK [2][-]{subsection.6.2.1}{The Interface}{section.6.2}
-\BOOKMARK [2][-]{subsection.6.2.2}{Landscapes of Interest}{section.6.2}
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}
-\BOOKMARK [0][-]{chapter.8}{Future Directions}{}
-\BOOKMARK [0][-]{chapter.9}{Conclusions}{}
-\BOOKMARK [0][-]{chapter.9}{Bibliography}{}
+\BOOKMARK [0][-]{chapter.4}{Human Computed Stories in wePorter}{}
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{User Generated Video Content}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{The Purpose}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Different Aims}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{Serving the Purpose of Encapsulated Wander}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Storytelling as Structured Recommendation}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{The Motivation}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Information Provision through Online Video}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Informative Entertainment}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{The Task}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Design Considerations}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{The Interface}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Implementation}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.6.1}{Preparation of Content}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.2}{The live system}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.3}{Hypervideo in a Web Browser}{section.4.6}
+\BOOKMARK [0][-]{chapter.5}{Evaluation}{}
+\BOOKMARK [1][-]{section.5.1}{Setup}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Results}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.2.1}{Preliminary Experiments}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.2}{Clean Data}{section.5.2}
+\BOOKMARK [1][-]{section.5.3}{Main Experiments}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.3.1}{Landscapes of Interest}{section.5.3}
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.4.1}{Feedback from Comments}{section.5.4}
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}
+\BOOKMARK [0][-]{chapter.7}{Future Directions}{}
+\BOOKMARK [0][-]{chapter.8}{Conclusions}{}
+\BOOKMARK [0][-]{chapter.8}{Bibliography}{}
