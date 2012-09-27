@@ -2,53 +2,55 @@ This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: dissertation_main.aux
 The style file: plain.bst
 Database file #1: ./tex/bib/mybib.bib
-Warning--I didn't find a database entry for "Sawhney:1996tk"
-Warning--I didn't find a database entry for "youtubeBM"
-Warning--I didn't find a database entry for "vimeoTimeline"
-Warning--I didn't find a database entry for "vimeoCC"
-Warning--I didn't find a database entry for "manovichAuthor"
+Repeated entry---line 820 of file ./tex/bib/mybib.bib
+ : @techreport{youtubeCC
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in youtubeBM
+Warning--to sort, need author or key in vimeoTimeline
+Warning--to sort, need author or key in vimeoCC
 Warning--empty journal in Babbage:1832vu
-Warning--empty institution in RodrigoLaiolaGuimaraes:2011tl
 Warning--empty institution in Rosenstiel:2012vb
-You've used 32 entries,
+Warning--empty year in Snoek:jf
+You've used 42 entries,
             2118 wiz_defined-function locations,
-            705 strings with 10579 characters,
-and the built_in function-call counts, 12665 in all, are:
-= -- 1282
-> -- 635
-< -- 16
-+ -- 250
-- -- 218
-* -- 871
-:= -- 2046
-add.period$ -- 98
-call.type$ -- 32
-change.case$ -- 205
+            761 strings with 11776 characters,
+and the built_in function-call counts, 15676 in all, are:
+= -- 1600
+> -- 728
+< -- 18
++ -- 288
+- -- 246
+* -- 1064
+:= -- 2496
+add.period$ -- 129
+call.type$ -- 42
+change.case$ -- 248
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 479
-empty$ -- 867
-format.name$ -- 218
-if$ -- 2676
+cite$ -- 48
+duplicate$ -- 590
+empty$ -- 1141
+format.name$ -- 246
+if$ -- 3334
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 31
-newline$ -- 164
-num.names$ -- 64
-pop$ -- 201
+int.to.str$ -- 42
+missing$ -- 38
+newline$ -- 215
+num.names$ -- 78
+pop$ -- 264
 preamble$ -- 1
-purify$ -- 173
+purify$ -- 207
 quote$ -- 0
-skip$ -- 407
+skip$ -- 492
 stack$ -- 0
-substring$ -- 846
-swap$ -- 167
-text.length$ -- 16
+substring$ -- 1088
+swap$ -- 192
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 124
-warning$ -- 3
-while$ -- 126
-width$ -- 34
-write$ -- 348
-(There were 8 warnings)
+type$ -- 164
+warning$ -- 6
+while$ -- 157
+width$ -- 44
+write$ -- 452
+(There was 1 error message)

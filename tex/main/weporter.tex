@@ -1,6 +1,8 @@
 \chapter{Human Computed Stories in wePorter}
 \label{chap:weporter}
 
+[draft]
+
 % [intro: sketch wePorter scenario. YouTube: Burning Man 1.7 million, Burning Man 2012 ..., Burning Man this month ...]
 % 
 % [discuss: is wePorter human computation?
@@ -27,14 +29,13 @@
 % ]
 
 \section{Introduction}
-This section describes the interaction design of the wePorter system, built to examplify how human computation can be used in tasks like local video part filtering and semi-automated video reconfiguration. The wePorter system runs an interactive webpage that functions as the main source for data acquisition, presentation of results and general proof of concept. In this chapter the system is analysed along the axes of \textit{Purpose}, \textit{Motivation} and \textit{Task}, that were introduced in the analysis of Human Computational systems in chapter \ref{ch:humancomputation}. Next to these guidelines for analysis, some remarks are made about the specifics in the functioning of the system. Lastly we discuss the implementation of the web application that is central in wePorter.
+This section describes the interaction design of the wePorter system, built to exemplify how the paradigm of human computation can be used in tasks like filtering of video segments and semi-automated video reconfiguration. The wePorter system runs an interactive webpage that functions as the main source for data acquisition, presentation of results and general proof of concept. In this chapter the system is analysed along the axes of \textit{Purpose}, \textit{Motivation} and \textit{Task}, that were introduced in the analysis of Human Computational systems in chapter \ref{ch:humancomputation}. Next to these guidelines for analysis, some remarks are made about the specifics in the functioning of the system. Lastly we discuss the implementation of the web application that is central in wePorter.
 
 \section{User Generated Video Content}
 \label{sec:weporter_ugvc}
 
-% [define UGVC]
-% 
-% \url{http://YouTube-global.blogspot.co.uk/2009/05/zoinks-20-hours-of-video-uploaded-every_20.html}
+ 
+%\url{http://YouTube-global.blogspot.co.uk/2009/05/zoinks-20-hours-of-video-uploaded-every_20.html}
 % 
 % \url{http://YouTube-global.blogspot.co.uk/2010/03/oops-pow-surprise24-hours-of-video-all.html}
 % 
@@ -247,7 +248,7 @@ When a user opens the wePorter web interface he is welcomed by a short introduct
 \end{figure}
 
 % loading sequences
-Upon loading the webpage, a database is queried for a pair of sequences made up from different video parts for which the system would like to elicit a user's preference. The two sequences both consist of six video parts that each have a duration of 10 seconds. The interaction of the two sequences playing in parallel thus has a total duration of 60 seconds, reflecting the short time span common across UGVC at YouTube\cite{Cha:2007ty, Cheng:2007tc}. A detailed description of the algorithm used for the construction of these sequences is given in section \ref{sec:implementation}.
+Upon loading the webpage, a database is queried for a pair of sequences made up from different video parts for which the system would like to elicit a user's preference. The two sequences both consist of six video parts that each have a duration of 10 seconds. The interaction of the two sequences playing in parallel thus has a total duration of 60 seconds, reflecting the short time span common across UGVC at YouTube\cite{Cha:2007ty, Cheng:2007tc}. A detailed description of the algorithm used for the construction of these sequences is given in section \ref{sec:weporter_implementation}.
 
 % starting interaction
 After reading the instructions, the user scrolls down to the interactive parallel video player that displays two videos on top of each other. By clicking the `Play' button, the user starts the interaction and sets in motion the consecutive playback of both sequences in parallel.
@@ -322,12 +323,12 @@ where $tc_{in}$ references the time code within the video indexed by $vIdx$ that
 Algorithm \ref{alg:videoparts} shows the procedure to generate video parts from source videos. The algorithm starts at the beginning of a video and extracts a video part for every consecutive window of duration $d$. 
 
 % end bits of videos discarded
-There might be an interval with a duration less than $d$ at the end of a source video that is not included in the resulting set of video parts. Because the parallel sequence player expects video parts of equal length, these end bits are discarded and will not be presented during user interaction. Our assumption is that because of the raw, unedited nature of the videos used in wePorter, disregarding the final few seconds of videos will be tolerable. People recording video in a point and shoot fashion usually stop recording when a phenomenon that caused them to film has ended and so the final bit of their videos does not commonly contain the most important content.
+There might be an interval with a duration less than $d$ at the end of a source video that is not included in the resulting set of video parts. Because the parallel sequence player expects video parts of equal length, these end bits are discarded and will not be presented during user interaction. Our assumption is that because of the raw, unedited nature of the videos used in wePorter, disregarding the final few seconds of videos will be tolerable. People recording video in a point and shoot fashion usually stop recording when a phenomenon that prompted them to start filming has ended and so the final bit of their videos does not commonly contain the most important content.
 
 \begin{algorithm}
   \caption{Generate Video Parts}
   \begin{algorithmic}[1]
-    \Procedure{Slice}{$sourceVideos,d$}\Comment{slice videos into parts with duration $d$}
+    \Procedure{Partition}{$sourceVideos,d$}\Comment{partition videos into parts with duration $d$}
       \State $i\gets 1$
       \ForAll{$video \in sourceVideos$} 
         \State $tc_{in} \gets 0$
@@ -347,10 +348,7 @@ There might be an interval with a duration less than $d$ at the end of a source 
 \subsection{The live system}
 
 % start = system defined query result set
-Figure \ref{fig:framework} shows the data framework of the wePorter system. The system runs as a web interface and is accessible online for multiple users at the same time. The server-side functionality is implemented in PHP making use of connections to a mySQL database. On the client-side, Javascript deals with the playback of video sequences as well as keeping track of all interaction data. Upon a user's navigation to the wePorter web page, two sequences are loaded in the parallel video player. A user triggers the interaction by clicking play. Once an interaction have finished all interaction data is added to the database on the server. The updated interaction data and counts of video parts are subsequently used in the generation of sequences for a new interactions either by the same or new visitors.
-
-% single set of videos
-For experimentation purposes, the current implementation maintains a single set of topically related source videos representing the context of `encapsulated wander' for a single query. A useful extension of the system would be to let users query a live database like YouTube for content of their interest and thus define a dynamical collection of content to explore. To focus experimentation on a fixed set of video content, this extension is left for future work. 
+Figure \ref{fig:framework} shows the data framework of the wePorter system. The system runs as a web interface and is accessible online for multiple users at the same time. The server-side functionality is implemented in PHP making use of connections to a mySQL database. On the client-side, Javascript deals with the playback of video sequences as well as keeping track of all interaction data. Upon a user's navigation to the wePorter web page, two sequences are loaded in the parallel video player. A user triggers the interaction by clicking a play button. During the interaction, Javascript running in the user's browser keeps track of the accumulating attentional ratings per video part. Once an interaction has finished, all interaction data is added to the database on the server. The updated interaction data and counts of video parts are subsequently used in the generation of sequences for new interactions either by the same user or a new visitor.
 
 \begin{figure}[htbp]
   \centering
@@ -358,6 +356,10 @@ For experimentation purposes, the current implementation maintains a single set 
   \caption{System Framework of wePorter}
   \label{fig:framework}
 \end{figure}
+
+% single set of videos
+For experimentation purposes, the current implementation maintains a single set of topically related source videos representing the context of `encapsulated wander' for a single query. An extension of the system would be to let users query a live database like YouTube for content of their interest and thus define a dynamic collection of content to explore. Another option would be to give users a choice of which set of videos they would like to interact with. These methods could prove to be useful as they let users interact with content they have chosen themselves, which might make their interaction more interest-driven. In our current implementation, we have chosen to use a fixed set of video content for more controllable experimentation, and left these extensions for future work.
+
 
 \subsubsection{Loading Sequences}
 % sequences satisfy 2 constraints
@@ -446,6 +448,8 @@ After the two sequences have reached the desired size of $n\_parts$, they are ra
   \end{algorithmic}
   \label{alg:shuffle}
 \end{algorithm}
+
+[TODO comment on combinatorics and complexity. all video parts are presented more or less equal, except long ones]
 
 \subsection{Hypervideo in a Web Browser}
 

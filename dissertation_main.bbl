@@ -1,9 +1,31 @@
 \begin{thebibliography}{10}
 
+\bibitem{vimeoCC}
+Creative commons licensed videos on vimeo.
+\newblock
+  \url{http://youtube-global.blogspot.co.uk/2012/07/heres-your-invite-to-reuse%
+-and-remix-4.html}.
+\newblock Accessed: 15/09/2012.
+
+\bibitem{youtubeBM}
+Searching youtube for ``burning man, this month.
+\newblock \url{http://www.youtube.com/results?search_query=burning+man}.
+\newblock Accessed: 17/09/2012.
+
+\bibitem{vimeoTimeline}
+Vimeo timeline.
+\newblock \url{https://vimeo.com/about/timeline}.
+\newblock Accessed: 15/09/2012.
+
 \bibitem{Babbage:1832vu}
 Charles Babbage.
 \newblock {On the economy of machinery and manufactures}.
 \newblock 1832.
+
+\bibitem{Barthes:1977wq}
+R.~Barthes.
+\newblock {The death of the author (1968)}.
+\newblock {\em Image-music-text}, pages 142--148, 1977.
 
 \bibitem{Bruno:2002tt}
 E.~Bruno and D.~Pellerin.
@@ -16,9 +38,7 @@ E.~Bruno and D.~Pellerin.
 Cathy Casserly.
 \newblock Here’s your invite to reuse and remix the 4 million creative
   commons-licensed videos on youtube.
-\newblock
-  \url{http://YouTube-global.blogspot.co.uk/2012/07/heres-your-invite-to-reuse%
--and-remix-4.html}, June 2012.
+\newblock \url{https://vimeo.com/creativecommons}, June 2012.
 \newblock Accessed: 15/09/2012.
 
 \bibitem{Cesar:2009fk}
@@ -79,11 +99,22 @@ D.A. Grier.
 \newblock {\em {When Computers Were Human}}.
 \newblock Princeton University Press, 2007.
 
+\bibitem{Halvey:2007tz}
+M.J. Halvey and M.T. Keane.
+\newblock {Analysis of online video search and sharing}.
+\newblock {\em Proceedings of the eighteenth conference on Hypertext and
+  hypermedia}, pages 217--226, 2007.
+
 \bibitem{Hollink:2005ei}
 L~Hollink, G~P Nguyen, D~C Koelma, A~Th Schreiber, and M~Worring.
 \newblock {Assessing user behaviour in news video retrieval}.
 \newblock {\em IEE Proceedings - Vision, Image, and Signal Processing},
   152(6):911, 2005.
+
+\bibitem{Jain:1994we}
+R.~Jain and A.~Hampapur.
+\newblock {Metadata in video databases}.
+\newblock {\em ACM Sigmod Record}, 23(4):27--33, 1994.
 
 \bibitem{jenkins2006convergence}
 H.~Jenkins.
@@ -94,6 +125,11 @@ H.~Jenkins.
 Anna~Maria J{\"o}nsson and Henrik {\"O}rnebring.
 \newblock {USER-GENERATED CONTENT AND THE NEWS}.
 \newblock {\em Journalism Practice}, 5(2):127--144, April 2011.
+
+\bibitem{Kankanhalli:2008uv}
+M.S. Kankanhalli and Y.~Rui.
+\newblock {Application potential of multimedia information retrieval}.
+\newblock {\em Proceedings of the IEEE}, 96(4):712--720, 2008.
 
 \bibitem{Kuwano:2000wy}
 H.~Kuwano, Y.~Taniguchi, H.~Arai, M.~Mori, S.~Kurakake, and H.~Kojima.
@@ -108,6 +144,18 @@ E.~Law and L.~Von~Ahn.
   computation games}.
 \newblock {\em Proceedings of the 27th international conference on Human
   factors in computing systems}, pages 1197--1206, 2009.
+
+\bibitem{Liu:2007fv}
+Ying Liu, Dengsheng Zhang, Guojun Lu, and Wei-Ying Ma.
+\newblock {A survey of content-based image retrieval with high-level
+  semantics}.
+\newblock {\em Pattern Recognition}, 40(1):262--282, January 2007.
+
+\bibitem{manovichAuthor}
+Lev Manovich.
+\newblock Who is the author? sampling / remixing / open source.
+\newblock \url{http://www.manovich.net/DOCS/models_of_authorship.doc}.
+\newblock Accessed: 16/09/2012.
 
 \bibitem{Mei:2007wa}
 T.~Mei, B.~Yang, X.S. Hua, L.~Yang, S.Q. Yang, and S.~Li.
@@ -127,13 +175,6 @@ A.J. Quinn and B.B. Bederson.
 \newblock {\em Proceedings of the 2011 annual conference on Human factors in
   computing systems}, pages 1403--1412, 2011.
 
-\bibitem{RodrigoLaiolaGuimaraes:2011tl}
-Pablo Cesar Dick C A Bulterman Vilmos Zsombori Ian~Kegel Rodrigo
-  Laiola~Guimaraes.
-\newblock {Creating Personalized Memories from Social Events: Community-Based
-  Support for Multi-Camera Recordings of School Concerts}.
-\newblock Technical report, August 2011.
-
 \bibitem{Rosenstiel:2012vb}
 Tom Rosenstiel and Amy Mitchell.
 \newblock {YouTube {\&} the News}.
@@ -146,11 +187,35 @@ Y.~Rui, T.S. Huang, M.~Ortega, and S.~Mehrotra.
 \newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
   on}, 8(5):644--655, 1998.
 
+\bibitem{Sawhney:1996tk}
+N.~Sawhney, D.~Balcom, and I.~Smith.
+\newblock {HyperCafe: narrative and aesthetic properties of hypervideo}.
+\newblock {\em Proceedings of the the seventh ACM conference on Hypertext},
+  pages 1--10, 1996.
+
 \bibitem{Smeaton:2006ww}
 A.F. Smeaton, P.~Over, and W.~Kraaij.
 \newblock {Evaluation campaigns and TRECVid}.
 \newblock {\em Proceedings of the 8th ACM international workshop on Multimedia
   information retrieval}, pages 321--330, 2006.
+
+\bibitem{Smeaton:2008go}
+Alan~F Smeaton, Peter Wilkins, Marcel Worring, Ork de~Rooij, Tat-Seng Chua, and
+  Huanbo Luan.
+\newblock {Content-based video retrieval: Three example systems from TRECVid}.
+\newblock {\em International Journal of Imaging Systems and Technology},
+  18(2-3):195--201, August 2008.
+
+\bibitem{Snoek:jf}
+C~G~M Snoek, B~Huurnink, L~Hollink, M~de~Rijke, G~Schreiber, and M~Worring.
+\newblock {Adding Semantics to Detectors for Video Retrieval}.
+\newblock {\em IEEE Transactions on Multimedia}, 9(5):975--986.
+
+\bibitem{Snoek:2009dq}
+Cees G~M Snoek and Marcel Worring.
+\newblock {Concept-Based Video Retrieval}.
+\newblock {\em Foundations and Trends{\textregistered} in Information
+  Retrieval}, 2(4):215--322, 2009.
 
 \bibitem{Turing:1950wi}
 AM~Turing.
@@ -159,15 +224,9 @@ AM~Turing.
 
 \bibitem{Ulges:2009ua}
 A.~Ulges, M.~Koch, D.~Borth, and T.M. Breuel.
-\newblock {Tubetagger-YouTube-based concept detection}.
+\newblock {Tubetagger-youtube-based concept detection}.
 \newblock {\em Data Mining Workshops, 2009. ICDMW'09. IEEE International
   Conference on}, pages 190--195, 2009.
-
-\bibitem{Ursu:2009gc}
-Marian~F Ursu, Vilmos Zsombori, John Wyver, Lucie Conrad, Ian Kegel, and Doug
-  Williams.
-\newblock {Interactive documentaries}.
-\newblock {\em Computers in Entertainment}, 7(3):1, September 2009.
 
 \bibitem{Xu:2008vb}
 S.~Xu, H.~Jiang, and F.~Lau.
@@ -195,12 +254,5 @@ R.~Zhou, S.~Khemmarat, and L.~Gao.
 \newblock {The impact of YouTube recommendation system on video views}.
 \newblock {\em Proceedings of the 10th annual conference on Internet
   measurement}, pages 404--410, 2010.
-
-\bibitem{Vilmos:2011wv}
-V.~Zsombori, M.~Frantzis, R.L. Guimaraes, M.F. Ursu, P.~Cesar, I.~Kegel,
-  R.~Craigie, and D.~Bulterman.
-\newblock {Automatic generation of video narratives from shared UGC}.
-\newblock {\em Proceedings of the ACM Conference on Hypertext and Hypermedia},
-  pages 325--334, 2011.
 
 \end{thebibliography}
