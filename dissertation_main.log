@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  1 OCT 2012 14:30
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  1 OCT 2012 17:25
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -457,14 +457,36 @@ Chapter 1.
 ]
 Chapter 2.
 
-Overfull \hbox (13.76291pt too wide) in paragraph at lines 28--38
+LaTeX Warning: Citation `Worring:2007vm' on page 5 undefined on input line 11.
+
+
+LaTeX Warning: Citation `Chang:2008wh' on page 5 undefined on input line 11.
+
+<img/understanding_visuals.png, id=330, 325.57635pt x 72.63135pt>
+File: img/understanding_visuals.png Graphic file (type png)
+
+<use img/understanding_visuals.png> [5
+
+]
+
+LaTeX Warning: Citation `Bordwell:1985tz' on page 6 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `gernsbacher1995coherence' on page 6 undefined on input
+ line 45.
+
+
+LaTeX Warning: Citation `Graesser:1994va' on page 6 undefined on input line 45.
+
+
+[6 <./img/understanding_visuals.png>]
+Overfull \hbox (13.76291pt too wide) in paragraph at lines 80--90
 \OT1/cmr/m/n/10.95 tent based [Rel-e-vance feed-back: A power tool for in-ter-a
 c-tive content-based im-age retrieval][[]]
  []
 
-[5
-
-]) (./tex/main/humanComputation.tex [6]
+) (./tex/main/humanComputation.tex [7]
 Chapter 3.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 12.
 (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
@@ -472,10 +494,10 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
- [7
+ [8
 
 ])
-(./tex/main/weporter.tex [8]
+(./tex/main/weporter.tex [9]
 Chapter 4.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -489,7 +511,7 @@ Missing character: There is no î in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[9
+[10
 
 ]
 Overfull \hbox (33.35472pt too wide) in paragraph at lines 60--60
@@ -497,34 +519,34 @@ Overfull \hbox (33.35472pt too wide) in paragraph at lines 60--60
  / 07 / greetings-[]everyone-[]thanks-[]for-[]visiting .
  []
 
-[10] [11] [12]
+[11] [12] [13]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [13] [14] [15]
+ [14] [15] [16]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [16]
-<img/vimeoCC.png, id=493, 349.7868pt x 183.5658pt>
+ [17]
+<img/vimeoCC.png, id=514, 349.7868pt x 183.5658pt>
 File: img/vimeoCC.png Graphic file (type png)
  <use img/vimeoCC.png>
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-[17 <./img/vimeoCC.png>]
-<img/instructions.png, id=508, 748.7975pt x 410.53375pt>
+[18 <./img/vimeoCC.png>]
+<img/instructions.png, id=527, 748.7975pt x 410.53375pt>
 File: img/instructions.png Graphic file (type png)
 
-<use img/instructions.png> [18 <./img/instructions.png (PNG copy)>]
-<img/pplay1.png, id=519, 437.635pt x 602.25pt>
+<use img/instructions.png> [19 <./img/instructions.png (PNG copy)>]
+<img/pplay1.png, id=538, 437.635pt x 602.25pt>
 File: img/pplay1.png Graphic file (type png)
  <use img/pplay1.png>
-<img/pplay2_cursor.png, id=520, 437.635pt x 602.25pt>
+<img/pplay2_cursor.png, id=539, 437.635pt x 602.25pt>
 File: img/pplay2_cursor.png Graphic file (type png)
 
 <use img/pplay2_cursor.png>
@@ -532,29 +554,29 @@ Overfull \hbox (4.86667pt too wide) in paragraph at lines 258--277
  [][]  [] 
  []
 
-[19 <./img/pplay1.png> <./img/pplay2_cursor.png>]
-<img/preparing_content.png, id=531, 487.46115pt x 164.0529pt>
+[20 <./img/pplay1.png> <./img/pplay2_cursor.png>]
+<img/preparing_content.png, id=550, 487.46115pt x 164.0529pt>
 File: img/preparing_content.png Graphic file (type png)
 
-<use img/preparing_content.png> [20 <./img/preparing_content.png>]
+<use img/preparing_content.png> [21 <./img/preparing_content.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 329.
 
-<img/framework.png, id=544, 564.4287pt x 542.7477pt>
+<img/framework.png, id=563, 564.4287pt x 542.7477pt>
 File: img/framework.png Graphic file (type png)
  <use img/framework.png>
-[21] [22 <./img/framework.png>] [23] [24]) (./tex/main/evaluation.tex [25]
+[22] [23 <./img/framework.png>] [24] [25]) (./tex/main/evaluation.tex [26]
 Chapter 5.
-<img/exp_posbias.png, id=584, 187.902pt x 93.58965pt>
+<img/exp_posbias.png, id=603, 187.902pt x 93.58965pt>
 File: img/exp_posbias.png Graphic file (type png)
 
-<use img/exp_posbias.png> [26
+<use img/exp_posbias.png> [27
 
  <./img/exp_posbias.png>]
-<img/exp_context.png, id=595, 187.54065pt x 93.58965pt>
+<img/exp_context.png, id=614, 187.54065pt x 93.58965pt>
 File: img/exp_context.png Graphic file (type png)
 
-<use img/exp_context.png> [27 <./img/exp_context.png>]
+<use img/exp_context.png> [28 <./img/exp_context.png>]
 Overfull \hbox (1.5414pt too wide) in paragraph at lines 64--64
 []\OT1/cmr/bx/n/10.95 Length
  []
@@ -569,34 +591,34 @@ Overfull \hbox (30.33398pt too wide) in paragraph at lines 62--76
 [][] 
  []
 
-[28] [29]) (./tex/main/future.tex [30]
+[29] [30]) (./tex/main/future.tex [31]
 Chapter 6.
-)) (./tex/conclusions.tex [31
+)) (./tex/conclusions.tex [32
 
 ]
 Chapter 7.
-) (./tex/acknowledgements.tex [32
+) (./tex/acknowledgements.tex [33
 
-]) [33] (./tex/mybibliography.tex
+]) [34] (./tex/mybibliography.tex
 (./dissertation_main.bbl
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
- [34
+ [35
 
 
-] [35])) [36] (./dissertation_main.aux)
+] [36])) [37] (./dissertation_main.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 7392 strings out of 493848
- 110192 string characters out of 3149207
- 203201 words of memory out of 3000000
- 10331 multiletter control sequences out of 15000+200000
+ 7410 strings out of 493848
+ 110574 string characters out of 3149207
+ 202380 words of memory out of 3000000
+ 10344 multiletter control sequences out of 15000+200000
  12189 words of font info for 44 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,10n,45p,1213b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -630,9 +652,9 @@ exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (38 pages, 1126901 bytes).
+Output written on dissertation_main.pdf (39 pages, 1157624 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 178 named destinations out of 1000 (max. 500000)
- 505 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 754 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 518 words of extra memory for PDF output out of 10000 (max. 10000000)
 

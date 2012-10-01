@@ -6,51 +6,56 @@ Repeated entry---line 820 of file ./tex/bib/mybib.bib
  : @techreport{youtubeCC
  :                      ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Worring:2007vm"
+Warning--I didn't find a database entry for "Chang:2008wh"
+Warning--I didn't find a database entry for "Bordwell:1985tz"
+Warning--I didn't find a database entry for "gernsbacher1995coherence"
+Warning--I didn't find a database entry for "Graesser:1994va"
 Warning--to sort, need author or key in youtubeBM
 Warning--to sort, need author or key in vimeoTimeline
 Warning--to sort, need author or key in vimeoCC
 Warning--empty journal in Babbage:1832vu
 Warning--empty institution in Rosenstiel:2012vb
 Warning--empty year in Snoek:jf
-You've used 42 entries,
+You've used 43 entries,
             2118 wiz_defined-function locations,
-            761 strings with 11776 characters,
-and the built_in function-call counts, 15676 in all, are:
-= -- 1600
-> -- 728
+            778 strings with 12157 characters,
+and the built_in function-call counts, 16120 in all, are:
+= -- 1643
+> -- 756
 < -- 18
-+ -- 288
-- -- 246
-* -- 1064
-:= -- 2496
-add.period$ -- 129
-call.type$ -- 42
-change.case$ -- 248
++ -- 299
+- -- 256
+* -- 1105
+:= -- 2571
+add.period$ -- 132
+call.type$ -- 43
+change.case$ -- 256
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 590
-empty$ -- 1141
-format.name$ -- 246
-if$ -- 3334
+cite$ -- 49
+duplicate$ -- 601
+empty$ -- 1170
+format.name$ -- 256
+if$ -- 3421
 int.to.chr$ -- 0
-int.to.str$ -- 42
-missing$ -- 38
-newline$ -- 215
-num.names$ -- 78
-pop$ -- 264
+int.to.str$ -- 43
+missing$ -- 39
+newline$ -- 220
+num.names$ -- 80
+pop$ -- 270
 preamble$ -- 1
-purify$ -- 207
+purify$ -- 214
 quote$ -- 0
-skip$ -- 492
+skip$ -- 499
 stack$ -- 0
-substring$ -- 1088
-swap$ -- 192
+substring$ -- 1124
+swap$ -- 193
 text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 164
+type$ -- 168
 warning$ -- 6
-while$ -- 157
-width$ -- 44
-write$ -- 452
+while$ -- 161
+width$ -- 45
+write$ -- 463
 (There was 1 error message)

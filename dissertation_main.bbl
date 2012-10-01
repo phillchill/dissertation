@@ -206,6 +206,12 @@ Alan~F Smeaton, Peter Wilkins, Marcel Worring, Ork de~Rooij, Tat-Seng Chua, and
 \newblock {\em International Journal of Imaging Systems and Technology},
   18(2-3):195--201, August 2008.
 
+\bibitem{Smeulders:2000tx}
+A.W.M. Smeulders, M~Worring, S.~Santini, A.~Gupta, and R.~Jain.
+\newblock {Content-based image retrieval at the end of the early years}.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 22(12):1349--1380, 2000.
+
 \bibitem{Snoek:jf}
 C~G~M Snoek, B~Huurnink, L~Hollink, M~de~Rijke, G~Schreiber, and M~Worring.
 \newblock {Adding Semantics to Detectors for Video Retrieval}.
