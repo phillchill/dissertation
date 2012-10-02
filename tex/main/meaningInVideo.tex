@@ -8,15 +8,16 @@
 Interpreting moving images is not a hard task. The medium film is often described as `dictatorial' because of the way the audience is immersed in a multi-modal experience controlled by the content's creators. When watching a film, we sit back and relax, passively taking in the presented information without much effort. A similar ease is reflected in our use of the word `couch potato' to describe the passive role of television audiences. Watching film or video gives us almost immediate access to a wide range of information about what is presented on screen. We recognise objects on screen and understand words that spoken in a language we know. We are also quick to infer a larger picture around the things we perceive, like personality traits of characters on screen and our emotional stance towards them. While most of these things happen extremely quickly and seemingly automatically to us humans, computers often have a hard time even starting to perceive a visual representation of an object.
 
 % explain how computers are having difficulties. in recognition, spatio/temporal segmentation (figure ground), qualitative evaluations are even more difficult.
-When we attend to visual content depicting parts of the world around us, we can't help ourselves from seeing its parts as separate entities. We recognise objects as if they stand out from their background even though they are simply patterns of colours on a two dimensional surface. To a computer, tasks like object segmentation and recognition are hard because visual information needs to be interpreted in some form of sequential processing. Digitally, images are usually represented by collections of numbers indicating local intensities (e.g. colour or brightness) at the different points that make up the image. How to calculate from this information, which objects are present, and what other concepts can be assigned to an image is studied in the field of computer vision. The task most related to finding computational interpretations of video content is video concept detection. Although recent years have seen important advances in the use of high-level semantical concepts in tasks like concept detection and concept-based video retrieval \cite{Snoek:2009dq, Snoek:jf, Worring:2007vm, Chang:2008wh}, computational methods commonly have difficulties in performing both reliably and generally.
+When we attend to visual content depicting parts of the world around us, we can't help ourselves from seeing its parts as separate entities. We recognise objects as if they stand out from their background even though they are simply patterns of colours on a two dimensional surface. To a computer, tasks like object segmentation and recognition are hard because visual information needs to be interpreted using some form of sequential processing. Digitally, images are usually represented by collections of numbers indicating local intensities (e.g. colour or brightness) at the different points that make up the image. How to calculate from this information, which objects are present, and what other concepts can be assigned to an image is studied in the field of computer vision. The tasks most related to finding computational interpretations of video content are video concept detection and video categorisation. Although recent years have seen important advances in the use of high-level semantical concepts in tasks like concept detection and concept-based video retrieval \cite{Snoek:2009dq, Snoek:jf, Worring:2007vm, Chang:2008wh}, computational methods commonly have difficulties in performing both reliably and generally.
 
 % setup chapter
 % scope of this chapter
-Because of the often elusive character of concepts like meaning and understanding, goals for this chapter are kept intensionally modest. The intension is not to give an accurate explanation of daunting concepts like meaning or semantics, nor is it to give an accurate account of the diverse work on signifying systems such as in the field of semiotics. This first chapter is meant to briefly introduce the difficulties that current computational methods have in arriving at meaningful interpretations of visual content. To this purpose we formulate a framework of computational interpretation of visual content that serves to establish terminology to work with in this work, rather than to make claims about the deeper functioning of human understanding or signifying systems. The next section addresses two high-level challenges to the goal of finding meaning in video and indicates how they arise. Of these, the \emph{semantic gap} is the most poignant and we take a look at how computational approaches aim to overcome this problem. The chapter concludes by pointing out outstanding challenges and hinting at a different solution that might step across the semantic gap altogether.
+Because of the elusive character of concepts like meaning and understanding, goals for this chapter are kept intensionally modest. The intension is not to give an accurate explanation of daunting concepts like meaning or semantics, nor is it to give an accurate account of the diverse work on signifying systems such as in the field of semiotics. This first chapter is meant to briefly introduce the difficulties that current computational methods have in arriving at meaningful interpretations of visual content. To this purpose we formulate a framework of computational interpretation of visual content that serves to establish terminology to work with in this work, rather than to make claims about the deeper functioning of human understanding or signifying systems. The next section addresses two high-level challenges to the goal of finding meaning in video and indicates how they arise. Of these, the \emph{semantic gap} is the most poignant and we take a look at how computational approaches aim to overcome this problem. The chapter concludes by pointing out outstanding challenges and hinting at a different solution that might step across the semantic gap altogether.
 
 % section introduction (end)
 
-\section{Challenges in Computational Interpretation of Visual Content}
+\section{Challenges in Computational Interpretation of Visual Content} % (fold)
+\label{sec:challenges_in_interpretation}
 
 % from world -> representation -> concepts
 As video content possesses most of its information in the visual stream, most research into the interpretation of video has focussed on the analysis of visual content \cite[ch.~2]{Snoek:2009dq}. To better understand what is going on in the interpretation of visual content by both humans and computers, it helps to model the process from start to end. Figure \ref{fig:understanding_visuals} shows in a high-level model how objects in the world are sensed and consequently rendered in a visual representation. We can think of this process taking place when we photograph a car and end up with a picture of that car as a result. When the representation of an object is next interpreted by someone, we can think of this person as establishing semantical concepts relating to aspects of the depiction. A situation to which this part of the model applies would be someone looking at the picture and recognising the car.
@@ -45,7 +46,7 @@ A second and more challenging issue that hinders meaningful computational interp
   ``The lack of correspondence between the low-level features that machines extract from video and the high-level conceptual interpretations a human gives to the data in a given situation.''\cite{Snoek:2009dq}
 \end{quote}
 
-One of the causes of the semantic gap is that the way people perceive images is mostly contextual\cite{Smeulders:2000tx}. We look for concepts that are already familiar from our environment or earlier encounters with visual content. Our perception of a simple object is determined by our vast background of personal experience and cultural upbringing. In contrast to these contextual interpretations, computational image descriptions rely purely on data-driven features that can be extracted from the content. Difficulties arise when there is a mismatch between the two.
+One of the causes of the semantic gap is that the way people interpret images is mostly contextual\cite{Smeulders:2000tx}. We look for concepts that are already familiar from our environment or earlier encounters with visual content. Our perception of a simple object is determined by our vast background of personal experience and cultural upbringing. In contrast to these contextual interpretations, computational image descriptions rely purely on data-driven features that can be extracted from the content. Difficulties arise when there is a mismatch between the two.
 
 % subjective interpretations; feeling and emotions
 Another cause of the gap are interpretations that are subjective in nature. Semantical concepts relating to feelings and emotions can vary widely across different people. Deciding computationally whether concepts such as ``romantic'' or ``funny'' apply to a piece of content is hard when there is no agreement about the interpretation to begin with.
@@ -57,6 +58,8 @@ Perceived concepts are also combined to infer a larger story around the things w
 Even if there is little context dependency in the perception or recognition of an object in video, it might still be hard for computational methods to produce appropriate semantical labels. This is due to the wide variety in appearance of visual concepts. Determining whether a clock is present in a video can be difficult because of the many different sizes, shapes and colours clock can have. 
 
 All of these issues contribute to the gap between the low-level features extracted from video and the interpretations humans give to them. Challenges posed by the semantic gap are of mayor concern to the research community focussing on multimedia retrieval based on querying by user defined semantical concepts. The challenge is thus relevant to different scientific disciplines such as computer vision, information retrieval, machine learning and human-computer interaction. The next section briefly reviews computational strategies that aim to narrow the semantic gap.
+
+% section challenges_in_computational_interpretation_of_visual_content (end)
 
 \section{Computational Undertakings of the Quest for Meaning}
 
@@ -76,23 +79,24 @@ To help alleviate the semantic gap between low-level features and high-level int
 Despite the different modalities that can collectively make up a piece of video, it's defining characteristic is the presence of a sequence of images. Most efforts to narrow the semantic gap in video systems focus on the visual modality and try to make use of the features that can be extracted from it. In their wide-ranging overview of concept-based video retrieval techniques, Snoek and Worring point to the following types of visual features that are used in video concept detection\cite{Snoek:2009dq}.
 
 \begin{itemize}
-  \item \Emph{Colour} - It Is an Obvious First Choice for the Representation of an Image As It Is Most Closely Related to the Way We Perceive Objects in the World. Colour Can Generally Be Represented in Different 3D Colour Spaces (E.G. Rgb, Hsv or L\*a\*B) and Has Discriminating Potential Superior to the Single Dimensional Greyscale Domain. In \cite{Smeulders:2000tx} Smeulders et al. indicate two aspects that can have to be considered when working with colour features. First is the considerable variability in appearance of coloured surfaces under different recording circumstances, contributing to the sensory gap. Second is the intricacy of human colour perception that has to be accounted for in addressing visual interpretations approaching those brought forth in human experience.
+  \item \emph{Colour} - Colour can generally be represented in different 3D colour spaces (e.g. rgb, hsv or l\*a\*b) and has discriminating potential superior to the single dimensional greyscale domain. In \cite{Smeulders:2000tx} Smeulders et al. indicate two aspects that have to be considered when working with colour features. First is the considerable variability in appearance of coloured surfaces under different recording circumstances, contributing to the sensory gap. Second is the intricacy of human colour perception that has to be accounted for in addressing visual interpretations approaching those brought forth in human experience.
   \item \emph{Texture} - While colour features can be calculated for every pixel in an image, texture features look at regions of multiple pixels to determine local patterns. Texture features are used to describe different materials or surfaces, for example the fine grained texture of sand versus the linear texture of hairs. A common practice is to capture directional patterns of texture using localised derivatives of changes in colour[TODO ref Gabor filters:  unsupervised texture segmentation using Gabor filters]. An example application of such methods is the detection of edges within an image.
 
   \item \emph{Shape} - When colours and textures of an image have been analysed, the resulting features can be used to partition images into smaller homogeneous areas. The shape of these areas can next be represented by features that either describe the shape's region or contour. Data-driven methods are used for \emph{weak segmentation}, where an image is deconstructed into shapes that share a visual property. [TODO ref R. C. Veltkamp and M. Hagedoorn, “State-of-the-art in shape matching,”] \emph{Strong segmentation} on the other hand, uses knowledge about the shapes of objects to delineate contours of semantic concepts in the image.
-\end{itemize}
 
-\item \emph{Temporal} - Besides addressing aspects of single video frames, visual features can also capture how characteristics of frames develop over time. By following how sequential images change over time, patterns of motion can be tracked to describe camera motion[TODO ref Y. Tonomura, A. Akutsu, Y. Taniguchi, and G. Suzuki, “Structured video computing,” IEEE MultiMedia, vol. 1, pp. 34–43, 1994.], motion of regions or points [TODO refJ. Sivic, F. Schaffalitzky, and A. Zisserman, “Object level grouping for video shots,” International Journal of Computer Vision, vol. 67, pp. 189–210, 2006.] or even the movement of segmented objects[TODO ref H. T. Nguyen, M. Worring, and A. Dev, “Detection of moving objects in video using a robust motion similarity measure].
+  \item \emph{Temporal} - Besides addressing aspects of single video frames, visual features can also capture how characteristics of frames develop over time. By following how sequential images change over time, patterns of motion can be tracked to describe camera motion[TODO ref Y. Tonomura, A. Akutsu, Y. Taniguchi, and G. Suzuki, “Structured video computing,” IEEE MultiMedia, vol. 1, pp. 34–43, 1994.], motion of regions or points [TODO refJ. Sivic, F. Schaffalitzky, and A. Zisserman, “Object level grouping for video shots,” International Journal of Computer Vision, vol. 67, pp. 189–210, 2006.] or even the movement of segmented objects[TODO ref H. T. Nguyen, M. Worring, and A. Dev, “Detection of moving objects in video using a robust motion similarity measure].
+
+\end{itemize}
 
 \subsubsection{Auditory Features}
 
-While the semantics of a video might be most prominently expressed in visual information, auditory signals can also be used to classify the type of video and event to detect concepts. In fact, auditory features may have the important advantage of being computationally cheaper relative to their visual counterparts. Considering this benefit, it can be strategic to start with an initial analysis of audio signals, and only proceed with more time-consuming video analyses if further disambiguation is required.
+While video semantics might be most prominently expressed in the visual domain, auditory signals can also be used for segment-type classification and concept detection. In fact, auditory features may have the important advantage of being computationally cheaper relative to their visual counterparts. Considering this benefit, it can be strategic to start with an initial analysis of audio signals, and only proceed with more costly video analyses if further disambiguation is required. Different types of audio signals can be used for analyses 
 
-As is the case for visual features, video content is first segmented before audio features are extracted. Generally, auditory feature extraction is done on two segmentation levels: short-term frame level and long-term clip level \cite{Wang:2000vf}. Frames are usually very short sample intervals spanning 10 to 40 ms, for which auditory signals are assumed to be stationary. The longer clips span multiple frames and are capture the changes in frame features over time.
+As is the case for visual features, video content is first segmented before audio features are extracted. Generally, auditory feature extraction is done on two levels: short-term frame level and long-term clip level \cite{Wang:2000vf}. Frames are usually very short sample intervals spanning 10 to 40 ms, for which auditory signals are assumed to be stationary. Clips have longer durations that span multiple frames and are used to capture the changes in frame features over time.
 
+In their overview of the merit of audio and visual features in the characterisation of semantic content, Wang et al. categorise audio features based on the type of information they are extracted from. They distinguish features based on \emph{volume}, \emph{zero crossing rate}, \emph{pitch} and \emph{spectral features}. Description of these features and their respective merit are left out of this thesis. Interested readers are referred to \cite{Wang:2000vf} for a detailed explanation. With frames analysed, features at clip level can be calculated to reflect the changes in frame level features over time. The different types of features on clip level can be characterised by the categories of the frame level features they are based on.
 
-
-[also see G. Lu, “Indexing and retrieval of audio: A survey,” Multimedia Tools and Applications, vol. 15, pp. 269–290, 2001.]
+[TODO also see G. Lu, “Indexing and retrieval of audio: A survey,” Multimedia Tools and Applications, vol. 15, pp. 269–290, 2001.]
 
 \subsubsection{Textual Features}
 
@@ -107,14 +111,6 @@ While some works investigate the role of auditory\cite{Wang:2000vf} and textual 
 
 
 
-\subsubsection{Structural Features}
-
-
-
-
-[cite bordwell \& Thompson: analysis of context dependency]
-% hypervideo as form of 1 narrative 2 navigation, link to database documentary
-[HyperCafe: Narrative and Aesthetic Properties of Hypervideo \cite{Sawhney:1996tk}]
 
 
 \subsection{Supervised Learning}
@@ -136,6 +132,15 @@ Once features are extracted for a collection of videos, they can be studied to s
 % problem of keeping ML techniques up to date in a dynamical environment where new content is added every minute (and a lot of it as we will see when we discuss user generated online video)
 
 % section outstanding_challenges (end)
+
+\subsection{Structural Features}
+
+
+
+
+[cite bordwell \& Thompson: analysis of context dependency]
+% hypervideo as form of 1 narrative 2 navigation, link to database documentary
+[HyperCafe: Narrative and Aesthetic Properties of Hypervideo \cite{Sawhney:1996tk}]
 
 
 \section{Discussion} % (fold)
