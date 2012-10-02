@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  2 OCT 2012 03:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  2 OCT 2012 16:09
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -483,17 +483,18 @@ LaTeX Warning: Citation `gernsbacher1995coherence' on page 7 undefined on input
 LaTeX Warning: Citation `Graesser:1994va' on page 7 undefined on input line 54.
 
 
-
-LaTeX Warning: Citation `Wang:2000vf' on page 7 undefined on input line 63.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
-(/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
+[7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+ (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
- [7])
-(./tex/main/humanComputation.tex [8] [9]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+ [8]
+
+LaTeX Warning: Citation `Wang:2000vf' on page 9 undefined on input line 104.
+
+) (./tex/main/humanComputation.tex [9]
 Chapter 3.
 [10
 
@@ -531,7 +532,7 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
  [19]
-<img/vimeoCC.png, id=508, 349.7868pt x 183.5658pt>
+<img/vimeoCC.png, id=509, 349.7868pt x 183.5658pt>
 File: img/vimeoCC.png Graphic file (type png)
  <use img/vimeoCC.png>
 Missing character: There is no ‚ in font cmr10!
@@ -539,14 +540,14 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
 [20 <./img/vimeoCC.png>]
-<img/instructions.png, id=521, 748.7975pt x 410.53375pt>
+<img/instructions.png, id=522, 748.7975pt x 410.53375pt>
 File: img/instructions.png Graphic file (type png)
 
 <use img/instructions.png> [21 <./img/instructions.png (PNG copy)>]
-<img/pplay1.png, id=532, 437.635pt x 602.25pt>
+<img/pplay1.png, id=533, 437.635pt x 602.25pt>
 File: img/pplay1.png Graphic file (type png)
  <use img/pplay1.png>
-<img/pplay2_cursor.png, id=533, 437.635pt x 602.25pt>
+<img/pplay2_cursor.png, id=534, 437.635pt x 602.25pt>
 File: img/pplay2_cursor.png Graphic file (type png)
 
 <use img/pplay2_cursor.png>
@@ -555,25 +556,25 @@ Overfull \hbox (4.86667pt too wide) in paragraph at lines 258--277
  []
 
 [22 <./img/pplay1.png> <./img/pplay2_cursor.png>]
-<img/preparing_content.png, id=544, 487.46115pt x 164.0529pt>
+<img/preparing_content.png, id=545, 487.46115pt x 164.0529pt>
 File: img/preparing_content.png Graphic file (type png)
 
 <use img/preparing_content.png> [23 <./img/preparing_content.png>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 329.
 
-<img/framework.png, id=558, 564.4287pt x 542.7477pt>
+<img/framework.png, id=557, 564.4287pt x 542.7477pt>
 File: img/framework.png Graphic file (type png)
  <use img/framework.png>
 [24] [25 <./img/framework.png>] [26] [27]) (./tex/main/evaluation.tex [28]
 Chapter 5.
-<img/exp_posbias.png, id=597, 187.902pt x 93.58965pt>
+<img/exp_posbias.png, id=596, 187.902pt x 93.58965pt>
 File: img/exp_posbias.png Graphic file (type png)
 
 <use img/exp_posbias.png> [29
 
  <./img/exp_posbias.png>]
-<img/exp_context.png, id=609, 187.54065pt x 93.58965pt>
+<img/exp_context.png, id=608, 187.54065pt x 93.58965pt>
 File: img/exp_context.png Graphic file (type png)
 
 <use img/exp_context.png> [30 <./img/exp_context.png>]
@@ -624,11 +625,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7411 strings out of 493848
  110533 string characters out of 3149207
- 203466 words of memory out of 3000000
+ 203467 words of memory out of 3000000
  10342 multiletter control sequences out of 15000+200000
  12189 words of font info for 44 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,10n,45p,1213b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,10n,45p,1444b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -659,7 +660,7 @@ exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (41 pages, 1161100 bytes).
+Output written on dissertation_main.pdf (41 pages, 1163482 bytes).
 PDF statistics:
  749 PDF objects out of 1000 (max. 8388607)
  185 named destinations out of 1000 (max. 500000)

@@ -3,13 +3,13 @@
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Challenges in Computational Interpretation of Visual Content}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Computational Undertakings of the Quest for Meaning}{7}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Feature Extraction}{7}{subsection.2.3.1}
-\contentsline {subsubsection}{Visual Features}{7}{section*.3}
+\contentsline {subsection}{\numberline {2.3.1}Feature Extraction}{8}{subsection.2.3.1}
+\contentsline {subsubsection}{Visual Features}{8}{section*.3}
 \contentsline {subsubsection}{Structural Features}{8}{section*.4}
-\contentsline {subsubsection}{Textual features}{8}{section*.5}
-\contentsline {subsubsection}{Audio features}{8}{section*.6}
-\contentsline {subsubsection}{H}{8}{section*.7}
-\contentsline {subsection}{\numberline {2.3.2}Supervised Learning}{8}{subsection.2.3.2}
+\contentsline {subsubsection}{Textual features}{9}{section*.5}
+\contentsline {subsubsection}{Auditory features}{9}{section*.6}
+\contentsline {subsubsection}{H}{9}{section*.7}
+\contentsline {subsection}{\numberline {2.3.2}Supervised Learning}{9}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Outstanding Challenges}{9}{section.2.4}
 \contentsline {section}{\numberline {2.5}Discussion}{9}{section.2.5}
 \contentsline {chapter}{\numberline {3}Human Computation towards Visual Meaning}{10}{chapter.3}
