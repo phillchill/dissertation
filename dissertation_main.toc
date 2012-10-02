@@ -1,76 +1,77 @@
 \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
 \contentsline {chapter}{\numberline {2}The Quest for Meaning in Video}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Computational Undertakings of the Quest for Meaning}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Meaning in Visuals}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Meaning in Concept}{7}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Meaning in Structure}{7}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Meaning in Annotations}{7}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Computational Undertakings of the Quest}{7}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}The Semantic Gap}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Steps towards Meaning: An Overview}{7}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Indexing to enable search}{7}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Computational Difficulties}{7}{section.2.4}
-\contentsline {chapter}{\numberline {3}Human Computation towards Visual Meaning}{8}{chapter.3}
-\contentsline {section}{\numberline {3.1}Characterising Human Computation}{8}{section.3.1}
-\contentsline {section}{\numberline {3.2}Humans Computing Visual Meaning}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Examples}{9}{subsection.3.2.1}
-\contentsline {subsubsection}{ESP Game}{9}{section*.3}
-\contentsline {subsubsection}{Peek-a-Boom}{9}{section*.4}
-\contentsline {subsubsection}{reCaptcha}{9}{section*.5}
-\contentsline {section}{\numberline {3.3}Computation in Interaction}{9}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}The web as platform for creation}{9}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Deriving Meaning from Video Via Human Factors}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Collaborative Filtering}{9}{section.3.5}
-\contentsline {section}{\numberline {3.6}A Characterisation of Human Computation Systems}{9}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Purpose}{9}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Motivation}{9}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Task}{9}{subsection.3.6.3}
-\contentsline {chapter}{\numberline {4}Human Computed Stories in wePorter}{10}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{10}{section.4.1}
-\contentsline {section}{\numberline {4.2}User Generated Video Content}{10}{section.4.2}
-\contentsline {section}{\numberline {4.3}The Purpose}{11}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Different Aims}{11}{subsection.4.3.1}
-\contentsline {subsubsection}{Direct Navigation}{11}{section*.6}
-\contentsline {subsubsection}{Search and Goal-oriented browse}{11}{section*.7}
-\contentsline {subsubsection}{Unarticulated Want}{12}{section*.8}
-\contentsline {subsubsection}{Encapsulated Wander}{12}{section*.9}
-\contentsline {subsection}{\numberline {4.3.2}Serving the Purpose of Encapsulated Wander}{12}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Storytelling as Structured Recommendation}{13}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}The Motivation}{14}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Information Provision through Online Video}{14}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Informative Entertainment}{14}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}The Task}{15}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Design Considerations}{15}{subsection.4.5.1}
-\contentsline {subsubsection}{wePorter is a web interface}{15}{section*.10}
-\contentsline {subsubsection}{Hypervideo}{15}{section*.11}
-\contentsline {subsubsection}{Localised Interest}{16}{section*.12}
-\contentsline {subsubsection}{Forced Feedback}{16}{section*.13}
-\contentsline {subsubsection}{Preference Elicitation by Parallel Play}{16}{section*.14}
-\contentsline {subsubsection}{Recurrent Interaction}{17}{section*.15}
-\contentsline {subsubsection}{Users Between Consumers and Producers}{17}{section*.16}
-\contentsline {subsubsection}{The Death of the Author, the Birth of Collective Creation}{17}{section*.17}
-\contentsline {subsection}{\numberline {4.5.2}The Interface}{19}{subsection.4.5.2}
-\contentsline {subsubsection}{A Walkthrough}{19}{section*.19}
-\contentsline {section}{\numberline {4.6}Implementation}{21}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Preparation of Content}{21}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}The live system}{22}{subsection.4.6.2}
-\contentsline {subsubsection}{Loading Sequences}{24}{section*.24}
-\contentsline {subsection}{\numberline {4.6.3}Hypervideo in a Web Browser}{24}{subsection.4.6.3}
-\contentsline {chapter}{\numberline {5}Evaluation}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Preliminary Experiments}{27}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Positional Bias}{27}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Context Dependency}{28}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Main Experiments}{28}{section.5.2}
-\contentsline {section}{\numberline {5.3}Setup}{29}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Clean Data}{29}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Landscapes of Attention}{29}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Evaluating Focus}{30}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Questionnaire}{30}{section.5.4}
-\contentsline {section}{\numberline {5.5}Discussion}{30}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Potential Extensions}{30}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Feedback from Comments}{31}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}Future Directions}{32}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclusions}{33}{chapter.7}
-\contentsline {section}{\numberline {7.1}Acknowledgements}{33}{section.7.1}
-\contentsline {chapter}{Bibliography}{35}{section.7.1}
+\contentsline {section}{\numberline {2.2}Challenges in Computational Interpretation of Visual Content}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Computational Undertakings of the Quest for Meaning}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Feature Extraction}{7}{subsection.2.3.1}
+\contentsline {subsubsection}{Visual Features}{7}{section*.3}
+\contentsline {subsubsection}{Structural Features}{8}{section*.4}
+\contentsline {subsubsection}{Textual features}{8}{section*.5}
+\contentsline {subsubsection}{Audio features}{8}{section*.6}
+\contentsline {subsubsection}{H}{8}{section*.7}
+\contentsline {subsection}{\numberline {2.3.2}Supervised Learning}{8}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Outstanding Challenges}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Discussion}{9}{section.2.5}
+\contentsline {chapter}{\numberline {3}Human Computation towards Visual Meaning}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Characterising Human Computation}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}Humans Computing Visual Meaning}{11}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Examples}{11}{subsection.3.2.1}
+\contentsline {subsubsection}{ESP Game}{11}{section*.8}
+\contentsline {subsubsection}{Peek-a-Boom}{11}{section*.9}
+\contentsline {subsubsection}{reCaptcha}{11}{section*.10}
+\contentsline {section}{\numberline {3.3}Computation in Interaction}{11}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}The web as platform for creation}{11}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Deriving Meaning from Video Via Human Factors}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Collaborative Filtering}{11}{section.3.5}
+\contentsline {section}{\numberline {3.6}A Characterisation of Human Computation Systems}{11}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Purpose}{11}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Motivation}{11}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Task}{11}{subsection.3.6.3}
+\contentsline {chapter}{\numberline {4}Human Computed Stories in wePorter}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}User Generated Video Content}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}The Purpose}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Different Aims}{13}{subsection.4.3.1}
+\contentsline {subsubsection}{Direct Navigation}{13}{section*.11}
+\contentsline {subsubsection}{Search and Goal-oriented browse}{13}{section*.12}
+\contentsline {subsubsection}{Unarticulated Want}{14}{section*.13}
+\contentsline {subsubsection}{Encapsulated Wander}{14}{section*.14}
+\contentsline {subsection}{\numberline {4.3.2}Serving the Purpose of Encapsulated Wander}{14}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Storytelling as Structured Recommendation}{15}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}The Motivation}{16}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Information Provision through Online Video}{16}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Informative Entertainment}{16}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}The Task}{17}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Design Considerations}{17}{subsection.4.5.1}
+\contentsline {subsubsection}{wePorter is a web interface}{17}{section*.15}
+\contentsline {subsubsection}{Hypervideo}{17}{section*.16}
+\contentsline {subsubsection}{Localised Interest}{18}{section*.17}
+\contentsline {subsubsection}{Forced Feedback}{18}{section*.18}
+\contentsline {subsubsection}{Preference Elicitation by Parallel Play}{18}{section*.19}
+\contentsline {subsubsection}{Recurrent Interaction}{19}{section*.20}
+\contentsline {subsubsection}{Users Between Consumers and Producers}{19}{section*.21}
+\contentsline {subsubsection}{The Death of the Author, the Birth of Collective Creation}{19}{section*.22}
+\contentsline {subsection}{\numberline {4.5.2}The Interface}{21}{subsection.4.5.2}
+\contentsline {subsubsection}{A Walkthrough}{21}{section*.24}
+\contentsline {section}{\numberline {4.6}Implementation}{23}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Preparation of Content}{23}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}The live system}{24}{subsection.4.6.2}
+\contentsline {subsubsection}{Loading Sequences}{26}{section*.29}
+\contentsline {subsection}{\numberline {4.6.3}Hypervideo in a Web Browser}{26}{subsection.4.6.3}
+\contentsline {chapter}{\numberline {5}Evaluation}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Preliminary Experiments}{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Positional Bias}{29}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Context Dependency}{30}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Main Experiments}{30}{section.5.2}
+\contentsline {section}{\numberline {5.3}Setup}{31}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Clean Data}{31}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Landscapes of Attention}{31}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Evaluating Focus}{32}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Questionnaire}{32}{section.5.4}
+\contentsline {section}{\numberline {5.5}Discussion}{32}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Potential Extensions}{32}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Feedback from Comments}{33}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}Future Directions}{34}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclusions}{35}{chapter.7}
+\contentsline {chapter}{\numberline {8}Acknowledgements}{36}{chapter.8}
+\contentsline {chapter}{Bibliography}{37}{chapter.8}

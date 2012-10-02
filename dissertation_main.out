@@ -1,16 +1,12 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}
 \BOOKMARK [0][-]{chapter.2}{The Quest for Meaning in Video}{}
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}
-\BOOKMARK [1][-]{section.2.2}{Computational Undertakings of the Quest for Meaning}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.2.1}{Meaning in Visuals}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.2}{Meaning in Concept}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.3}{Meaning in Structure}{section.2.2}
-\BOOKMARK [2][-]{subsection.2.2.4}{Meaning in Annotations}{section.2.2}
-\BOOKMARK [1][-]{section.2.3}{Computational Undertakings of the Quest}{chapter.2}
-\BOOKMARK [2][-]{subsection.2.3.1}{The Semantic Gap}{section.2.3}
-\BOOKMARK [2][-]{subsection.2.3.2}{Steps towards Meaning: An Overview}{section.2.3}
-\BOOKMARK [2][-]{subsection.2.3.3}{Indexing to enable search}{section.2.3}
-\BOOKMARK [1][-]{section.2.4}{Computational Difficulties}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{Challenges in Computational Interpretation of Visual Content}{chapter.2}
+\BOOKMARK [1][-]{section.2.3}{Computational Undertakings of the Quest for Meaning}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Feature Extraction}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Supervised Learning}{section.2.3}
+\BOOKMARK [1][-]{section.2.4}{Outstanding Challenges}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{Discussion}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Human Computation towards Visual Meaning}{}
 \BOOKMARK [1][-]{section.3.1}{Characterising Human Computation}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Humans Computing Visual Meaning}{chapter.3}
@@ -55,5 +51,5 @@
 \BOOKMARK [2][-]{subsection.5.5.2}{Feedback from Comments}{section.5.5}
 \BOOKMARK [0][-]{chapter.6}{Future Directions}{}
 \BOOKMARK [0][-]{chapter.7}{Conclusions}{}
-\BOOKMARK [1][-]{section.7.1}{Acknowledgements}{chapter.7}
-\BOOKMARK [0][-]{section.7.1}{Bibliography}{}
+\BOOKMARK [0][-]{chapter.8}{Acknowledgements}{}
+\BOOKMARK [0][-]{chapter.8}{Bibliography}{}
