@@ -124,6 +124,12 @@ Related to this is the idea that for accurate interpretations, a system might ha
 % temporal processing is computationally costly and time consuming
 Processing visuals is a complex matter in its own right, but the temporal aspect of video add an extra dimension worth of challenges. The sequential nature of video makes it a very information rich medium, with much to gain from but also many to be  challenged by. Looking at temporal features is costly and therefore currently left largely unexplored.
 
+Even though the combination of low-level feature extraction and supervised learning builds a bridge across the semantic gap, these methods leave many intermediary levels of interpretation unaddressed. Of particular importance seem to be narrative analyses that characterise scenes within a video according to the role they play in a story. These features are very conceptual and thus hard to detect automatically by data driven procedures based on low-level features. A second difficulty comes from the fact that characterisation of these concepts is hugely dependent on the context in which they are presented. Because narrative structure arises from sequential ordering of elements in time, it requires analysis that addresses a range of shots or scenes which is costly because of aforementioned reasons. It has been shown that the configuration of elements in film and video can strongly affect the meaning that emerges from their assemblage. This property is dealt with extensively in studies of cinema\cite{Bordwell:1985tz} and is termed the `Kuleshov effect', after Lev Kuleshov who is an early investigator of this dependency effect:
+
+\begin{quote}
+  ``one must not forget that the location of the shot in a a montage phrase is crucial, because it is the position that, more often than not, explains the essence of the meaning intended by the artist-editor, his purpose (often the position in the montage alters the content).''\cite[``The Principles of Montage'']{kuleshov1974kuleshov}
+\end{quote}
+
 % wide domains e.g. ugvc
 Perhaps the biggest challenge in the automatic interpretation of video is the wide variety of content that is produced and distributed nowadays. When considering ``\emph{narrow domains}'' of visual content, variations in appearance across different concepts are limited and predictable\cite{Smeulders:2000tx}. This makes narrow domains relatively easy to interpret as accidental distortions due to the sensory gap are limited. The contrary is true for broad domains:
 
@@ -131,57 +137,55 @@ Perhaps the biggest challenge in the automatic interpretation of video is the wi
   ``A broad domain has an unlimited and unpredictable variability in its appearance even for the same semantic meaning.''\cite{Smeulders:2000tx}
 \end{quote}
 
-Phrased in the context of image retrieval, Smeulders et al. further illustrate the idea of broad domains by mentioning the set of images available on the Internet as the broadest class available. The same can be said for video and regarding the enormous amount of user-generated video content that gets uploaded, we can consider YouTube to come frighteningly close to this widest scope.
+The broader a domain, the wider the semantic gap. Phrased in the context of image retrieval, Smeulders et al. further illustrate the idea of broad domains by mentioning the set of images available on the internet as the broadest class available. The same can be said about video. Regarding the enormous amount of user-generated video content that are put online, a platform like YouTube comes frighteningly close to this broadest scope. With so many users actively participating on such large scale platforms, extremely broad domains of video content become realities to be dealt with appropriately and this may prove a main hurdle in effort of solving the problems posed by the semantic gap.
 
 % section outstanding_challenges (end)
 
-\subsection{Structural Features}
-
-[cite bordwell \& Thompson: analysis of context dependency]
-% hypervideo as form of 1 narrative 2 navigation, link to database documentary
-[HyperCafe: Narrative and Aesthetic Properties of Hypervideo \cite{Sawhney:1996tk}]
-
-
-\section{Interactive Storytelling: From database to data-based}
-
-\subsection{Symbolic approaches to storytelling}
-\cite{Vilmos:2011wv,RodrigoLaiolaGuimaraes:2011tl,Ursu:2009gc}
-
-\subsection{Statistic, emergent approaches}
-\label{sec:statistic}
-
-NLP
-
-\subsection{Remixing}
-
-The reconfiguration of smaller units that carry meaning within themselves is common practice for textual media such as blogs, where it is easy to quote part of  another author`s writing in a new post [ref]. 
-
-It needs to be said that some reconfiguration of videos is taking place, but even though it often concerns content that was originally sourced online, much of the creative act of remixing happens offline.
-
-
-% Taking the remix online
-
-examples like: Aaron Koblin (johnny cash project, exquisite corps, etc)
-
-there is even word of a true remix culture\cite{Diakopoulos:2007tl}.
-
-the availability of multimedia content via the internet has meant a surge in 
-
-
-
-
-
-\section{Discussion} % (fold)
-\label{sec:discussion}
-
-
-\subsection
-Human interaction [Relevance feedback: A power tool for interactive content-based image retrieval]\cite{Rui:1998uj}
-[collaborative filtering] \url{http://en.wikipedia.org/wiki/Collaborative_filtering}
-
-
-% section discussion (end)
-
-
-
-
+% \subsection{Structural Features}
+% 
+% [cite bordwell \& Thompson: analysis of context dependency]
+% 
+% 
+% % hypervideo as form of 1 narrative 2 navigation, link to database documentary
+% [HyperCafe: Narrative and Aesthetic Properties of Hypervideo \cite{Sawhney:1996tk}]
+% 
+% 
+% \section{Interactive Storytelling: From database to data-based}
+% 
+% \subsection{Symbolic approaches to storytelling}
+% \cite{Vilmos:2011wv,RodrigoLaiolaGuimaraes:2011tl,Ursu:2009gc}
+% 
+% \subsection{Statistic, emergent approaches}
+% \label{sec:statistic}
+% 
+% NLP
+% 
+% \subsection{Remixing}
+% 
+% The reconfiguration of smaller units that carry meaning within themselves is common practice for textual media such as blogs, where it is easy to quote part of  another author`s writing in a new post [ref]. 
+% 
+% It needs to be said that some reconfiguration of videos is taking place, but even though it often concerns content that was originally sourced online, much of the creative act of remixing happens offline.
+% 
+% 
+% % Taking the remix online
+% 
+% examples like: Aaron Koblin (johnny cash project, exquisite corps, etc)
+% 
+% there is even word of a true remix culture\cite{Diakopoulos:2007tl}.
+% 
+% the availability of multimedia content via the internet has meant a surge in 
+% 
+% \section{Discussion} % (fold)
+% \label{sec:discussion}
+% 
+% 
+% \subsection
+% Human interaction [Relevance feedback: A power tool for interactive content-based image retrieval]\cite{Rui:1998uj}
+% [collaborative filtering] \url{http://en.wikipedia.org/wiki/Collaborative_filtering}
+% 
+% 
+% % section discussion (end)
+% 
+% 
+% 
+% 

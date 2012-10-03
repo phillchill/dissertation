@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  2 OCT 2012 21:39
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.5.29)  3 OCT 2012 11:14
 entering extended mode
  file:line:error style messages enabled.
  %&-line parsing enabled.
@@ -343,6 +343,9 @@ Package: `setspace' 6.7 <2000/12/01>
 ))
 (./dissertation_main.aux
 
+LaTeX Warning: Label `sec:introduction' multiply defined.
+
+
 LaTeX Warning: Label `sec:discussion' multiply defined.
 
 )
@@ -465,38 +468,41 @@ LaTeX Warning: Citation `Worring:2007vm' on page 5 undefined on input line 11.
 
 LaTeX Warning: Citation `Chang:2008wh' on page 5 undefined on input line 11.
 
+
+LaTeX Warning: Citation `Urban:2006up' on page 5 undefined on input line 11.
+
 [5
 
-] <img/understanding_visuals.png, id=323, 325.57635pt x 72.63135pt>
+] <img/understanding_visuals.png, id=354, 325.57635pt x 72.63135pt>
 File: img/understanding_visuals.png Graphic file (type png)
 
 <use img/understanding_visuals.png> [6 <./img/understanding_visuals.png>]
 
-LaTeX Warning: Citation `Bordwell:1985tz' on page 7 undefined on input line 54.
+LaTeX Warning: Citation `Bordwell:1985tz' on page 7 undefined on input line 57.
 
 
 
 LaTeX Warning: Citation `gernsbacher1995coherence' on page 7 undefined on input
- line 54.
+ line 57.
 
 
-LaTeX Warning: Citation `Graesser:1994va' on page 7 undefined on input line 54.
+LaTeX Warning: Citation `Graesser:1994va' on page 7 undefined on input line 57.
 
 
 
-LaTeX Warning: Citation `Wang:2000vf' on page 7 undefined on input line 63.
-
-
-LaTeX Warning: Citation `Wang:2000vf' on page 7 undefined on input line 65.
+LaTeX Warning: Citation `Wang:2000vf' on page 7 undefined on input line 68.
 
 [7]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 79.
+
+LaTeX Warning: Citation `Wang:2000vf' on page 8 undefined on input line 70.
+
+[8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
  (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [8]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -524,32 +530,39 @@ Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
+ [9]
+
+LaTeX Warning: Citation `Wang:2000vf' on page 10 undefined on input line 97.
 
 
-LaTeX Warning: Citation `Wang:2000vf' on page 9 undefined on input line 92.
+LaTeX Warning: Citation `Wang:2000vf' on page 10 undefined on input line 99.
+
+[10]
+
+LaTeX Warning: Citation `kuleshov1974kuleshov' on page 11 undefined on input li
+ne 130.
+
+[11]
+
+LaTeX Warning: Citation `Vilmos:2011wv' on page 12 undefined on input line 154.
 
 
-LaTeX Warning: Citation `Wang:2000vf' on page 9 undefined on input line 94.
 
-[9]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
+LaTeX Warning: Citation `RodrigoLaiolaGuimaraes:2011tl' on page 12 undefined on
+ input line 154.
 
 
-LaTeX Warning: Citation `Wang:2000vf' on page 10 undefined on input line 100.
+LaTeX Warning: Citation `Ursu:2009gc' on page 12 undefined on input line 154.
 
-) (./tex/main/humanComputation.tex [10]
+
+LaTeX Warning: Citation `Diakopoulos:2007tl' on page 12 undefined on input line
+ 172.
+
+) (./tex/main/humanComputation.tex [12]
 Chapter 3.
-[11
+[13
 
-]) (./tex/main/weporter.tex [12]
+]) (./tex/main/weporter.tex [14]
 Chapter 4.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -563,7 +576,7 @@ Missing character: There is no î in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-[13
+[15
 
 ]
 Overfull \hbox (33.35472pt too wide) in paragraph at lines 60--60
@@ -571,34 +584,41 @@ Overfull \hbox (33.35472pt too wide) in paragraph at lines 60--60
  / 07 / greetings-[]everyone-[]thanks-[]for-[]visiting .
  []
 
-[14] [15] [16]
+[16] [17] [18]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [17] [18] [19]
+ [19] [20] [21]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [20]
-<img/vimeoCC.png, id=520, 349.7868pt x 183.5658pt>
+ [22]
+
+LaTeX Warning: Citation `Diakopoulos:2007jn' on page 23 undefined on input line
+ 207.
+
+
+LaTeX Warning: Citation `Luther:2010wq' on page 23 undefined on input line 207.
+
+
+<img/vimeoCC.png, id=565, 349.7868pt x 183.5658pt>
 File: img/vimeoCC.png Graphic file (type png)
  <use img/vimeoCC.png>
+[23 <./img/vimeoCC.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 
-[21 <./img/vimeoCC.png>]
-<img/instructions.png, id=533, 748.7975pt x 410.53375pt>
+<img/instructions.png, id=579, 748.7975pt x 410.53375pt>
 File: img/instructions.png Graphic file (type png)
 
-<use img/instructions.png> [22 <./img/instructions.png (PNG copy)>]
-<img/pplay1.png, id=544, 437.635pt x 602.25pt>
+<use img/instructions.png> <img/pplay1.png, id=583, 437.635pt x 602.25pt>
 File: img/pplay1.png Graphic file (type png)
- <use img/pplay1.png>
-<img/pplay2_cursor.png, id=545, 437.635pt x 602.25pt>
+
+<use img/pplay1.png> <img/pplay2_cursor.png, id=584, 437.635pt x 602.25pt>
 File: img/pplay2_cursor.png Graphic file (type png)
 
 <use img/pplay2_cursor.png>
@@ -606,54 +626,58 @@ Overfull \hbox (4.86667pt too wide) in paragraph at lines 258--277
  [][]  [] 
  []
 
-[23 <./img/pplay1.png> <./img/pplay2_cursor.png>]
-<img/preparing_content.png, id=557, 487.46115pt x 164.0529pt>
+[24] [25 <./img/instructions.png (PNG copy)> <./img/pplay1.png> <./img/pplay2_c
+ursor.png>] <img/preparing_content.png, id=602, 487.46115pt x 164.0529pt>
 File: img/preparing_content.png Graphic file (type png)
 
-<use img/preparing_content.png> [24 <./img/preparing_content.png>]
+<use img/preparing_content.png> [26]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 329.
-
-<img/framework.png, id=568, 564.4287pt x 542.7477pt>
+ [27 <./img/preparing_content.png>]
+<img/framework.png, id=620, 564.4287pt x 542.7477pt>
 File: img/framework.png Graphic file (type png)
  <use img/framework.png>
-[25] [26 <./img/framework.png>] [27] [28]) (./tex/main/evaluation.tex [29]
+[28 <./img/framework.png>] [29] [30]) (./tex/main/evaluation.tex [31]
 Chapter 5.
-<img/exp_posbias.png, id=608, 187.902pt x 93.58965pt>
+<img/exp_posbias.png, id=653, 187.902pt x 93.58965pt>
 File: img/exp_posbias.png Graphic file (type png)
 
-<use img/exp_posbias.png> [30
+<use img/exp_posbias.png> [32
 
- <./img/exp_posbias.png>]
-<img/exp_context.png, id=619, 187.54065pt x 93.58965pt>
+]
+<img/exp_context.png, id=665, 187.54065pt x 93.58965pt>
 File: img/exp_context.png Graphic file (type png)
 
-<use img/exp_context.png> [31 <./img/exp_context.png>]
-Overfull \hbox (1.5414pt too wide) in paragraph at lines 64--64
+<use img/exp_context.png> [33 <./img/exp_posbias.png> <./img/exp_context.png>]
+Overfull \hbox (1.5414pt too wide) in paragraph at lines 66--66
 []\OT1/cmr/bx/n/10.95 Length
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 70--70
+Underfull \hbox (badness 1389) in paragraph at lines 72--72
 []\OT1/cmr/m/n/10.95 ``Queens di-a-mond ju-bilee Lon-don 5th June
  []
 
 
-Overfull \hbox (30.33398pt too wide) in paragraph at lines 62--76
+Overfull \hbox (30.33398pt too wide) in paragraph at lines 64--78
 [][] 
  []
 
-[32] [33]) (./tex/main/future.tex [34]
+<img/videoparts_focus.png, id=676, 609.2361pt x 182.48175pt>
+File: img/videoparts_focus.png Graphic file (type png)
+
+<use img/videoparts_focus.png> [34] [35 <./img/videoparts_focus.png>])
+(./tex/main/future.tex [36]
 Chapter 6.
-)) (./tex/conclusions.tex [35
+)) (./tex/conclusions.tex [37
 
 ]
 Chapter 7.
-) (./tex/acknowledgements.tex [36
+) (./tex/acknowledgements.tex [38
 
 ]
 Chapter 8.
-) [37
+) [39
 
 ] (./tex/mybibliography.tex (./dissertation_main.bbl
 Missing character: There is no ‚ in font cmr10!
@@ -661,10 +685,10 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
- [38
+ [40
 
 
-] [39])) [40]
+] [41])) [42]
 (./dissertation_main.aux)
 
 LaTeX Warning: There were undefined references.
@@ -674,17 +698,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7413 strings out of 493848
- 110563 string characters out of 3149207
- 203468 words of memory out of 3000000
- 10343 multiletter control sequences out of 15000+200000
+ 7445 strings out of 493848
+ 111192 string characters out of 3149207
+ 203799 words of memory out of 3000000
+ 10365 multiletter control sequences out of 15000+200000
  12189 words of font info for 44 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,10n,45p,1302b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
+ 43i,10n,45p,1365b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{algorithm.3} has been referenced but does not exist
@@ -694,6 +718,9 @@ pdfTeX warning (dest): name{algorithm.2} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{algorithm.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
@@ -711,9 +738,9 @@ exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
 ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
 e/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on dissertation_main.pdf (42 pages, 1170055 bytes).
+Output written on dissertation_main.pdf (44 pages, 1343417 bytes).
 PDF statistics:
- 760 PDF objects out of 1000 (max. 8388607)
- 186 named destinations out of 1000 (max. 500000)
- 494 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 811 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 
