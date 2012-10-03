@@ -1,87 +1,146 @@
 \chapter{Human Computation towards Visual Meaning}
 \label{ch:humancomputation}
 
- 
+\section{Introduction} % (fold)
+\label{sec:introduction}
+% TODO define HCS
 
-\section{Characterising Human Computation}
-% [Define GWAP]
-
-In a recent survey paper, Quinn and Bederson present a taxonomy of Human computation systems\cite{Quinn:2011us}. They sketch out the trend of this new method for intelligent problem solving by the increase of academic papers featuring the term `human computation' and its relative `crowd-sourcing'. They summarise the myriad of definitions given in recent works by several different authors in two key points:
-
-\begin{itemize}
-  \item ``The problems fit  the general paradigm of computation, and as such might someday be solvable by computers."
-  \item ``The human participation is directed by the computational system of process"
-\end{itemize}
-
-The first point introduces an interesting question whether storytelling is a computable process.
-In 1950, Alan Turing envisioned in his seminal paper `Computing Machinery and Intelligence' that a computer program would be able to successfully play a game now known as the Turing Test. His work also mentions that 
-
+% historic antecedents
+In 1950, Alan Turing envisioned in his seminal paper `Computing Machinery and Intelligence' that a computer program would once be able to successfully play an imitation game now known as the Turing Test. His work mentions that
 \begin{quote}
   ``[t]he idea behind digital computers may be explained by saying that these machines are intended to carry out any operations which could be done by a human computer''\cite{Turing:1950wi}
 \end{quote}
 
-The notion of `human computer' benefits from some contextualisation, as in the last few decades we've become unaccustomed to the term. Human computers were not uncommon in the time of Turing and before that from the 18th century, when `computer' was used to signify `one who computes'\cite{grier2007computers}. People bearing the function title were involved in the execution of calculations produced by strictly following mathematical theories. The activity that these computers were involved in was a process of rote, not requiring any human creativity. While working on the design for the first ever mechanical computer, Charles Babbage called it ``mental labour''\cite[Ch.\ 20]{Babbage:1832vu}.
-
-Quinn and Bederson further present a classification along six dimensions they see as the most salient distinguishing factors: \cite{Quinn:2011us}
-
-% [table of dimensions?]
+The notion of `human computer' asks for some contextualisation, as in the last few decades we've become unaccustomed to the term. Human computers were not uncommon in the time of Turing and before that from the 18th century, when `computer' was used to signify `one who computes'\cite{grier2007computers}. People bearing the function title were involved in the execution of calculations produced by strictly following mathematical theories. The activity that these computers were involved in were processes of rote, not requiring any human creativity. While working on the design for the first ever mechanical computer, Charles Babbage refers to it as ``mental labour''\cite[Ch.\ 20]{Babbage:1832vu}.
 
 
-\subsection{Purpose}
-\subsection{Motivation}
-\subsection{Task}
+% current definition of HC
+In a recent survey paper, Quinn and Bederson present a taxonomy of human computation \cite{Quinn:2011us}. They sketch the trend of this new paradigm for intelligent problem solving by pointing at the increase of academic papers featuring the term `human computation' and its relative `crowd-sourcing'. They summarise a myriad of definitions given in recent works by different authors in two key points about the nature of \emph{Human Computation Systems} (HCS) and the problems they intent to solve:
+
+\begin{itemize}
+  \item ``The problems fit the general paradigm of computation, and as such might someday be solvable by computers."
+  \item ``The human participation is directed by the computational system or process"
+\end{itemize}
 
 
-\section{Humans Computing Visual Meaning}
-% examples of HCS with the purpose of computing meaning
-\subsection{Examples}
-\subsubsection{ESP Game}
-\subsubsection{Peek-a-Boom}
-\subsubsection{reCaptcha}
+% section introduction (end)
+
+
+\section{Characterising Human Computation Systems} % (fold)
+\label{sec:characterising_hcs}
+
+To be able to analyse the merits of different approaches in the paradigm of human computation, it helps to have a characterisation of the different components that generally make up a HCS. Quinn and Bederson present such a framework in \cite{Quinn:2011us} and use six dimensions to distinguish different types of systems: motivation, human skill, aggregation, quality control, process order and task-request cardinality. We briefly discuss these factors below and then propose our own general framework to describe the functioning of an individual human computation system that we will also use in the explanation of our own system in chapter \ref{ch:weporter}.
+
+\subsection{Comparing Human Computation Systems} % (fold)
+\label{sub:comparing_systems}
+
+\subsubsection{Motivation}
+As we saw in the previous chapter, it is often difficult or costly to acquire accurate human-contributed data. Motivating people to participate is one of the main challenges in the design of HCSs. To ease a user's entry into participation, tasks are often presented in short bite-size chunks and made easily accessible over the internet. But as the tasks at hand do not directly benefit contributors, they will need to have a strong motivation to contribute their time and cognitive resources.
+
+Different kinds of motivations can be engineered into a system, as long as they provide users with ``a reason why doing the tasks is more beneficial to them than not doing them''\cite{Quinn:2011us}. Quinn and Bederson include the following types of motivations: 
+
+\begin{description}
+  \item[Pay] - Participants can be paid by money or other resources\cite{Biewald:2011us}. Amazon's Mechanical Turk\footnote{\url{www.mturk.com}} is an `online crowdsourcing marketplace' that utilises monetary payments to participants contributing their time to small computer directed tasks. The platform has received attention from different research communities\cite{Buhrmester:2011cw,Paolacci:2010ws,Kittur:2008tu}, which has in turn lead to critique about neglected limitations of the platform\cite{Adar:2011ur}. 
+  \item[Altruism] - Users may be motivated by the wish to simply do good, especially when they feel the problem being solved is interesting or important.
+  \item[Enjoyment] - The abundance of entertainment activities such as games and media consumption platforms available online show that web users often spend much time in pursuit of enjoyment. Making a human computation task enjoyable can motivate users to participate and have a good time in whilst contributing their human skills. A group of HCSs that rely on this kind of motivation is termed `Games with a Purpose'\cite{vonAhn:2008iy} and channels human behaviour by the motivation of gameplay. An example is the ESP game used to acquire meaningful image labels\cite{VonAhn:2004vd}.
+  \item[Reputation] - For tasks associated with an organisation or platform that has a certain level of prestige, participants may be motivated by the idea of their contributions being showcased on as part of their profile.
+  \item[Implicit work] - There are already many interactions taking place in different web environments. If a human computation task can be mapped to the configurations of such a preexisting activity, users can participate without engaging in any extra effort than they are already used to. Forms of implicit work could even be so much intertwined with existing activities that users might not even be aware they are contributing they cognitive skills to a higher purpose. ReCaptcha\footnote{\url{http://www.google.com/recaptcha}} is a successful example where the human transcription of scanned books parts that are hard to decipher by optical character recognition is incorporated in the existing activity of solving a `captcha' to access a free email account\cite{VonAhn:2008bu}.
+\end{description}
+  
+\subsubsection{Human Skill}
+
+Another salient factor in the characterisation of HCSs is the type of skill humans contribute in the task they are presented with. Examples of human skills required in different systems are visual recognition \cite{VonAhn:2004vd,VonAhn:2008bu,COLLECTOR:2005tt}, understanding of natural language\cite{Bernstein:2010wk}\cite{Hu:2011ws} and music interpretation\cite{Law:2009vl}.
+
+It is interesting to note that all of these tasks reside in the high-level conceptual realm of semantic interpretations. This relates back to the semantic gap for visual content and the general difficulty of deriving meaningful interpretations from low level features of multimedia content. Considering that human computation intends to solve problems that are too hard to solve by current computational techniques, it comes as no surprise to see the challenging tasks from chapter \ref{ch:meaning_in_video} resurface here.
+
+\subsubsection{Aggregation}
+Most applications that use human computation distribute large numbers of small tasks to many individuals. Sometimes the results of these task directly contribute to the problem that is being solved, but often they need to be aggregated in order for this to happen. Mechanisms of aggregation that may be used include collection, statistical processing of data, iterative improvement, active learning, search, genetic algorithms\cite{Quinn:2011us}.
+
+\subsubsection{Quality Control}
+Working with data from a large number of volunteers or non-experts, may lead to distortions in the data caused by misunderstanding of the instructions. Another issue is the existence of malicious spammers contributing wrong answers \cite{Ipeirotis:2010tt}. To yield useful results from people's computations, these unwanted data need to be accounted for. Different procedures exist to counter this problem, some of which focus on the setup of the interaction (e.g. design of the rewards system\cite{Mason:2009wg}, input agreement\cite{Law:2009vl} and output agreement\cite{VonAhn:2004vd}), others on analysis of the result after data is contributed (e.g. comparing redundant contributions to the same task, statistical filtering, expert reviews and automatic result checks).
+
+\subsubsection{Process Order}
+Process order describes the configuration of three main roles in the HCS\cite{Quinn:2011us}:
+
+\begin{description}
+  \item[Requester:] ``The end user who benefits from the computation (i.e. someone using a n image search engine to find something)''.
+  \item[Worker:] The person performing the computation.
+  \item[Computer:] The digital computer system, only considered to be active ``when it is playing an active role in solving the problem, as opposed to simply aggregating results or acting as an information channel''.
+\end{description}
+
+
+\subsubsection{Task-request cardinality}
+Human computation systems can have different numbers of interacting users. On the side of the workers, many people's contributions may be aggregated to serve a single or many requests. Although not common, it is possible that a request is handled by a single worker, without any aggregation. Considering these different possibilities, Quinn and Bederson give examples of the cardinalities 
+``One-to-one'', ``Many-to-many'', ``Many-to-one'' and ``Few-to-one''.
+
+% subsection comparing_systems (end)
+
+\subsection{Describing Human Computation Systems} % (fold)
+\label{sub:describing_human_computation_systems}
+
+The generic analyses proposed in \cite{Quinn:2011us} are useful for the comparison of different systems as they seem to capture in a concise way many aspects these systems have in common or set them apart. They are good for a broad characterisation and categorisation of systems, but lack the expression to talk in detail about the what constitutes a specific system. For this reason we propose the  combination of \emph{`purpose'}, \emph{`motivation'} and \emph{`task'} to help in the conceptual description of a human computation system. The concepts are closely linked to the distinction of the three roles of ``requester'', ``worker'' and ``computer'' made in \cite{Quinn:2011us}. Our proposed concepts though, focus more at the functionality of the system rather than merely pointing to components. In chapter \ref{ch:weporter} we propose our own system and use these concepts in its description.
+
+\subsubsection{Purpose}
+
+Any human computation system is aimed at finding the solution to a problem. Perhaps bordering the obvious, the first level of description of a system is the precise indication of the problem being solved. Pointing to the effort that is commonly required by multiple contributors in order to solve a computationally challenging problem, we prefer the term \emph{`purpose'} over `problem'. The purpose of a system is linked to the functionality desired by Quinn and Bederson's \emph{requester} but can be thought of at a larger scale. While a single requester in the ReCaptha system might for example be interested in the accurate transcription of several books, we can indicate `the digitisation of books from Google Books' as the larger purpose served by the system.
+
+\subsubsection{Motivation}
+
+A comprehensive description of motivation is given in our discussion of Quinn and Bederson's characterisation. A precise study of user motivation will help the description and design of any HCS. Motivation is tied to the role of the \emph{worker} as it defines the reason to contribute work to the system.
+
+\subsubsection{Task}
+
+Finally a description of a HCS should include a detailed description of the task presented to the worker along with information about how user-contributed data is being acquired and subsequently processed. The task forms the most technical level of description and is thus related to the role of the \emph{computer}. Task descriptions should indicate how the computer is involved in the direction of user interaction towards the purpose that is addressed in the system.
+
+% subsection describing_human_computation_systems (end)
 
 
 
 
-\section{Computation in Interaction}
 
+% section a_characterisation_of_human_computation_systems (end)
 
-% many people watching collaborating
-% is collective intelligence HC?
-Clicking from one video to the next (choosing from a set of related videos)
-these inter-video links could be seen as indicators for relatedness and relevance, much like google's page rank algorithm use links across webpages to establish a notion of the most significant site on a particular topic. 
-
-There is an important difference here though. Whereas the links used by Google's search algorithms are embedded in machine readable hyperlinks, the path of clicking on from one video to the next is a characteristic of a person's interaction. 
-
-% differences:
-%   public, readable // private, non readable
-%   conscious choice // unconcious result of interaction
-%   Concluding
-%     can be consciously put in place by several people at large scale // dependent on real `human' traffic.
-
-
-
-\subsection{The web as platform for creation}
-\label{sec:platform}
-Many media scholars have written about the role of the web [refs New Media Reader].
-Important trend of the web as platform of creation. In terms of video creation for example, the last few years have seen the development of online video editing tools and environments such as popcorn.js, WeVideo and Kaltura.
-
-
-
-\section{Deriving Meaning from Video Via Human Factors}
-[Personalized online document, image and video recommendation via commodity eye-tracking]\cite{Xu:2008vb}
-
-[VideoReach: an online video recommendation system]\cite{Mei:2007wa}
-
-\section{Collaborative Filtering} 
-
-% \url{http://en.wikipedia.org/wiki/Collaborative_filtering}
-
-The idea of using user's past interactions within a system hosting digital content for the filtering of items that might be of interest is not a new one and usually goes by the name of collaborative filtering. 
-Collaborative filtering can generally take two forms: User-based, Item-based
-
-Information filtering agents and collaborative filtering both
-attempt to alleviate information overload by identifying
-which items a user will find worthwhile.
-
-% already happening at YouTube
+% 
+% \section{Computation in Interaction}
+% 
+% 
+% % many people watching collaborating
+% % is collective intelligence HC?
+% Clicking from one video to the next (choosing from a set of related videos)
+% these inter-video links could be seen as indicators for relatedness and relevance, much like google's page rank algorithm use links across webpages to establish a notion of the most significant site on a particular topic. 
+% 
+% There is an important difference here though. Whereas the links used by Google's search algorithms are embedded in machine readable hyperlinks, the path of clicking on from one video to the next is a characteristic of a person's interaction. 
+% 
+% % differences:
+% %   public, readable // private, non readable
+% %   conscious choice // unconcious result of interaction
+% %   Concluding
+% %     can be consciously put in place by several people at large scale // dependent on real `human' traffic.
+% 
+% 
+% 
+% \subsection{The web as platform for creation}
+% \label{sec:platform}
+% Many media scholars have written about the role of the web [refs New Media Reader].
+% Important trend of the web as platform of creation. In terms of video creation for example, the last few years have seen the development of online video editing tools and environments such as popcorn.js, WeVideo and Kaltura.
+% 
+% 
+% 
+% \section{Deriving Meaning from Video Via Human Factors}
+% [Personalized online document, image and video recommendation via commodity eye-tracking]\cite{Xu:2008vb}
+% 
+% [VideoReach: an online video recommendation system]\cite{Mei:2007wa}
+% 
+% \section{Collaborative Filtering} 
+% 
+% % \url{http://en.wikipedia.org/wiki/Collaborative_filtering}
+% 
+% The idea of using user's past interactions within a system hosting digital content for the filtering of items that might be of interest is not a new one and usually goes by the name of collaborative filtering. 
+% Collaborative filtering can generally take two forms: User-based, Item-based
+% 
+% Information filtering agents and collaborative filtering both
+% attempt to alleviate information overload by identifying
+% which items a user will find worthwhile.
+% 
+% % already happening at YouTube
 
