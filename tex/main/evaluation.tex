@@ -1,13 +1,14 @@
 \chapter{Evaluation}
 \label{ch:evaluation}
 % terminology: attentional data = 'focus rate'
- 
+
+\section{Introduction} % (fold)
+\label{sec:introduction}
 
 This chapter presents results of number of experiments we have run. This includes 
 We report on the feedback that is received from users' interaction through the use of the wePorter web interface. We show how it can be used for the purposes of filtering segments of interest within a video and the configuration of a new video story from the initially unstructured content. We present results from a user evaluation study on the merit of filtered and reconfigured content. We end with a reflection on our results in the discussion section.
 
-
-
+% section introduction (end)
 
 \section{Preliminary Experiments}
 \label{sec:preliminary_experiments}
@@ -53,14 +54,13 @@ The first trial presented test group users with a first part in the bottom seque
 
 Our main experiments use the system framework described in section \ref{sec:weporter_implementation} for the preparation and presentation of video content, data capture from user interaction and storage of interaction data. The experiments we report on here are based on the interactions from a total of 68 persons over a period of a week.
 
-\section{Setup}
+\subsection{Setup}
 For our main experiments we use a set of 10 unedited, user-generated videos that were returned in response to the query ``Diamond Jubilee London'' on YouTube. The videos along with their title, length and view count at time of retrieval is shown in table \ref{videos}. As mentioned in section \ref{sec:weporter_implementation}, we divide source videos into video parts of equal length and generate two sequences consisting of an equal number of video parts to present in parallel. In our main experiments 
 
 [TODO]
 
 
 \begin{table}
-   % \begin{tabular}{ | l | l | p{8cm} | p{1.3cm} | l |}
    \begin{tabular}{ | l | l | p{8cm} | p{1.3cm} | l |}
      \hline
      \textbf{Id} & \textbf{File Name}	          & \textbf{Title}	  & \textbf{Length (sec)} & \textbf{Views} \\ \hline
@@ -82,6 +82,25 @@ For our main experiments we use a set of 10 unedited, user-generated videos that
 % if all views were parallel plays
 The videos used for the main experiments have a total length of 25 minutes and their individual view counts range from 28 to 2304. 
 
+[TODO]
+
+\subsection{Parallel Play Interaction Data} % (fold)
+\label{sub:parallel_play_interaction_data}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=\textwidth]{img/videoparts_focus}
+  \caption{Average focus rates and weighted focus ratios for individual video parts}
+  \label{fig:videoparts_focus}
+\end{figure}
+
+% landscapes of interest
+% The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. After all, unedited video captures a single stretch of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we imagine an individual's interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with some hills or spikes every now and then when an interesting event occurs. 
+% 
+% Looking at interest at a more global level, aggregating over a large group of users, would result in an even a more smooth landscape of interest. This kind of data reveals mountains and valleys that can be used for attention-based segmentation. From the thus segmented parts, the ones with high attentional scores can be returned as candidates for interesting parts within a video.
+
+
+% subsection parallel_play_interaction_data (end)
 
 \subsection{Clean Data} % (fold)
 \label{sub:clean_data}
@@ -91,14 +110,12 @@ Data returned from the capturing of attentional behaviour in the parallel player
 
 % subsection clean_data (end)
 
-\subsection{Landscapes of Attention} % (fold)
-\label{sub:landscapes_of_attention}
+\subsection{Attention-based filtering} % (fold)
+\label{sub:attention_based_filtering}
 
-The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. After all, an unedited video captures a single stretch of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we see interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with spikes every now and then when an interesting event occurs. 
+% subsection attention_based_filtering (end)
 
-Looking at interest at a more global level, aggregating over a large group of users, would result in an even a more smooth landscape of interest. This kind of data reveals mountains and valleys that can be used for attention-based segmentation. From the thus segmented parts, the ones with high attentional scores can be returned as candidates for interesting parts within a video.
-
-% subsection landscapes_of_attention (end)
+% subsection reconfiguration (end)
 
 \subsection{Evaluating Focus} % (fold)
 \label{sub:evaluating_focus}
@@ -108,12 +125,12 @@ By capturing the amount of focus time, we receive measures for user attention. W
 To see how focus measures relate to user preference, we compare video parts which have received low focus rates
 
 % subsection evaluating_focus (end)
-
-
 % section main_experiments (end)
 
 \section{Questionnaire} % (fold)
 \label{sec:questionnaire}
+
+In addition to the interactive experiment using the parallel play interface
 
 % section questionnaire (end)
 

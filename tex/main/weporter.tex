@@ -207,7 +207,7 @@ In our aim of reconfiguring interesting sub-clips into a new arrangement, the ch
 (Co-)authoring by means of reconfiguration or \emph{`remixing'} is common practice in today's vivid content sharing communities \cite{Diakopoulos:2007jn} and an important factor in these relatively new forms of creation seems to be attribution\cite{Luther:2010wq}. Although classically intellectual property licences mostly have a restrictive function (protecting my intellectual property from being exploited), new less restrictive licences also offer a way of attribution in digital content that is derived from external sources. Less restrictive forms of digital content licensing, like Creative Commons (CC), mean that it is now possible for content uploaded by its original creator, to be used under specified conditions in a new piece of work by someone else. This kind of licences has been noted to be an important facilitator of research into Human Computation\cite{Law:2009vl}. They make it possible for works not only to be used and remixed by other individuals, but also to be incorporated in algorithmically constructed reconfigurations of user generated content.
 
 % popularity CC
-Different video platforms are currently offering less-restrictive CC licensing as an integrated part of their services. YouTube currently offers the option of choosing a most basic attribution licence and reports 4 million videos licensed this way \cite{YouTubeCC}. The video platform Vimeo focusses on letting video and animation producers share and showcase their original work. The platform has internalized the use of CC from 2010\cite{vimeoTimeline} and many of their users licence their videos such that they can be remixed by others. Figure \ref{fig:vimeoCC} shows that a large part of the licences on the Vimeo platform allow derivatives to be made\cite{vimeoCC}.
+Different video platforms are currently offering less-restrictive CC licensing as an integrated part of their services. YouTube currently offers the option of choosing a most basic attribution licence and reports 4 million videos licensed this way \cite{YouTubeCC}. The video platform Vimeo\footnote{\url{www.vimeo.com}} focusses on letting video and animation producers share and showcase their original work. The platform has internalized the use of CC from 2010\cite{vimeoTimeline} and many of their users licence their videos such that they can be remixed by others. Figure \ref{fig:vimeoCC} shows that a large part of the licences on the Vimeo platform allow derivatives to be made\cite{vimeoCC}.
 
 \begin{figure}[htbp]
   \centering
@@ -287,12 +287,12 @@ During the parallel play of the two sequences of video parts, the user triggers 
 
 We record which video a user is attending to by keeping a count for each of the two video parts playing concurrently and increasing the count for the focussed video every 100 milliseconds. When a video part ends, the count is logged internally on the user's browser side before the next video part is started with its own count. When the parallel sequences are played back completely, the end of the interaction is reached and the counts for each of the 12 video parts are stored in a server-side database. Each pair of counts for two concurrently presented parts, represents a distribution of the user's attention over those parts.
 
-Note that we never explicitly ask anyone to point at the video that is most interesting. Users are simply instructed as to how the interface works and then left to explore the videos as they like. By recording users' behaviour this way, we achieve a detailed insight into which of a pair of videos a user has attended to at what time. In section \ref{ch:evaluation} we report on how these measure can be telling in the process of filtering and reconfiguration. 
+Note that users are never explicitly asked to point at the video that is most interesting. Users are simply instructed as to how the interface works and then left to explore the videos as they like. By recording users' behaviour this way, we achieve a detailed insight into which of a pair of videos a user has attended to at what time. In section \ref{ch:evaluation} we report on the merits of these measures for the processes of filtering and reconfiguration.
 
 \section{Implementation}
 \label{sec:weporter_implementation}
 
-This section describes in detail the technologies used in the wePorter system and how components relate to each other. We begin by illustrating how video content is prepared for presentation in the wePorter web interface, and next describe the system framework. 
+This section describes in detail the functionality of the wePorter system, the different components in use and the way they relate to each other. We begin by illustrating how video content is prepared for presentation in the wePorter web interface, and next describe the system framework. 
 
 \subsection{Preparation of Content}
 
@@ -345,7 +345,7 @@ There might be an interval with a duration less than $d$ at the end of a source 
   \label{alg:videoparts}
 \end{algorithm}
 
-\subsection{The live system}
+\subsection{System Framework}
 
 % start = system defined query result set
 Figure \ref{fig:framework} shows the data framework of the wePorter system. The system runs as a web interface and is accessible online for multiple users at the same time. The server-side functionality is implemented in PHP making use of connections to a mySQL database. On the client-side, Javascript deals with the playback of video sequences as well as keeping track of all interaction data. Upon a user's navigation to the wePorter web page, two sequences are loaded in the parallel video player. A user triggers the interaction by clicking a play button. During the interaction, Javascript running in the user's browser keeps track of the accumulating attentional ratings per video part. Once an interaction has finished, all interaction data is added to the database on the server. The updated interaction data and counts of video parts are subsequently used in the generation of sequences for new interactions either by the same user or a new visitor.
@@ -449,12 +449,12 @@ After the two sequences have reached the desired size of $n\_parts$, they are ra
   \label{alg:shuffle}
 \end{algorithm}
 
-[TODO comment on combinatorics and complexity. all video parts are presented more or less equal, except long ones]
+[TODO comment on combinatorics and complexity. all video parts are presented more or less equal, except long videos. for n videos, how many iterations would be needed to converge to optimum of k... convergence has Log complexity]
 
 \subsection{Hypervideo in a Web Browser}
 
-Playing back parts of different online videos in a single video experience is a common feature of any video editing system, but this functionality has only recently become available to code that runs in a web browser. Today most videos that live on the web are much like black boxes and this is not just because computers are having a hard time understanding the visuals. When we interact with video online it is almost always on the high level of the entire video. Whether it's playing, sharing, commenting on or linking to video, we lack the functionality of referring to parts that lie within or interact with components like (sub)titles, images or audio as separate entities. [... ref video vortex] calls this type of video ``hard'' and ``flat'' [check quotes].
+Playing back parts of different online videos in a single video experience is a common feature of any video editing system, but this functionality has only recently become available to code that runs in a web browser. Today most videos that live on the web are much like black boxes and this is not just because computers are having a hard time understanding the visuals. When we interact with video online it is almost always on the high level of the entire video. Whether it's playing, sharing, commenting on or linking to video, we lack the functionality of referring to parts that lie within or interact with components like (sub)titles, images or audio as separate entities. [TODO ... ref video vortex] calls this type of video ``hard'' and ``flat'' [TODO check quotes].
 
-This is starting to change. An important player in the movement of treating video like the web by hyperlinking, cross referencing and remixing it in code, is Mozilla, whose foundation runs `Popcorn' \footnote{\url{http://mozillapopcorn.org/}}, a project that makes video work much like the web. Part of the Popcorn project is `Popcorn.js' \footnote{\url{http://popcornjs.org/}}, a Javascript library that intends to open up videos to the web, give it back it's depth and make it more soft. The wePorter system relies for a big part on the `Popcorn.js' library for the playback of video parts in sequence.
+This is starting to change. An important player in the movement of treating video like the web by hyperlinking, cross referencing and remixing it in code, is Mozilla, whose foundation runs `Popcorn' \footnote{\url{http://mozillapopcorn.org/}}, a project that makes video work much like the web. Part of the Popcorn project is `Popcorn.js' \footnote{\url{http://popcornjs.org/}}, a Javascript library that intends to open up videos to the web, give it back it's depth and make them more soft and reconfigurable. The wePorter system relies for a big part on the `Popcorn.js' library for the playback of video parts in sequence.
 
 % ? player can handle videos of different dimensions

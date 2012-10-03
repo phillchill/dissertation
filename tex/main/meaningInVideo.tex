@@ -8,7 +8,7 @@
 Interpreting moving images is not a hard task. The medium film is often described as `dictatorial' because of the way the audience is immersed in a multi-modal experience controlled by the content's creators. When watching a film, we sit back and relax, passively taking in the presented information without much effort. A similar ease is reflected in our use of the word `couch potato' to describe the passive role of television audiences. Watching film or video gives us almost immediate access to a wide range of information about what is presented on screen. We recognise objects on screen and understand words that spoken in a language we know. We are also quick to infer a larger picture around the things we perceive, like personality traits of characters on screen and our emotional stance towards them. While most of these things happen extremely quickly and seemingly automatically to us humans, computers often have a hard time even starting to perceive a visual representation of an object.
 
 % explain how computers are having difficulties. in recognition, spatio/temporal segmentation (figure ground), qualitative evaluations are even more difficult.
-When we attend to visual content depicting parts of the world around us, we can't help ourselves from seeing its parts as separate entities. We recognise objects as if they stand out from their background even though they are simply patterns of colours on a two dimensional surface. To a computer, tasks like object segmentation and recognition are hard because visual information needs to be interpreted using some form of sequential processing. Digitally, images are usually represented by collections of numbers indicating local intensities (e.g. colour or brightness) at the different points that make up the image. How to calculate from this information, which objects are present, and what other concepts can be assigned to an image is studied in the field of computer vision. The tasks most related to finding computational interpretations of video content are video concept detection and video categorisation. Although recent years have seen important advances in the use of high-level semantical concepts in tasks like concept detection and concept-based video retrieval \cite{Snoek:2009dq, Snoek:jf, Worring:2007vm, Chang:2008wh}, computational methods commonly have difficulties in performing both reliably and generally.
+When we attend to visual content depicting parts of the world around us, we can't help ourselves from seeing its parts as separate entities. We recognise objects as if they stand out from their background even though they are simply patterns of colours on a two dimensional surface. To a computer, tasks like object segmentation and recognition are hard because visual information needs to be interpreted using some form of sequential processing. Digitally, images are usually represented by collections of numbers indicating local intensities (e.g. colour or brightness) at the different points that make up the image. How to calculate from this information, which objects are present, and what other concepts can be assigned to an image is studied in the field of computer vision. The tasks most related to finding computational interpretations of video content are video concept detection and video categorisation. Although recent years have seen important advances in the use of high-level semantical concepts in tasks like concept detection and concept-based video retrieval \cite{Snoek:2009dq, Snoek:jf, Worring:2007vm, Chang:2008wh}, computational methods commonly have difficulties in performing both reliably and generally\cite{Urban:2006up, Snoek:2009dq}.
 
 % setup chapter
 % scope of this chapter
@@ -45,6 +45,8 @@ A second and more challenging issue that hinders meaningful computational interp
 \begin{quote}
   ``The lack of correspondence between the low-level features that machines extract from video and the high-level conceptual interpretations a human gives to the data in a given situation.''\cite{Snoek:2009dq}
 \end{quote}
+
+The semantic gap makes automatic video categorisation and video concept detection difficult tasks\cite{Snoek:2009dq}. It also makes it hard for users searching in digital video systems to formulate their query in a way that matches the features accessible to the retrieval system.
 
 One of the causes of the semantic gap is that the way people interpret images is mostly contextual\cite{Smeulders:2000tx}. We look for concepts that are already familiar from our environment or earlier encounters with visual content. Our perception of a simple object is determined by our vast background of personal experience and cultural upbringing. In contrast to these contextual interpretations, computational image descriptions rely purely on data-driven features that can be extracted from the content. Difficulties arise when there is a mismatch between the two.
 
@@ -96,26 +98,23 @@ As is the case for visual features, video content is first segmented before audi
 
 In their overview of the merit of audio and visual features in the characterisation of semantic content, Wang et al. categorise audio features based on the type of information they are extracted from. They distinguish features based on \emph{volume}, \emph{zero crossing rate}, \emph{pitch} and \emph{spectral features}. Description of these features and their respective merit are left out of this thesis. Interested readers are referred to \cite{Wang:2000vf} for a detailed explanation. With frames analysed, features at clip level can be calculated to reflect the changes in frame level features over time. The different types of features on clip level can be characterised by the categories of the frame level features they are based on.
 
-[TODO also see G. Lu, “Indexing and retrieval of audio: A survey,” Multimedia Tools and Applications, vol. 15, pp. 269–290, 2001.]
-
 \subsubsection{Textual Features}
 
-While some works investigate the role of auditory\cite{Wang:2000vf} and textual features\cite{Kuwano:2000wy} in video analysis, 
+So far we've seen that auditory and visual information need interpretation to arrive at semantical concepts that can be expressed in text. In contrast to the sensory nature of audio and visuals, textual data is nice to deal with computationally as its symbolic nature makes it directly accessible to algorithmic processing. Not all videos feature text, but for certain types of video it is a viable option to extract textual information and use it for the characterisation of the video's semantics. Digital video files in itself do not contain textual data, but this can be extracted either from the visual or auditory stream.
 
-`` text search against transcript narrative text provides almost all the retrieval capability, even with visually oriented generic topics.''
-[Addressing the Challenge of Visual Information Access from Digital Image and Video Libraries]\cite{Christel:2005td}
+Text might be available in a video's visual content in the form of titles or captions. It is mostly structured content, produced by a (semi-)professional editor that has these kinds of texts embedded. Video content following a fixed structure has the additional benefit of text element appearing at expected times and positions. News programmes for example feature titles on fixed moments in time such as during the introduction of a person or location. \emph{Video optical character recognition} has been applied to news material to transcribe headline texts indicating topics of news items as well as to extract information about the text such as size and position\cite{Kuwano:2000wy}.
 
-
-
-
-
-
-
-
+Another form of text is the transcription of spoken language in the audio stream. This is particularly interesting for video content that contains much information in spoken language, such as news programmes or other narrated presentations. For such content transcriptions may be present in the form of closed captions or extracted using \emph{automatic speech recognition}. Accurate transcriptions can lead to major improvements in interactive retrieval performance by novice users\cite{Christel:2005td}.
 
 \subsection{Supervised Learning}
 
 Once features are extracted for a collection of videos, they can be studied to see how they relate to the concepts that are detected within the videos. The paradigm of supervised learning looks to find a relation between features describing data instances and classifications that can be attributed to them. The approach in supervised learning is to provide a large set of training examples along with the known classification or labelling of the content. Different methods can be used to determine a function that optimally describes how features are combined into a calculation of the probability that an instance should be labeled with a particular classification.
+
+[TODO review alineas]
+
+The paradigm most in use for the detection of concepts in video is supervised learning. In a supervised machine learning task, one learns the relation between a collection of input values and a smaller set of output values. A relation between inputs and outputs is learned by presenting a large number of training examples as input along with their respective output values. For video concept detection, input values are usually a collection of features representing different aspects of the video while outputs code for the concept that is known to be present. 
+
+Although detectors can be trained to learn to detect patters of multiple concepts, usually a separate concept detectors are trained for distinct concepts. By applying multiple detectors on an previously unseen input instance, multiple concepts can be detected.
 
 % TODO formal def
 
@@ -135,12 +134,38 @@ Once features are extracted for a collection of videos, they can be studied to s
 
 \subsection{Structural Features}
 
-
-
-
 [cite bordwell \& Thompson: analysis of context dependency]
 % hypervideo as form of 1 narrative 2 navigation, link to database documentary
 [HyperCafe: Narrative and Aesthetic Properties of Hypervideo \cite{Sawhney:1996tk}]
+
+
+\section{Interactive Storytelling: From database to data-based}
+
+\subsection{Symbolic approaches to storytelling}
+\cite{Vilmos:2011wv,RodrigoLaiolaGuimaraes:2011tl,Ursu:2009gc}
+
+\subsection{Statistic, emergent approaches}
+\label{sec:statistic}
+
+NLP
+
+\subsection{Remixing}
+
+The reconfiguration of smaller units that carry meaning within themselves is common practice for textual media such as blogs, where it is easy to quote part of  another author`s writing in a new post [ref]. 
+
+It needs to be said that some reconfiguration of videos is taking place, but even though it often concerns content that was originally sourced online, much of the creative act of remixing happens offline.
+
+
+% Taking the remix online
+
+examples like: Aaron Koblin (johnny cash project, exquisite corps, etc)
+
+there is even word of a true remix culture\cite{Diakopoulos:2007tl}.
+
+the availability of multimedia content via the internet has meant a surge in 
+
+
+
 
 
 \section{Discussion} % (fold)
