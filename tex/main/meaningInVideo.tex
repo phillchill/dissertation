@@ -69,7 +69,7 @@ This section gives a short overview of strategies to narrow the semantic gap tha
 
 Before starting the processes of classification or concept detection, videos are usually segmented into smaller clips. The most common unit for temporal video segmentation is the \emph{shot}, one continuously recorded interval in the same setting of time and place. Shot segmentation is a well-understood problem and efficient automatic methods exist [TODO ref `automatic partitioning of full-motion video', `a formal study of shot boundary detection' ]. Another form of partitioning is to segment the video into \emph{scenes}, possibly consisting of multiple shots, signifying a unit within a story\cite{Wang:2000vf}. While shot segmentation can be done automatically thanks to data-driven procedures, the task of scene segmentation relies on semantical and narrative interpretations of the content and is thus a lot harder to solve computationally.
 
-The tasks of video classification and video concept detection, are generally organised as follows. For a video segment or keyframe $i$, represented by $n$-dimensional feature vector $x_i$, a measure is calculated that indicates whether conceptual label $\omega_j$ applies to shot $i$ (concept $w_j$ is present in $i$ or  $i$ can be classified as being of type $w_j$). The common paradigm to find the relation between $x_i$ and $\omega_j$ is supervised learning. Supervised learning methods use a large number of examples in a training phase to find an optimal combination of features that codes for the presence of a particular concept. Using the found relationship from features to conceptual label, previously unseen instances can then be classified with a certain accuracy. This section briefly addresses different features that can be extracted from video content and explains the general framework of supervised learning.
+The tasks of video classification and video concept detection, are generally organised as follows. For a video segment or keyframe $i$, represented by $n$-dimensional feature vector $x_i$, a measure is calculated that indicates whether conceptual label $\omega_j$ applies to shot $i$ (concept $w_j$ is present in $i$ or  $i$ can be classified as being of type $w_j$). The common paradigm to find the relation between $x_i$ and $\omega_j$ is supervised learning. Supervised learning methods use a large number of examples in a training phase to find an optimal combination of features that codes for the presence of a particular concept. Using the found relationship from features to conceptual label, previously unseen instances can be classified with a certain accuracy. This section briefly addresses different features that can be extracted from video content and explains the general framework of supervised learning.
 
 \subsection{Feature Extraction}
 
@@ -86,7 +86,7 @@ Despite the different modalities that can collectively make up a piece of video,
 
   \item \emph{Shape} - When colours and textures of an image have been analysed, the resulting features can be used to partition images into smaller homogeneous areas. The shape of these areas can next be represented by features that either describe the shape's region or contour. Data-driven methods are used for \emph{weak segmentation}, where an image is deconstructed into shapes that share a visual property. [TODO ref R. C. Veltkamp and M. Hagedoorn, “State-of-the-art in shape matching,”] \emph{Strong segmentation} on the other hand, uses knowledge about the shapes of objects to delineate contours of semantic concepts in the image.
 
-  \item \emph{Temporal} - Besides addressing aspects of single video frames, visual features can also capture how characteristics of frames develop over time. By following how sequential images change over time, patterns of motion can be tracked to describe camera motion[TODO ref Y. Tonomura, A. Akutsu, Y. Taniguchi, and G. Suzuki, “Structured video computing,” IEEE MultiMedia, vol. 1, pp. 34–43, 1994.], motion of regions or points [TODO refJ. Sivic, F. Schaffalitzky, and A. Zisserman, “Object level grouping for video shots,” International Journal of Computer Vision, vol. 67, pp. 189–210, 2006.] or even the movement of segmented objects[TODO ref H. T. Nguyen, M. Worring, and A. Dev, “Detection of moving objects in video using a robust motion similarity measure].
+  \item \emph{Temporal} - Besides addressing aspects of single video frames, visual features can also capture how characteristics of frames develop over time. By following how sequential images change over time, patterns of motion can be tracked to describe camera motion[TODO ref Y. Tonomura, A. Akutsu, Y. Taniguchi, and G. Suzuki, “Structured video computing,” IEEE MultiMedia, vol. 1, pp. 34–43, 1994.], motion of regions or points [TODO refJ. Sivic, F. Schaffalitzky, and A. Zisserman, “Object level grouping for video shots,” International Journal of Computer Vision, vol. 67, pp. 189–210, 2006.] or even the movement of segmented objects[TODO ref H. T. Nguyen, M. Worring, and A. Dev, “Detection of moving objects in video using a robust motion similarity measure]. A problem with using temporal features is that they are computationally costly and time-consuming to extract. This is a general problem with video induced by the sequential nature of consisting of information rich images. Because of this, temporal features are not commonly used in automated detection and categorisation methods.
 
 \end{itemize}
 
@@ -108,27 +108,30 @@ Another form of text is the transcription of spoken language in the audio stream
 
 \subsection{Supervised Learning}
 
-Once features are extracted for a collection of videos, they can be studied to see how they relate to the concepts that are detected within the videos. The paradigm of supervised learning looks to find a relation between features describing data instances and classifications that can be attributed to them. The approach in supervised learning is to provide a large set of training examples along with the known classification or labelling of the content. Different methods can be used to determine a function that optimally describes how features are combined into a calculation of the probability that an instance should be labeled with a particular classification.
+Once a suitable set of features is extracted for a collection of videos, they can be analysed to see how they relate to the concepts that are detected within the videos. The paradigm of supervised learning looks to find a relation between features describing data instances and classifications that can be attributed to them. Supervised learning takes place in two stages. In the initial training stage, a large set of training examples is taken along with the known classification or labels of the content.  Different methods can be used to determine a function that optimally describes how features are combined in a calculation of a measure that indicates whether the concept is present. During the testing stage the trained model is used with new instances as input (represented by the same set of features as training examples) and calculates the probability $P(w_j | x_i)$ of concept $w_j$ being present in the video segment $i$ represented by feature vector $x_i$.
 
-[TODO review alineas]
-
-The paradigm most in use for the detection of concepts in video is supervised learning. In a supervised machine learning task, one learns the relation between a collection of input values and a smaller set of output values. A relation between inputs and outputs is learned by presenting a large number of training examples as input along with their respective output values. For video concept detection, input values are usually a collection of features representing different aspects of the video while outputs code for the concept that is known to be present. 
-
-Although detectors can be trained to learn to detect patters of multiple concepts, usually a separate concept detectors are trained for distinct concepts. By applying multiple detectors on an previously unseen input instance, multiple concepts can be detected.
-
-% TODO formal def
-
+Although detectors can be trained to detect patterns of multiple concepts, usually separate concept detectors are trained for distinct concepts. By applying multiple detectors on an previously unseen input instance, multiple concepts can be detected.
 
 \section{Outstanding Challenges} % (fold)
 \label{sec:outstanding_challenges}
 
-% the problem of acquiring labelled data for ML approaches
+Although significant advances have been made in recent years in methods to narrow the gap between low level video features and the high-level interpretations humans address to the content, the semantic gap still forms a major scientific challenge. The computational methods described in this chapter have clear values in addressing the semantic gap, but there are several difficulties that make it unlikely for the the gap to become bridged completely soon.
 
-% wide domains e.g. ugvc
+Although the low-level features described here can all be extracted automatically, the use of supervised learning methods still requires initial labelling from trusted sources. Acquiring these initial human labels might still be costly and time-consuming.
+
+Related to this is the idea that for accurate interpretations, a system might have to be updated to reflect newly added content or the latest contextual knowledge of its users. Periodical reassessment of features sets or user-defined labels may prove impractical in an architecture based on supervised learning.
 
 % temporal processing is computationally costly and time consuming
+Processing visuals is a complex matter in its own right, but the temporal aspect of video add an extra dimension worth of challenges. The sequential nature of video makes it a very information rich medium, with much to gain from but also many to be  challenged by. Looking at temporal features is costly and therefore currently left largely unexplored.
 
-% problem of keeping ML techniques up to date in a dynamical environment where new content is added every minute (and a lot of it as we will see when we discuss user generated online video)
+% wide domains e.g. ugvc
+Perhaps the biggest challenge in the automatic interpretation of video is the wide variety of content that is produced and distributed nowadays. When considering ``\emph{narrow domains}'' of visual content, variations in appearance across different concepts are limited and predictable\cite{Smeulders:2000tx}. This makes narrow domains relatively easy to interpret as accidental distortions due to the sensory gap are limited. The contrary is true for broad domains:
+
+\begin{quote}
+  ``A broad domain has an unlimited and unpredictable variability in its appearance even for the same semantic meaning.''\cite{Smeulders:2000tx}
+\end{quote}
+
+Phrased in the context of image retrieval, Smeulders et al. further illustrate the idea of broad domains by mentioning the set of images available on the Internet as the broadest class available. The same can be said for video and regarding the enormous amount of user-generated video content that gets uploaded, we can consider YouTube to come frighteningly close to this widest scope.
 
 % section outstanding_challenges (end)
 
