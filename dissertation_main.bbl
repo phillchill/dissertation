@@ -17,6 +17,10 @@ Vimeo timeline.
 \newblock \url{https://vimeo.com/about/timeline}.
 \newblock Accessed: 15/09/2012.
 
+\bibitem{Anonymous:z7Le1Iup}
+{Turing - Computing Machinery and Intelligence}.
+\newblock pages 1--3, November 2009.
+
 \bibitem{Babbage:1832vu}
 Charles Babbage.
 \newblock {On the economy of machinery and manufactures}.
@@ -26,13 +30,6 @@ Charles Babbage.
 R.~Barthes.
 \newblock {The death of the author (1968)}.
 \newblock {\em Image-music-text}, pages 142--148, 1977.
-
-\bibitem{Bruno:2002tt}
-E.~Bruno and D.~Pellerin.
-\newblock {Video structuring, indexing and retrieval based on global motion
-  wavelet coefficients}.
-\newblock {\em Pattern Recognition, 2002. Proceedings. 16th International
-  Conference on}, 3:287--290 vol. 3, 2002.
 
 \bibitem{YouTubeCC}
 Cathy Casserly.
@@ -157,13 +154,6 @@ Lev Manovich.
 \newblock \url{http://www.manovich.net/DOCS/models_of_authorship.doc}.
 \newblock Accessed: 16/09/2012.
 
-\bibitem{Mei:2007wa}
-T.~Mei, B.~Yang, X.S. Hua, L.~Yang, S.Q. Yang, and S.~Li.
-\newblock {VideoReach: an online video recommendation system}.
-\newblock {\em Proceedings of the 30th annual international ACM SIGIR
-  conference on Research and development in information retrieval}, pages
-  767--768, 2007.
-
 \bibitem{Pea:2004td}
 R.~Pea, M.~Mills, J.~Rosen, K.~Dauber, W.~Effelsberg, and E.~Hoffert.
 \newblock {The diver project: Interactive digital video repurposing}.
@@ -179,13 +169,6 @@ A.J. Quinn and B.B. Bederson.
 Tom Rosenstiel and Amy Mitchell.
 \newblock {YouTube {\&} the News}.
 \newblock Technical report, July 2012.
-
-\bibitem{Rui:1998uj}
-Y.~Rui, T.S. Huang, M.~Ortega, and S.~Mehrotra.
-\newblock {Relevance feedback: A power tool for interactive content-based image
-  retrieval}.
-\newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
-  on}, 8(5):644--655, 1998.
 
 \bibitem{Sawhney:1996tk}
 N.~Sawhney, D.~Balcom, and I.~Smith.
@@ -234,6 +217,11 @@ A.~Ulges, M.~Koch, D.~Borth, and T.M. Breuel.
 \newblock {\em Data Mining Workshops, 2009. ICDMW'09. IEEE International
   Conference on}, pages 190--195, 2009.
 
+\bibitem{vonAhn:2008iy}
+Luis von Ahn and Laura Dabbish.
+\newblock {Designing games with a purpose}.
+\newblock {\em Communications of the ACM}, 51(8):57, August 2008.
+
 \bibitem{Xu:2008vb}
 S.~Xu, H.~Jiang, and F.~Lau.
 \newblock {Personalized online document, image and video recommendation via
@@ -247,13 +235,6 @@ B.~Yang, T.~Mei, X.S. Hua, L.~Yang, S.Q. Yang, and M.~Li.
   feedback}.
 \newblock {\em Proceedings of the 6th ACM international conference on Image and
   video retrieval}, pages 73--80, 2007.
-
-\bibitem{Yang:2004tc}
-M.~Yang, B.M. Wildemuth, and G.~Marchionini.
-\newblock {The relative effectiveness of concept-based versus content-based
-  video retrieval}.
-\newblock {\em Proceedings of the 12th annual ACM international conference on
-  Multimedia}, pages 368--371, 2004.
 
 \bibitem{Zhou:2010ut}
 R.~Zhou, S.~Khemmarat, and L.~Gao.

@@ -1,18 +1,26 @@
-\chapter{Human Computation towards Visual Meaning}
-\label{ch:humancomputation}
+\chapter{Human Computation}
+\label{ch:human_computation}
 
 \section{Introduction} % (fold)
 \label{sec:introduction}
+
+
 % TODO define HCS
 
 % historic antecedents
-In 1950, Alan Turing envisioned in his seminal paper `Computing Machinery and Intelligence' that a computer program would once be able to successfully play an imitation game now known as the Turing Test. His work mentions that
+In his seminal paper `Computing Machinery and Intelligence' Alan Turing proposed what he called an imitation game, to answer the question ``Can machines think?''\cite{Turing:1950wi}. The game involves a digital computer running an advanced programme and a person who each take place in one of two rooms randomly. A human interrogator to whom the position of computer and person is unknown, is given the ability to communicate back and forth with the inhabitants of the rooms by textual messages. It is the interrogator's goal to figure out which of the rooms houses the computer and which one the person.
+
+The game is now known as the \emph{Turing Test} and is still considered a method to determine a programme's capacity to `think' or display a human level of intelligence. Turing's proposed experiment raises the question whether human thought can be expressed in terms of \emph{computation}. The Turing Test indicates how certain tasks may be trivial to human beings but prove extremely challenging to computers. The task proposed by Turing is considered to rely on such a wide range  of the human intellect that its successful imitation by a machine is taken as indicative for computational mastery of human thought.
+
+In the same paper, Turing explains the idea of a digital computer by relating its activities to those that can be carried out by humans:
+
 \begin{quote}
   ``[t]he idea behind digital computers may be explained by saying that these machines are intended to carry out any operations which could be done by a human computer''\cite{Turing:1950wi}
 \end{quote}
 
 The notion of `human computer' asks for some contextualisation, as in the last few decades we've become unaccustomed to the term. Human computers were not uncommon in the time of Turing and before that from the 18th century, when `computer' was used to signify `one who computes'\cite{grier2007computers}. People bearing the function title were involved in the execution of calculations produced by strictly following mathematical theories. The activity that these computers were involved in were processes of rote, not requiring any human creativity. While working on the design for the first ever mechanical computer, Charles Babbage refers to it as ``mental labour''\cite[Ch.\ 20]{Babbage:1832vu}.
 
+The idea that some tasks are hard to express in computational terms but easily solved by humans has received much attention in recent years. \emph{`Human computation'} as an academic paradigm saw its development sparked by a doctoral theses by Luis von Ahn in 2005 and has seen an increase of attention since that time\cite{Quinn:2011us}. The main idea in human computation is that certain tasks that are too hard to solve by current computational techniques, may be solved by the combined effort of humans contributing their cognitive skills. 
 
 % current definition of HC
 In a recent survey paper, Quinn and Bederson present a taxonomy of human computation \cite{Quinn:2011us}. They sketch the trend of this new paradigm for intelligent problem solving by pointing at the increase of academic papers featuring the term `human computation' and its relative `crowd-sourcing'. They summarise a myriad of definitions given in recent works by different authors in two key points about the nature of \emph{Human Computation Systems} (HCS) and the problems they intent to solve:
@@ -29,7 +37,7 @@ In a recent survey paper, Quinn and Bederson present a taxonomy of human computa
 \section{Characterising Human Computation Systems} % (fold)
 \label{sec:characterising_hcs}
 
-To be able to analyse the merits of different approaches in the paradigm of human computation, it helps to have a characterisation of the different components that generally make up a HCS. Quinn and Bederson present such a framework in \cite{Quinn:2011us} and use six dimensions to distinguish different types of systems: motivation, human skill, aggregation, quality control, process order and task-request cardinality. We briefly discuss these factors below and then propose our own general framework to describe the functioning of an individual human computation system that we will also use in the explanation of our own system in chapter \ref{ch:weporter}.
+To be able to analyse the merits of different approaches in the paradigm of human computation, it helps to have a characterisation of the different components that generally make up a HCS. Quinn and Bederson present such a framework in \cite{Quinn:2011us} and use six dimensions to distinguish different types of systems: motivation, human skill, aggregation, quality control, process order and task-request cardinality. We briefly discuss these factors below and then propose our own general framework to describe the functioning of an individual human computation system. We will use the proposed concepts in the description of our own human computation system in chapter \ref{ch:weporter}.
 
 \subsection{Comparing Human Computation Systems} % (fold)
 \label{sub:comparing_systems}
@@ -75,14 +83,14 @@ Human computation systems can have different numbers of interacting users. On th
 
 % subsection comparing_systems (end)
 
-\subsection{Describing Human Computation Systems} % (fold)
-\label{sub:describing_human_computation_systems}
+\subsection{Describing a Human Computation System} % (fold)
+\label{sub:describing_hcs}
 
 The generic analyses proposed in \cite{Quinn:2011us} are useful for the comparison of different systems as they seem to capture in a concise way many aspects these systems have in common or set them apart. They are good for a broad characterisation and categorisation of systems, but lack the expression to talk in detail about the what constitutes a specific system. For this reason we propose the  combination of \emph{`purpose'}, \emph{`motivation'} and \emph{`task'} to help in the conceptual description of a human computation system. The concepts are closely linked to the distinction of the three roles of ``requester'', ``worker'' and ``computer'' made in \cite{Quinn:2011us}. Our proposed concepts though, focus more at the functionality of the system rather than merely pointing to components. In chapter \ref{ch:weporter} we propose our own system and use these concepts in its description.
 
 \subsubsection{Purpose}
 
-Any human computation system is aimed at finding the solution to a problem. Perhaps bordering the obvious, the first level of description of a system is the precise indication of the problem being solved. Pointing to the effort that is commonly required by multiple contributors in order to solve a computationally challenging problem, we prefer the term \emph{`purpose'} over `problem'. The purpose of a system is linked to the functionality desired by Quinn and Bederson's \emph{requester} but can be thought of at a larger scale. While a single requester in the ReCaptha system might for example be interested in the accurate transcription of several books, we can indicate `the digitisation of books from Google Books' as the larger purpose served by the system.
+Any human computation system is aimed at finding the solution to a problem. Perhaps bordering the obvious, the first level of description of a system is the precise indication of the problem being solved. Pointing to the effort that is commonly required by multiple contributors in order to solve a computationally challenging problem, we prefer the term \emph{`purpose'} over `problem'. The purpose of a system is linked to the functionality desired by Quinn and Bederson's \emph{requester} but can be thought of at a larger scale. While a single requester in the ReCaptcha system might for example be interested in the accurate transcription of several books, we can indicate `the digitisation of books from Google Books' as the larger purpose served by the system.
 
 \subsubsection{Motivation}
 
@@ -94,11 +102,21 @@ Finally a description of a HCS should include a detailed description of the task
 
 % subsection describing_human_computation_systems (end)
 
-
-
-
-
 % section a_characterisation_of_human_computation_systems (end)
+
+\section{Bypassing the Semantic Gap?} % (fold)
+\label{sec:bypassing_the_semantic_gap}
+
+Several aspects make the paradigm of human computation well-suited for application to tasks concerning meaningful video interpretation.
+
+In general, many of the problems that are currently hard to solve computationally are related to finding meaningful interpretation of digital content. This is true for music interpretation, understanding of natural language as well as visual recognition and interpretation. Visual interpretation may stay a challenging task for a longer time because of the sensory nature of most of the information present in videos and people's high level narrative interpretations that are specific to video because of its sequential nature.
+
+The wide domain represented by the increasing amount of user generated video content that gets uploaded to the internet will furthermore present challenges in tasks like retrieval and recommendation. On the other hand the incorporation of this content in online video sharing platforms means that popular content is frequently interacted with. These existing interactions may be used to leverage the motivation by implicit work in human computation applications directing users' interaction data to serve a larger purpose relating to video interpretation.
+
+We have suggested the paradigm of human computation as a viable option to make video content more accessible to computer systems and thereby indirectly to their users. It should be noted that in pointing to an alternative solution to the problems raised by the semantic gap, intensions are not to point away from the strategies described in chapter \ref{ch:meaning_in_video}. These methods have achieved promising results and shown much improvement in past year. Considering the first point in Quinn and Bederson's definition of human computation, we can maintain hope that new or improved computational approaches will continue to narrow the semantic gap.
+
+
+% section bypassing_the_semantic_gap (end)
 
 % 
 % \section{Computation in Interaction}

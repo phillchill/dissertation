@@ -8,54 +8,76 @@ Repeated entry---line 820 of file ./tex/bib/mybib.bib
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Worring:2007vm"
 Warning--I didn't find a database entry for "Chang:2008wh"
+Warning--I didn't find a database entry for "Urban:2006up"
 Warning--I didn't find a database entry for "Bordwell:1985tz"
 Warning--I didn't find a database entry for "gernsbacher1995coherence"
 Warning--I didn't find a database entry for "Graesser:1994va"
+Warning--I didn't find a database entry for "Wang:2000vf"
+Warning--I didn't find a database entry for "kuleshov1974kuleshov"
+Warning--I didn't find a database entry for "Biewald:2011us"
+Warning--I didn't find a database entry for "Buhrmester:2011cw"
+Warning--I didn't find a database entry for "Paolacci:2010ws"
+Warning--I didn't find a database entry for "Kittur:2008tu"
+Warning--I didn't find a database entry for "Adar:2011ur"
+Warning--I didn't find a database entry for "VonAhn:2004vd"
+Warning--I didn't find a database entry for "VonAhn:2008bu"
+Warning--I didn't find a database entry for "COLLECTOR:2005tt"
+Warning--I didn't find a database entry for "Bernstein:2010wk"
+Warning--I didn't find a database entry for "Hu:2011ws"
+Warning--I didn't find a database entry for "Ipeirotis:2010tt"
+Warning--I didn't find a database entry for "Mason:2009wg"
+Warning--I didn't find a database entry for "Kelly:2001ui"
+Warning--I didn't find a database entry for "Kelly:2004tq"
+Warning--I didn't find a database entry for "Diakopoulos:2007jn"
+Warning--I didn't find a database entry for "Luther:2010wq"
+Warning--to sort, need author or key in Anonymous:z7Le1Iup
 Warning--to sort, need author or key in youtubeBM
 Warning--to sort, need author or key in vimeoTimeline
 Warning--to sort, need author or key in vimeoCC
+Warning--empty author in Anonymous:z7Le1Iup
+Warning--empty journal in Anonymous:z7Le1Iup
 Warning--empty journal in Babbage:1832vu
 Warning--empty institution in Rosenstiel:2012vb
 Warning--empty year in Snoek:jf
-You've used 43 entries,
+You've used 41 entries,
             2118 wiz_defined-function locations,
-            778 strings with 12157 characters,
-and the built_in function-call counts, 16120 in all, are:
-= -- 1643
-> -- 756
-< -- 18
-+ -- 299
-- -- 256
-* -- 1105
-:= -- 2571
-add.period$ -- 132
-call.type$ -- 43
-change.case$ -- 256
+            800 strings with 11956 characters,
+and the built_in function-call counts, 14881 in all, are:
+= -- 1513
+> -- 683
+< -- 17
++ -- 271
+- -- 230
+* -- 1014
+:= -- 2370
+add.period$ -- 125
+call.type$ -- 41
+change.case$ -- 237
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 601
-empty$ -- 1170
-format.name$ -- 256
-if$ -- 3421
+cite$ -- 50
+duplicate$ -- 566
+empty$ -- 1095
+format.name$ -- 230
+if$ -- 3163
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 39
-newline$ -- 220
-num.names$ -- 80
-pop$ -- 270
+int.to.str$ -- 41
+missing$ -- 37
+newline$ -- 209
+num.names$ -- 74
+pop$ -- 256
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 197
 quote$ -- 0
-skip$ -- 499
+skip$ -- 467
 stack$ -- 0
-substring$ -- 1124
-swap$ -- 193
-text.length$ -- 18
+substring$ -- 1001
+swap$ -- 177
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
-warning$ -- 6
-while$ -- 161
-width$ -- 45
-write$ -- 463
+type$ -- 160
+warning$ -- 9
+while$ -- 149
+width$ -- 43
+write$ -- 438
 (There was 1 error message)
