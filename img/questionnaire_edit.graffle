@@ -55,7 +55,7 @@
 	<key>Creator</key>
 	<string>Philo van Kemenade</string>
 	<key>DisplayScale</key>
-	<string>1 0/72 in = 1 0/72 in</string>
+	<string>1 0/72 in = 1.0000 in</string>
 	<key>FileType</key>
 	<string>flat</string>
 	<key>GraphDocumentVersion</key>
@@ -75,20 +75,6 @@
 			<string>Rectangle</string>
 			<key>Style</key>
 			<dict>
-				<key>fill</key>
-				<dict>
-					<key>Color</key>
-					<dict>
-						<key>b</key>
-						<string>0.0283559</string>
-						<key>g</key>
-						<string>0</string>
-						<key>r</key>
-						<string>1</string>
-					</dict>
-					<key>Draws</key>
-					<string>NO</string>
-				</dict>
 				<key>shadow</key>
 				<dict>
 					<key>Draws</key>
@@ -7563,7 +7549,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2012-09-16 00:55:43 +0100</string>
+	<string>2012-10-04 15:45:40 +0100</string>
 	<key>Modifier</key>
 	<string>Philo van Kemenade</string>
 	<key>NotesVisible</key>
@@ -7631,7 +7617,7 @@
 		<key>ExpandedCanvases</key>
 		<array/>
 		<key>Frame</key>
-		<string>{{68, 192}, {717, 626}}</string>
+		<string>{{44, 7}, {903, 871}}</string>
 		<key>ListView</key>
 		<false/>
 		<key>OutlineWidth</key>
@@ -7643,7 +7629,7 @@
 		<key>SidebarWidth</key>
 		<integer>138</integer>
 		<key>VisibleRegion</key>
-		<string>{{201.351, 213.514}, {758.108, 678.378}}</string>
+		<string>{{21.6216, 316.216}, {1009.46, 1009.46}}</string>
 		<key>Zoom</key>
 		<real>0.74000000953674316</real>
 		<key>ZoomValues</key>

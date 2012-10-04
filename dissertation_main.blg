@@ -2,82 +2,54 @@ This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: dissertation_main.aux
 The style file: plain.bst
 Database file #1: ./tex/bib/mybib.bib
-Repeated entry---line 820 of file ./tex/bib/mybib.bib
- : @techreport{youtubeCC
- :                      ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Worring:2007vm"
-Warning--I didn't find a database entry for "Chang:2008wh"
-Warning--I didn't find a database entry for "Urban:2006up"
-Warning--I didn't find a database entry for "Bordwell:1985tz"
-Warning--I didn't find a database entry for "gernsbacher1995coherence"
-Warning--I didn't find a database entry for "Graesser:1994va"
-Warning--I didn't find a database entry for "Wang:2000vf"
-Warning--I didn't find a database entry for "kuleshov1974kuleshov"
-Warning--I didn't find a database entry for "Biewald:2011us"
-Warning--I didn't find a database entry for "Buhrmester:2011cw"
-Warning--I didn't find a database entry for "Paolacci:2010ws"
-Warning--I didn't find a database entry for "Kittur:2008tu"
-Warning--I didn't find a database entry for "Adar:2011ur"
-Warning--I didn't find a database entry for "VonAhn:2004vd"
-Warning--I didn't find a database entry for "VonAhn:2008bu"
-Warning--I didn't find a database entry for "COLLECTOR:2005tt"
-Warning--I didn't find a database entry for "Bernstein:2010wk"
-Warning--I didn't find a database entry for "Hu:2011ws"
-Warning--I didn't find a database entry for "Ipeirotis:2010tt"
-Warning--I didn't find a database entry for "Mason:2009wg"
-Warning--I didn't find a database entry for "Kelly:2001ui"
-Warning--I didn't find a database entry for "Kelly:2004tq"
-Warning--I didn't find a database entry for "Diakopoulos:2007jn"
-Warning--I didn't find a database entry for "Luther:2010wq"
-Warning--to sort, need author or key in Anonymous:z7Le1Iup
 Warning--to sort, need author or key in youtubeBM
 Warning--to sort, need author or key in vimeoTimeline
 Warning--to sort, need author or key in vimeoCC
-Warning--empty author in Anonymous:z7Le1Iup
-Warning--empty journal in Anonymous:z7Le1Iup
 Warning--empty journal in Babbage:1832vu
+Warning--empty journal in Bordwell:1985tz
+Warning--empty institution in YouTubeCC
+Warning--empty journal in COLLECTOR:2005tt
 Warning--empty institution in Rosenstiel:2012vb
-Warning--empty year in Snoek:jf
-You've used 41 entries,
+Warning--empty year in Yuan:hu
+You've used 72 entries,
             2118 wiz_defined-function locations,
-            800 strings with 11956 characters,
-and the built_in function-call counts, 14881 in all, are:
-= -- 1513
-> -- 683
-< -- 17
-+ -- 271
-- -- 230
-* -- 1014
-:= -- 2370
-add.period$ -- 125
-call.type$ -- 41
-change.case$ -- 237
+            939 strings with 16974 characters,
+and the built_in function-call counts, 26332 in all, are:
+= -- 2675
+> -- 1257
+< -- 27
++ -- 496
+- -- 424
+* -- 1823
+:= -- 4264
+add.period$ -- 220
+call.type$ -- 72
+change.case$ -- 425
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 566
-empty$ -- 1095
-format.name$ -- 230
-if$ -- 3163
+cite$ -- 81
+duplicate$ -- 996
+empty$ -- 1892
+format.name$ -- 424
+if$ -- 5545
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 37
-newline$ -- 209
-num.names$ -- 74
-pop$ -- 256
+int.to.str$ -- 72
+missing$ -- 69
+newline$ -- 364
+num.names$ -- 138
+pop$ -- 426
 preamble$ -- 1
-purify$ -- 197
+purify$ -- 356
 quote$ -- 0
-skip$ -- 467
+skip$ -- 806
 stack$ -- 0
-substring$ -- 1001
-swap$ -- 177
-text.length$ -- 17
+substring$ -- 1753
+swap$ -- 297
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
+type$ -- 280
 warning$ -- 9
-while$ -- 149
-width$ -- 43
-write$ -- 438
-(There was 1 error message)
+while$ -- 266
+width$ -- 74
+write$ -- 773
+(There were 9 warnings)

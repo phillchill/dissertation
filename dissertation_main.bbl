@@ -17,9 +17,11 @@ Vimeo timeline.
 \newblock \url{https://vimeo.com/about/timeline}.
 \newblock Accessed: 15/09/2012.
 
-\bibitem{Anonymous:z7Le1Iup}
-{Turing - Computing Machinery and Intelligence}.
-\newblock pages 1--3, November 2009.
+\bibitem{Adar:2011ur}
+E.~Adar.
+\newblock {Why I hate Mechanical Turk research (and workshops)}.
+\newblock {\em Proc. CHI Workshop on Crowdsourcing and Human Computation},
+  2011.
 
 \bibitem{Babbage:1832vu}
 Charles Babbage.
@@ -31,12 +33,35 @@ R.~Barthes.
 \newblock {The death of the author (1968)}.
 \newblock {\em Image-music-text}, pages 142--148, 1977.
 
+\bibitem{Bernstein:2010wk}
+M.S. Bernstein, G.~Little, R.C. Miller, B.~Hartmann, M.S. Ackerman, D.R.
+  Karger, D.~Crowell, and K.~Panovich.
+\newblock {Soylent: a word processor with a crowd inside}.
+\newblock {\em Proceedings of the 23nd annual ACM symposium on User interface
+  software and technology}, pages 313--322, 2010.
+
+\bibitem{Biewald:2011us}
+L.~Biewald.
+\newblock {Massive multiplayer human computation for fun, money, and survival}.
+\newblock {\em Current Trends in Web Engineering}, pages 171--176, 2011.
+
+\bibitem{Bordwell:1985tz}
+D.~Bordwell.
+\newblock {Narration in the fiction film}.
+\newblock 1985.
+
+\bibitem{Buhrmester:2011cw}
+M~Buhrmester, T~Kwang, and S~D Gosling.
+\newblock {Amazon's Mechanical Turk: A New Source of Inexpensive, Yet
+  High-Quality, Data?}
+\newblock {\em Perspectives on Psychological Science}, 6(1):3--5, February
+  2011.
+
 \bibitem{YouTubeCC}
 Cathy Casserly.
-\newblock Here’s your invite to reuse and remix the 4 million creative
-  commons-licensed videos on youtube.
-\newblock \url{https://vimeo.com/creativecommons}, June 2012.
-\newblock Accessed: 15/09/2012.
+\newblock {Here's your invite to reuse and remix the 4 million Creative
+  Commons-licensed videos on YouTube}.
+\newblock Technical report, June 2012.
 
 \bibitem{Cesar:2009fk}
 Pablo Cesar and Konstantinos Chorianopoulos.
@@ -51,6 +76,13 @@ M.~Cha, H.~Kwak, P.~Rodriguez, Y.Y. Ahn, and S.~Moon.
   user generated content video system}.
 \newblock {\em Proceedings of the 7th ACM SIGCOMM conference on Internet
   measurement}, pages 1--14, 2007.
+
+\bibitem{Chang:2008wh}
+S.F. Chang, J.~He, Y.G. Jiang, EE~Khoury, C.W. Ngo, A.~Yanagawa, and
+  E.~Zavesky.
+\newblock {Columbia University/VIREO-CityU/IRIT TRECVID2008 high-level feature
+  extraction and interactive video search}.
+\newblock {\em NIST TRECVID Workshop}, 2008.
 
 \bibitem{Cheng:2007tc}
 X.~Cheng, C.~Dale, and J.~Liu.
@@ -72,6 +104,12 @@ M.G. Christel and R.M. Conescu.
 \newblock {\em Proceedings of the 5th ACM/IEEE-CS joint conference on Digital
   libraries}, pages 69--78, 2005.
 
+\bibitem{COLLECTOR:2005tt}
+D.I.D. COLLECTOR.
+\newblock {STARDUST@ HOME: A MASSIVELY DISTRIBUTED PUBLIC SEARCH FOR
+  INTERSTELLAR DUST IN THE STAR}.
+\newblock 2005.
+
 \bibitem{Davidson:2010tu}
 J.~Davidson, B.~Liebald, J.~Liu, P.~Nandy, T.~Van~Vleet, U.~Gargi, S.~Gupta,
   Y.~He, M.~Lambert, and B.~Livingston.
@@ -91,6 +129,22 @@ O.~De~Rooij, C~G~M Snoek, and M~Worring.
 \newblock {\em Proceedings of the 2008 international conference on
   Content-based image and video retrieval}, pages 485--494, 2008.
 
+\bibitem{Diakopoulos:2007jn}
+Nicholas Diakopoulos, Kurt Luther, Yevgeniy~Eugene Medynskiy, and Irfan Essa.
+\newblock {The evolution of authorship in a remix society}.
+\newblock In {\em HT '07: Proceedings of the eighteenth conference on Hypertext
+  and hypermedia}. ACM Request Permissions, September 2007.
+
+\bibitem{gernsbacher1995coherence}
+M.A. Gernsbacher and T.~Giv{\'o}n.
+\newblock {\em {Coherence in Spontaneous Text}}.
+\newblock Typological Studies in Language. J. Benjamins, 1995.
+
+\bibitem{Graesser:1994va}
+A.C. Graesser, M.~Singer, and T.~Trabasso.
+\newblock {Constructing inferences during narrative text comprehension.}
+\newblock {\em Psychological review}, 101(3):371, 1994.
+
 \bibitem{grier2007computers}
 D.A. Grier.
 \newblock {\em {When Computers Were Human}}.
@@ -107,6 +161,24 @@ L~Hollink, G~P Nguyen, D~C Koelma, A~Th Schreiber, and M~Worring.
 \newblock {Assessing user behaviour in news video retrieval}.
 \newblock {\em IEE Proceedings - Vision, Image, and Signal Processing},
   152(6):911, 2005.
+
+\bibitem{Hu:2011ws}
+C.~Hu, B.B. Bederson, P.~Resnik, and Y.~Kronrod.
+\newblock {Monotrans2: A new human computation system to support monolingual
+  translation}.
+\newblock {\em Proceedings of the 2011 annual conference on Human factors in
+  computing systems}, pages 1133--1136, 2011.
+
+\bibitem{Ipeirotis:2010tt}
+P.G. Ipeirotis, F.~Provost, and J.~Wang.
+\newblock {Quality management on amazon mechanical turk}.
+\newblock {\em Proceedings of the ACM SIGKDD workshop on human computation},
+  pages 64--67, 2010.
+
+\bibitem{Jain:1991wc}
+A.K. Jain and F.~Farrokhnia.
+\newblock {Unsupervised texture segmentation using Gabor filters}.
+\newblock {\em Pattern Recognition}, 24(12):1167--1186, 1991.
 
 \bibitem{Jain:1994we}
 R.~Jain and A.~Hampapur.
@@ -128,6 +200,32 @@ M.S. Kankanhalli and Y.~Rui.
 \newblock {Application potential of multimedia information retrieval}.
 \newblock {\em Proceedings of the IEEE}, 96(4):712--720, 2008.
 
+\bibitem{Kelly:2001ui}
+D.~Kelly and N.J. Belkin.
+\newblock {Reading time, scrolling and interaction: exploring implicit sources
+  of user preferences for relevance feedback}.
+\newblock {\em Proceedings of the 24th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  408--409, 2001.
+
+\bibitem{Kelly:2004tq}
+D.~Kelly and N.J. Belkin.
+\newblock {Display time as implicit feedback: understanding task effects}.
+\newblock {\em Proceedings of the 27th annual international ACM SIGIR
+  conference on Research and development in information retrieval}, pages
+  377--384, 2004.
+
+\bibitem{Kittur:2008tu}
+A.~Kittur, E.H. Chi, and B.~Suh.
+\newblock {Crowdsourcing user studies with Mechanical Turk}.
+\newblock {\em Proceedings of the twenty-sixth annual SIGCHI conference on
+  Human factors in computing systems}, pages 453--456, 2008.
+
+\bibitem{kuleshov1974kuleshov}
+L.V. Kuleshov.
+\newblock {\em {Kuleshov on Film: Writings}}.
+\newblock University of California Press, 1974.
+
 \bibitem{Kuwano:2000wy}
 H.~Kuwano, Y.~Taniguchi, H.~Arai, M.~Mori, S.~Kurakake, and H.~Kojima.
 \newblock {Telop-on-demand: Video structuring and retrieval based on text
@@ -148,11 +246,35 @@ Ying Liu, Dengsheng Zhang, Guojun Lu, and Wei-Ying Ma.
   semantics}.
 \newblock {\em Pattern Recognition}, 40(1):262--282, January 2007.
 
+\bibitem{Luther:2010wq}
+K.~Luther, N.~Diakopoulos, and A.~Bruckman.
+\newblock {Edits {\&} credits: exploring integration and attribution in online
+  creative collaboration}.
+\newblock {\em Proceedings of the 28th of the international conference extended
+  abstracts on Human factors in computing systems}, pages 2823--2832, 2010.
+
 \bibitem{manovichAuthor}
 Lev Manovich.
 \newblock Who is the author? sampling / remixing / open source.
 \newblock \url{http://www.manovich.net/DOCS/models_of_authorship.doc}.
 \newblock Accessed: 16/09/2012.
+
+\bibitem{Mason:2009wg}
+W.~Mason and D.J. Watts.
+\newblock {Financial incentives and the performance of crowds}.
+\newblock {\em Proceedings of the ACM SIGKDD workshop on human computation},
+  pages 77--85, 2009.
+
+\bibitem{Nguyen:2000vk}
+H.T. Nguyen, M~Worring, and A.~Dev.
+\newblock {Detection of moving objects in video using a robust motion
+  similarity measure}.
+\newblock {\em Image Processing, IEEE Transactions on}, 9(1):137--141, 2000.
+
+\bibitem{Paolacci:2010ws}
+G.~Paolacci, J.~Chandler, and P.~Ipeirotis.
+\newblock {Running experiments on amazon mechanical turk}.
+\newblock {\em Judgment and Decision Making}, 5(5):411--419, 2010.
 
 \bibitem{Pea:2004td}
 R.~Pea, M.~Mills, J.~Rosen, K.~Dauber, W.~Effelsberg, and E.~Hoffert.
@@ -176,6 +298,12 @@ N.~Sawhney, D.~Balcom, and I.~Smith.
 \newblock {\em Proceedings of the the seventh ACM conference on Hypertext},
   pages 1--10, 1996.
 
+\bibitem{Sivic:2006jw}
+Josef Sivic, Frederik Schaffalitzky, and Andrew Zisserman.
+\newblock {Object Level Grouping for Video Shots}.
+\newblock {\em International Journal of Computer Vision}, 67(2):189--210,
+  January 2006.
+
 \bibitem{Smeaton:2006ww}
 A.F. Smeaton, P.~Over, and W.~Kraaij.
 \newblock {Evaluation campaigns and TRECVid}.
@@ -198,13 +326,18 @@ A.W.M. Smeulders, M~Worring, S.~Santini, A.~Gupta, and R.~Jain.
 \bibitem{Snoek:jf}
 C~G~M Snoek, B~Huurnink, L~Hollink, M~de~Rijke, G~Schreiber, and M~Worring.
 \newblock {Adding Semantics to Detectors for Video Retrieval}.
-\newblock {\em IEEE Transactions on Multimedia}, 9(5):975--986.
+\newblock {\em IEEE Transactions on Multimedia}, 9(5), August 2007.
 
 \bibitem{Snoek:2009dq}
 Cees G~M Snoek and Marcel Worring.
 \newblock {Concept-Based Video Retrieval}.
 \newblock {\em Foundations and Trends{\textregistered} in Information
   Retrieval}, 2(4):215--322, 2009.
+
+\bibitem{Tonomura:1994vb}
+Y.~Tonomura, A.~Akutsu, Y.~Taniguchi, and G.~Suzuki.
+\newblock {Structured video computing}.
+\newblock {\em IEEE multimedia}, 1(3):34--43, 1994.
 
 \bibitem{Turing:1950wi}
 AM~Turing.
@@ -217,10 +350,48 @@ A.~Ulges, M.~Koch, D.~Borth, and T.M. Breuel.
 \newblock {\em Data Mining Workshops, 2009. ICDMW'09. IEEE International
   Conference on}, pages 190--195, 2009.
 
+\bibitem{Urban:2006up}
+J.~Urban, J.M. Jose, and C.J. Van~Rijsbergen.
+\newblock {An adaptive technique for content-based image retrieval}.
+\newblock {\em Multimedia Tools and Applications}, 31(1):1--28, 2006.
+
+\bibitem{Veltkamp:2001vn}
+R.C. Veltkamp and M.~Hagedoorn.
+\newblock {4. State of the Art in Shape Matching}.
+\newblock {\em Principles of visual information retrieval}, page~87, 2001.
+
+\bibitem{VonAhn:2004vd}
+L.~Von~Ahn and L.~Dabbish.
+\newblock {Labeling images with a computer game}.
+\newblock {\em Proceedings of the SIGCHI conference on Human factors in
+  computing systems}, pages 319--326, 2004.
+
+\bibitem{VonAhn:2008bu}
+L.~Von~Ahn, B.~Maurer, C.~McMillen, D.~Abraham, and M.~Blum.
+\newblock {reCAPTCHA: Human-Based Character Recognition via Web Security
+  Measures}.
+\newblock {\em Science}, 321(5895):1465--1468, September 2008.
+
+\bibitem{vonAhn:2005wi}
+Luis von Ahn.
+\newblock {\em {Human Computation}}.
+\newblock PhD thesis, Carnegie Mellon University, December 2005.
+
 \bibitem{vonAhn:2008iy}
 Luis von Ahn and Laura Dabbish.
 \newblock {Designing games with a purpose}.
 \newblock {\em Communications of the ACM}, 51(8):57, August 2008.
+
+\bibitem{Wang:2000vf}
+Y.~Wang, Z.~Liu, and J.C. Huang.
+\newblock {Multimedia content analysis-using both audio and visual clues}.
+\newblock {\em Signal Processing Magazine, IEEE}, 17(6):12--36, 2000.
+
+\bibitem{Worring:2007vm}
+M~Worring, C~G~M Snoek, O.~De~Rooij, GP~Nguyen, and AWM Smeulders.
+\newblock {The MediaMill semantic video search engine}.
+\newblock {\em Acoustics, Speech and Signal Processing, 2007. ICASSP 2007. IEEE
+  International Conference on}, 4:IV--1213--IV--1216, 2007.
 
 \bibitem{Xu:2008vb}
 S.~Xu, H.~Jiang, and F.~Lau.
@@ -235,6 +406,18 @@ B.~Yang, T.~Mei, X.S. Hua, L.~Yang, S.Q. Yang, and M.~Li.
   feedback}.
 \newblock {\em Proceedings of the 6th ACM international conference on Image and
   video retrieval}, pages 73--80, 2007.
+
+\bibitem{Yuan:hu}
+Jinhui Yuan, Huiyi Wang, Lan Xiao, Wujie Zheng, Jianmin Li, Fuzong Lin, and
+  Bo~Zhang.
+\newblock {A Formal Study of Shot Boundary Detection}.
+\newblock {\em Circuits and Systems for Video Technology, IEEE Transactions
+  on}, 17(2):168--186.
+
+\bibitem{springerlink:10.1007/BF01210504}
+HongJiang Zhang, Atreyi Kankanhalli, and Stephen~W. Smoliar.
+\newblock {Automatic partitioning of full-motion video}.
+\newblock {\em Multimedia Systems}, 1:10--28, 1993.
 
 \bibitem{Zhou:2010ut}
 R.~Zhou, S.~Khemmarat, and L.~Gao.

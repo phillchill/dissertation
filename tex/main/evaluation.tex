@@ -3,10 +3,9 @@
 % terminology: attentional data = 'focus rate'
 
 \section{Introduction} % (fold)
-\label{sec:introduction}
+\label{sec:evaluation_introduction}
 
-This chapter presents results of number of experiments we have run. This includes 
-We report on the feedback that is received from users' interaction through the use of the wePorter web interface. We show how it can be used for the purposes of filtering segments of interest within a video and the configuration of a new video story from the initially unstructured content. We present results from a user evaluation study on the merit of filtered and reconfigured content. We end with a reflection on our results in the discussion section.
+This chapter reports on a number of experiments on the wePorter system. We report on the feedback that is received from users' interaction through the use of the wePorter web interface. We show how this data can be used for the purposes of filtering segments within a video and the reconfiguration of these segments into a new video story. We present results from a user evaluation study on the merit of filtered and reconfigured content and also include results obtained from a user questionnaire supplied along with our main experiment.
 
 % section introduction (end)
 
@@ -20,7 +19,7 @@ To see whether the positioning of a video has effect on users' attentional behav
 
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width = .7\textwidth]{img/exp_posbias}
+    \includegraphics[width = .5\textwidth]{img/exp_posbias}
   \caption{Setup for Positional Bias Experiment}
   \label{fig:exp_posbias}
 \end{figure}
@@ -40,25 +39,21 @@ The first trial presented test group users with a first part in the bottom seque
 
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width = .7\textwidth]{img/exp_context}
+    \includegraphics[width = .5\textwidth]{img/exp_context}
   \caption{Setup for Context Dependency Experiment}
   \label{fig:exp_context}
 \end{figure}
 
 
-
-
+The effects of Positional Bias and Context Dependency are mainly interesting when experiments involve large amounts of data. This is first of all because of the increased statistical power that large data set bring to the table for these experiments themselves. Second, the experiments, in particular the one studying influences of context, are aimed at acquisition of knowledge that helps to steer the design of methods that needs many more data points that the limited set we have been able to acquire in our main experiment. Initial sets of data for both the Positional Bias and Context Dependency experiment have been obtained, but as they do little for the purpose of the current thesis, their analyses is left out of this work.
 
 \section{Main Experiments} % (fold)
 \label{sec:main_experiments}
 
-Our main experiments use the system framework described in section \ref{sec:weporter_implementation} for the preparation and presentation of video content, data capture from user interaction and storage of interaction data. The experiments we report on here are based on the interactions from a total of 68 persons over a period of a week.
+Our main experiments use the system framework described in section \ref{sec:weporter_implementation} for the preparation and presentation of video content, data capture from user interaction and storage of interaction data. The experiments we report on here are based on the interactions from a total of 51 persons who all participated once over a period of a week.
 
 \subsection{Setup}
-For our main experiments we use a set of 10 unedited, user-generated videos that were returned in response to the query ``Diamond Jubilee London'' on YouTube. The videos along with their title, length and view count at time of retrieval is shown in table \ref{videos}. As mentioned in section \ref{sec:weporter_implementation}, we divide source videos into video parts of equal length and generate two sequences consisting of an equal number of video parts to present in parallel. In our main experiments 
-
-[TODO]
-
+For our main experiments we use a set of 10 unedited, user-generated videos returned in response to the query ``Diamond Jubilee London'' on YouTube. The videos along with their title, length and view count at time of retrieval is shown in table \ref{videos}. As mentioned in section \ref{sec:weporter_implementation}, we divide source videos into video parts of equal length and generate two sequences consisting of an equal number of video parts to present in parallel. Partitioning the source videos from table \ref{videos} yields 142 separate video parts.
 
 \begin{table}
    \begin{tabular}{ | l | l | p{8cm} | p{1.3cm} | l |}
@@ -79,13 +74,31 @@ For our main experiments we use a set of 10 unedited, user-generated videos that
    \label{videos}
 \end{table}
 
-% if all views were parallel plays
-The videos used for the main experiments have a total length of 25 minutes and their individual view counts range from 28 to 2304. 
-
-[TODO]
+The sequence loading procedure shown in algorithm \ref{alg:genseqs}, prepares two parallel sequences consisting of six video parts each. Each interaction thus presents a user with twelve video parts. For the 51 interactions focus rates are captured. Video parts have each been presented between 3 and 7 times. 
 
 \subsection{Parallel Play Interaction Data} % (fold)
 \label{sub:parallel_play_interaction_data}
+
+\subsubsection{Clean Data} % (fold)
+
+Data returned from the capturing of attentional behaviour in the parallel player interface might have several deficiencies that we deal with by preprocessing the data before we start analysis. Deficiencies range from inaccurate artefacts induced by the interface to users' behaviour patterns that make their data less revealing. Such patterns are expected to be caused by misunderstood instructions and minor technical shortcomings in the implementation of the web interface.
+
+Some entries show focus rates of both sequences consistently valued at zero. This can either be caused by a malfunction of the focus counter functionality or by a user simply not focussing on either of the videos. These entries are completely deleted from the dataset. Although not present in the data required in our current experiments, it focus rates of segments within a single sequence might also be consistently high valued. This indicates at behaviour of someone who did not decided to change in focus. Although it might be a sign that the user is simply most interested in the one particular sequence, we would also discard these entries as they are most likely to result of a lazy participant who decided not to move the mouse or someone who misunderstood the instructions. Moreover interactions patterns that aren't the cause of active exploration of the content are not likely to reveal useful information with regard to a user's interest.
+
+The unit of measurement for focus time as captured by the parallel play interface is 100ms. A ten second clip can theoretically thus acquire a focus rate of 100, indicating a user has focussed for the complete duration of 10 seconds. A user dividing focus over two parallel videos would result in two focus rate around 50 that together add up to maximally 100. Practically however, many focus pairs in the dataset have a combined sum over 100. This is most likely cause by the method of logging focus counts. Although counters are only increased when a video is playing to prevent a video's potential load time to contribute to its focus rate, there may still be glitches induces by videos not playing bad continuously in the web browser. Also, moving the mouse quickly back and forth between the two videos can cause the two counters to be increased during a single time frame of 100 ms. These technical shortcomings should be addressed in a future implementation. 
+
+Because of the varying sum of focus rate pairs, it is more indicative to look at the ratio between the two parallel rates than to absolute rates. This way a focus rate of 50 in pair $\{focus(50,u_j), focus(50,u_j)\}$ has a different contribution than in pair $\{focus(50,u_k), focus(0,u_k)\}$. Likewise, it ensures that a rate of 30 in the pair $\{focus(30,u_l), focus(30,u_l)\}$ has a contribution equal to that of the rate of 50 in the pair received from user $u_j$. 
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width = .6\textwidth]{img/histogram_ratingsSum}
+  \caption{Occurrence of different sums of parallel focus rates}
+  \label{fig:histogram_ratingsSum}
+\end{figure}
+
+A further processing set is to weigh the ratios depending on the size of their sum. This is to emphasise focus pairs with a sum around 100 as this indicates a user has spend the full playing time focussing on at least on of the presented sequences. figure \ref{fig:histogram_ratingsSum} shows the distribution of the sum of parallel focus counts. Focus pairs whose rates sum to values between 20 and 160 are weighted once, sums between 70 and 120 are weighted twice. Focus rates that sum to other values are discarded.
+
+Figure \ref{fig:videoparts_focus} shows both average absolute focus rates and average weighted ratios received for all video parts. For clarity, ratios in the plot are scaled by a factor 100 to match the absolute rates' order of magnitude.
 
 \begin{figure}[htbp]
   \centering
@@ -94,28 +107,18 @@ The videos used for the main experiments have a total length of 25 minutes and t
   \label{fig:videoparts_focus}
 \end{figure}
 
-% landscapes of interest
-% The distinction to be made, between interesting intervals on one hand and less striking parts of a video on the other is not likely to be a very strict one. After all, unedited video captures a single stretch of space and time, so any event that is of particular interest will unlikely have hard cut-off points in time. Rather, if we imagine an individual's interest as a function of time in a particular video, we would expect a somewhat continuous flowing line with some hills or spikes every now and then when an interesting event occurs. 
-% 
-% Looking at interest at a more global level, aggregating over a large group of users, would result in an even a more smooth landscape of interest. This kind of data reveals mountains and valleys that can be used for attention-based segmentation. From the thus segmented parts, the ones with high attentional scores can be returned as candidates for interesting parts within a video.
-
-
 % subsection parallel_play_interaction_data (end)
-
-\subsection{Clean Data} % (fold)
-\label{sub:clean_data}
-
-Data returned from the capturing of attentional behaviour in the parallel player interface might have several deficiencies that we account for by preprocessing the data before we start analysis. These range from inaccurate artifacts induced by the interface to users' behaviour patterns that make their data less revealing.
-
-
-% subsection clean_data (end)
 
 \subsection{Attention-based filtering} % (fold)
 \label{sub:attention_based_filtering}
 
+Considering the assumption that user interest may be inferred from many users' focus data across different interactions, we can look at the focus data and use it to form a selections of \emph{best} and \emph{worst} attended-to video parts.
+
+To find a reasonable amount of video parts for most of the source videos in the experiment that make it into the \emph{best} and \emph{worst} sets, we consider focus ratings over 60 and below 40 respectively. Selection of parts for filtering out can be straight forward based on a ranking of all video parts within the \emph{worst} set of parts and a rejection of the $x\%$ video parts with the lowest rates. For an optimal selection for reconfiguration, a slightly more complex procedure may be preferred, as simply selecting the top $y\%$ of the \emph{best} set may result in several video parts from the same source video. This may not be desired for reconfiguration and in that case diversity in source videos should be promoted in the selection procedure.
+
 \begin{figure}[htbp]
   \centering
-    \includegraphics[width=\textwidth]{img/focus_selection}
+    \includegraphics[width=1\textwidth]{img/focus_selection}
   \caption{Video parts considered for filtering}
   \label{fig:focus_selection}
 \end{figure}
@@ -127,9 +130,153 @@ Data returned from the capturing of attentional behaviour in the parallel player
 \subsection{Evaluating Focus} % (fold)
 \label{sub:evaluating_focus}
 
-By capturing the amount of focus time, we receive measures for user attention. We hope these measures for attention help point to patterns in user preference. If the two dimensions turn out to be linked, it makes sense to base segmentation of potentially interesting parts of video on the focus data captured in our parallel play interface.
+By capturing the amount of focus time, we receive measures for user attention. We hypothesise that these measures for attention help point to patterns in user preference. If the two dimensions turn out to be linked, it makes sense to base segmentation (and subsequent reconfiguration) of potentially interesting parts of video on the focus data captured in our parallel play interface.
 
-To see how focus measures relate to user preference, we compare video parts which have received low focus rates
+To see how focus measures relate to user preference, we compare video parts which have received low focus rates to those who received relatively high rates. We construct three types of videos from our data set of video parts based on their weighted focus:
+\begin{enumerate}
+  \item two complete sets of \emph{parallel play sequence pairs}, one consisting of two sequences of 6 parts from the \emph{best} set the other consisting of two sequence of 6 from the worst set. For both sets, video parts with the highest (and lowest respectively) focus rates per source video are selected to encourage variety in the reconfiguration.
+  \item four \emph{sequences of 6 video parts}, two consisting of the video parts with the highest (lowest) focus rate per source video, two consisting of the 6 video parts with highest (lowest) focus rate that were not yet selected for the parallel play sequences.
+  \item twelve \emph{single 10 second video parts}, consisting of 6 pairs of corresponding video parts with minimum and maximum focus rate for their mutual source video.
+\end{enumerate}
+
+Subjects in the evaluation experiment were presented with pairs of content of the three different types described above, one video from the \emph{best} set, the second video from the \emph{worst} set, without subjects knowing the nature of the videos' content. The positioning left or right on screen was done at random to counter possible effects of bias by the positioning. 
+
+After the presentation of the two videos, subjects were asked to rate what they were shown based on how \emph{informative}, \emph{entertaining} and \emph{interesting} they thought the content was. Subjects were instructed to rate content on a range form 1 being very \{uninformative, unentertaining, uninteresting\}, 3 being neutral, 5 being very \{informative, entertaining, interesting\}.
+
+Besides this, they were asked to choose which of the two presented videos has their preference. Histograms of the received rating are include per video type for each category of assessment below.
+
+\subsubsection{Parallel Play Interaction}
+\paragraph{Ratings}
+
+For each of the three dimensions (indicated by colour) of a user's assessment of a parallel played sequence interactions we have plotted how the frequency of the occurrence of the distinct ratings differs for sequences sourced from the selection of video parts with either high focus rates (the best set) or low focus rates (the worst set).
+
+If our hypotheses on the relation between focus and interest are correct, we would expect higher evaluation ratings for the parts that are sourced from the best set, compared to those from the worst set. On the level of parallel sequence interaction this is the case for both entertainment ratings and interest ratings. On these two dimensions videos from the worst set are more commonly given low rating, while videos from the best set are more prominent on the high end of the rating spectrum.
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/hist_parallel_key}
+  \caption{Histogram of ratings for parallel player sequences}
+  \label{fig:evalParallel}
+\end{figure}
+
+\paragraph{Preference}
+Looking at users' choices for preference does not reveal a very insightful pattern. Although the downward first segment of the line in figure \ref{fig:evalPrefParallel} indicates a collective preference of the interaction featuring content from the best set, the difference is extremely small so not very significant. Because of the small number of subjects it is hard to find telling results. Results that show more extremely difference between the two sets of content are of most relevance.
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/pref_parallel}
+  \caption{Histogram of preferences for parallel sequences}
+  \label{fig:evalPrefParallel}
+\end{figure}
+
+\subsubsection{Sequences}
+\paragraph{Ratings} Of the two sequences we evaluated, the second shows the most indicative configuration of ratings for the dimension of interest. Although not very accentuated we see the same pattern of best set content receiving more high-end ratings and worst set content receiving more low end ratings, with their lines cutting in the middle. 
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{.5\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_seq1}
+    \caption{Sequence 1}
+    \label{fig:evalSeq1}
+  \end{subfigure}%
+  ~
+    %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{.5\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_seq2}
+    \caption{Sequence 2}
+    \label{fig:evalSeq2}
+  \end{subfigure}
+  \caption{Histogram of ratings for two evaluated sequences}
+  \label{fig:evalSeqs}
+\end{figure}
+
+\paragraph{Preference}
+
+The leaning to `good' content for the second pair of sequences is more clearly accentuated by the choices of preference. Figure \ref{fig:evalSeqsPref} points to a larger difference between the number of people choosing the different sets in favour of the content with high focus rates. 
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/pref_seqs_all}
+  \caption{Histogram of preferences for one minute sequences}
+  \label{fig:evalSeqsPref}
+\end{figure}
+
+\subsubsection{Video Parts}
+\paragraph{Ratings}
+
+Looking at the ratings of the 10 second different videos parts, two videos are most interesting. Video pair 1 and 6 show the most difference in ratings between the two sets of content. Manual inspection of the video parts (originally numbered 11 and 3 in figure \ref{fig:videoparts_focus} for pair one and 133 and 142 for pair 6) reveal that both video pairs consist of two pieces of content with a significantly difference in activity. Because of the unedited nature of the content used for the experiment, the scene setting are mostly the same. Yet in one videos originating from the set with high focus rates, a carriage transporting her majesty Queen Elizabeth passes by in full view and in the other pair the video from this set shows a zoomed in shot an a particular boat. The alternative video parts respectively show a couple of horses together with a handful of union jacks and a zoomed out pan-shot capturing many people filming and photographing the Jubilee's boat parade on the river Thames. Apart from video parts in pair three have a similar nature to those in pair 1. The content in the other pairs differs hardly.
+
+\begin{figure}
+  \centering
+  \begin{subfigure}[b]{.32\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_video1}
+    \caption{Video part pair 1}
+    \label{fig:evalVideo1}
+  \end{subfigure}%
+  ~
+    %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{.32\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_video2}
+    \caption{Video part pair 2}
+    \label{fig:evalVideo2}
+  \end{subfigure}
+  ~
+    %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{.32\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_video3}
+    \caption{Video part pair 3}
+    \label{fig:evalVideo3}
+  \end{subfigure}
+  
+  \centering
+  \begin{subfigure}[b]{.32\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_video4}
+    \caption{Video part pair 4}
+    \label{fig:evalVideo4}
+  \end{subfigure}%
+  ~
+    %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{.32\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_video5}
+    \caption{Video part pair 5}
+    \label{fig:evalVideo5}
+  \end{subfigure}
+  ~
+    %add desired spacing between images, e. g. ~, \quad, \qquad etc. 
+    %(or a blank line to force the subfigure onto a new line)
+  \begin{subfigure}[b]{.32\textwidth}
+    \centering
+      \includegraphics[width=\textwidth]{img/evaluation/hist_video6}
+    \caption{Video part pair 6}
+    \label{fig:evalVideo6}
+  \end{subfigure}
+
+  \caption{Histograms of ratings for six 10 second video parts}
+  \label{fig:evalVideos}
+\end{figure}
+
+\paragraph{Preference}
+
+The 
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/pref_videos_all}
+  \caption{Histogram of preference for 10 second video parts}
+  \label{fig:evalVideosPref}
+\end{figure}
+ 
 
 % subsection evaluating_focus (end)
 % section main_experiments (end)
@@ -137,36 +284,59 @@ To see how focus measures relate to user preference, we compare video parts whic
 \section{Questionnaire} % (fold)
 \label{sec:questionnaire}
 
-In addition to the interactive experiment using the parallel play interface
+In addition to the interactive experiment using the parallel play interface subject were presented with a questionnaire asking them about their use of online video and evaluation of the interface. The questionnaire also gave room to express general comments about the experiment. A copy of the questionnaire as presented to the users is included in appendix A.
 
-% section questionnaire (end)
+\subsection{Questions} % (fold)
+\label{sub:questions}
 
-\section{Discussion} % (fold)
-\label{sec:discussion}
+\subsubsection{Online Video Content}
+To get a better picture of the subject who participated in the experiment, they were instructed to rate on a discrete scale from one to five the frequency and aggregate daily duration of their interactions with online video as well as how often they feel the content they view is news-related. Figure \ref{fig:quest_consumption} shows amongst others that a large majority of the subjects is accustomed to watching online video on a daily basis, typically for a durations between 10 and 30 minutes.
 
-This section presents a discussion of the results presented in this chapter as well as considerations about wePorter at system level. We also relate the findings from our experimentation with the wePorter system back to the broader ideas concerned Human Computation towards meaningful video analysis.
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/quest_consumption}
+  \caption{Questionnaire Results for questions relating to online video consumption}
+  \label{fig:quest_consumption}
+\end{figure}
 
-\subsection{Potential Extensions} % (fold)
-\label{sub:potential_in_real_context}
-% at YT viewed a lot
-Using the length of individual videos and the number of times they have been viewed, we have calculated that the total time spent on watching the 10 videos above, amounts to over 185 hours. That is a lot of user interaction that could help in the computation of the most interesting video segments. If directed through our one minute parallel play interface, all this user interaction would result in more than 11000 complete interactions. With 12 video parts presented in each interaction, it would amount to more than 130000 attentional ratings for video parts or over 900 ratings per part. 
+We also asked the users about their own engagement with online video. Figure \ref{fig:quest_own_content} shows that the group of subjects in our experiment include both active and non-active individuals.
 
-% filtering can be applied
-This is not yet regarding the system's filtering functionality. Once reliable estimates of user interest have been established from the collection of captured attentional ratings, we can filter for the parts that seem most interesting, that way enabling a convergence towards the most interesting video segments. A simple way of doing this would be to rank all video parts according to their average attentional rating and discard the parts that are systematically less attended to, on the assumption that they are considered less interesting. More complex procedures are of course possible, for example taking into account the number of ratings a part has received, the positions in sequence at which parts have been presented or the kind of users that have submitted the interactions (e.g. first time users versus experienced users). Once the initial set of source videos has been filtered, more data can be acquired for the remaining set, after which filtering can be applied again. This iterative process of filtering can continue until the process yields a small subset of video part that have acquired most attention in aggregate.
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/quest_video}
+  \caption{Questionnaire Results for questions relating to user engagement with online video}
+  \label{fig:quest_own_content}
+\end{figure}
+% subsection quesitoins (end)
 
-% if filtering applied
-Filtering video parts to converge to a subset of the source videos that is  iteratively narrowed down, means that most interactive computation will be focussed on the video parts that receive most attention. There is an obvious issue of exploration versus exploitation here. When is filtering applied and what part of the current set of content is discarded in an iteration.
 
-% subsection potential_in_real_context (end)
+\subsubsection{The wePorter Interface} 
+
+Subjects seem to slant slightly to a positive evaluation of the interface, but opinions vary. Subjects are also ambivalent about the idea of seeing their own recorded video back in an algorithmic reconfiguration as the one presented in the experiment.
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/quest_interaction}
+  \caption{Questionnaire Results for questions relating to the wePorter interaction}
+  \label{fig:quest_interactions}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=.6\textwidth]{img/evaluation/quest_remix}
+  \caption{Questionnaire Results for the question ``Would you like to see your own video content remixed in such a way?''}
+  \label{fig:quest_remix}
+\end{figure}
+
 
 \subsection{Feedback from Comments} % (fold)
 \label{sub:feedback_from_comments}
 
 \begin{quote}
-  ``[...]the technology may though have many uses like the crowd sourcing of video editing or the training of AI to mimic human audio visual focus and attention'' - Mia
+  ``[...]the technology may [...] have many uses like the crowd sourcing of video editing or the training of AI to mimic human audio visual focus and attention'' - Mia
 \end{quote}
 
-As part of the user feedback form that was presented during the experiments, participants were given the option to leave their comments. Thinking of the potential of the interface, some comments, like the one above, hit the nail right on the head. Others touched upon different aspects of the experiment, the interface and the content of the videos. Overall a number of salient points emerged from the comments:
+As part of the user feedback form, participants were also given the option to leave their comments. Thinking of the potential of the interface, some comments, like the one above, hit the nail right on the head. Others touched upon different aspects of the experiment, the interface and the content of the videos. Overall a number of salient points emerged from the comments:
 
 \begin{itemize}
   \item \textbf{``I would like to see news this way''} - People were positive about the way video was presented in parallel and were enthusiastic about the possibility to interact.
@@ -174,13 +344,24 @@ As part of the user feedback form that was presented during the experiments, par
   \item \textbf{``The subject and content of the videos was uninteresting''} - Many people said they were not particularly interested in the topic of the presented videos. This meant that often they weren't drawn strongly to a particular video and did not feel a strong reason to shift focus from one or another.
 \end{itemize}
 
-Some participants also offered ideas as to how they saw the project could be extended:
+Some participants even offered ideas as to how they saw the project could be extended:
 
 \begin{quote}
   ``Idea is great and project full of potential, in particular for big events which are well covered and allow multi-angle views of an action. It would be interesting to have information about the content producer displayed discretely on the player. That way the audience could vote on the quality of a source, and in time reward the owner for it's content, encouraging him to submit more videos in this system.'' - Marc
 \end{quote}
 
 % subsection feedback_from_comments (end)
+
+% section questionnaire (end)
+
+\section{Discussion} % (fold)
+\label{sec:discussion}
+
+It is first of all interesting to see which parts of the initial sources videos are picked up by the attention-based filtering mechanism. Manual inspection shows that for source videos that feature intervals of prominent visual activity, parts of this concept can be automatically selected and used in reconfiguration. The low number of interactions per video part definitely contributes to the variation in focus data over time. Increasing the number of interactions per video part will smooth out the data and solidify mountains of attention and valleys of lack of attention.
+
+The initial evaluation performed at multiple levels of reconfigured or deconstructed video, shows that although user evaluations and preferences differ considerably across much of the content, some footage shows signs of correspondence between the time spent focussing by several users on segments of video and the collective evaluation of these parts. Moreover, the global correlation between acquired focus rates and the user preference data acquired in the evaluation experiment, indicate that we are on to something. For six out of the nine pairs of reconfigurations, the `filtered in' piece of content selected for its high focus rates, is evaluated by a majority of the evaluation subjects as most preferential. This is compared to one pair of 10 second video parts where the `filtered out' member received a majority of the preferences.
+
+
 
 % section discussion (end)
 
