@@ -26,24 +26,24 @@
 \contentsline {section}{\numberline {3.3}Bypassing the Semantic Gap?}{17}
 \contentsline {chapter}{\numberline {4}Human Computed Stories in wePorter}{18}
 \contentsline {section}{\numberline {4.1}Introduction}{18}
-\contentsline {section}{\numberline {4.2}User Generated Video Content}{18}
+\contentsline {section}{\numberline {4.2}User-Generated Video Content}{18}
 \contentsline {section}{\numberline {4.3}The Purpose}{19}
 \contentsline {subsection}{\numberline {4.3.1}Different Aims}{19}
 \contentsline {subsubsection}{Direct Navigation}{19}
 \contentsline {subsubsection}{Search and Goal-oriented browse}{19}
 \contentsline {subsubsection}{Unarticulated Want}{20}
 \contentsline {subsubsection}{Encapsulated Wander}{20}
-\contentsline {subsection}{\numberline {4.3.2}Serving the Purpose of Encapsulated Wander}{21}
+\contentsline {subsection}{\numberline {4.3.2}Serving the Purpose of Encapsulated Wander}{20}
 \contentsline {section}{\numberline {4.4}The Motivation}{22}
 \contentsline {subsection}{\numberline {4.4.1}Information Provision through Online Video}{22}
 \contentsline {subsection}{\numberline {4.4.2}Informative Entertainment}{23}
 \contentsline {section}{\numberline {4.5}The Task}{23}
 \contentsline {subsection}{\numberline {4.5.1}Design Considerations}{23}
 \contentsline {subsubsection}{wePorter is a web interface}{23}
-\contentsline {subsubsection}{Hypervideo}{24}
+\contentsline {subsubsection}{Hypervideo}{23}
 \contentsline {subsubsection}{Localised Interest}{24}
 \contentsline {subsubsection}{Implicit User Feedback}{24}
-\contentsline {subsubsection}{Capturing Attention Time by Parallel Play}{25}
+\contentsline {subsubsection}{Capturing Attention Time by Parallel Play}{24}
 \contentsline {subsubsection}{Recurrent Interaction}{25}
 \contentsline {subsubsection}{Users Between Consumers and Producers}{25}
 \contentsline {subsubsection}{The Death of the Author, the Birth of Collective Creation}{26}
@@ -74,11 +74,11 @@
 \contentsline {subsubsection}{Video Parts}{43}
 \contentsline {paragraph}{Ratings}{43}
 \contentsline {paragraph}{Preference}{44}
-\contentsline {section}{\numberline {5.4}Questionnaire}{44}
+\contentsline {section}{\numberline {5.4}Questionnaire}{45}
 \contentsline {subsection}{\numberline {5.4.1}Questions}{45}
 \contentsline {subsubsection}{Online Video Content}{45}
 \contentsline {subsubsection}{The wePorter Interface}{45}
-\contentsline {subsection}{\numberline {5.4.2}Feedback from Comments}{47}
+\contentsline {subsection}{\numberline {5.4.2}Feedback from Comments}{45}
 \contentsline {section}{\numberline {5.5}Discussion}{47}
 \contentsline {chapter}{\numberline {6}Discussion and Future Directions}{48}
 \contentsline {chapter}{\numberline {7}Conclusions}{50}
